@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
@@ -66,7 +67,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(IEInit());
+        //StartCoroutine(IEInit());
+        InitializeGame();
     }
 
     public void ChangeMode(UIObject uiObject)
@@ -85,24 +87,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void Title()
-    {
-        StartCoroutine(IETitle());
-    }
-
     public void Select()
     {
-        StartCoroutine(IESelect());
+        IESelect();
     }
 
     public void Play()
     {
         StartCoroutine(IEInitPlay());
-    }
-
-    public void Edit()
-    {
-        StartCoroutine(IEEdit());
     }
 
     public void Stop()
@@ -142,6 +134,51 @@ public class GameManager : MonoBehaviour
         Select();
     }
 
+    private async void InitializeGame()
+    {
+        SheetLoader.Instance.Init();
+
+        foreach (GameObject go in canvases)
+        {
+            go.SetActive(true);
+        }
+
+        UIController.Instance.Init();
+        Score.Instance.Init();
+
+        // UIObject들이 자기자신을 캐싱할때까지 여유를 주고 비활성화(임시코드)
+        await Task.Delay(2000); // 2초 동안 대기
+
+        DisableCanvases();
+
+        // 선택화면 아이템 생성
+        await WaitUntilSheetLoaded();
+        ItemGenerator.Instance.Init();
+
+        // 타이틀 화면 시작
+        //Title();
+        canvases[(int)Canvas.Title].SetActive(false);
+        Play();
+    }
+
+    private void DisableCanvases()
+    {
+        canvases[(int)Canvas.Game].SetActive(false);
+        canvases[(int)Canvas.GameBGA].SetActive(false);
+        canvases[(int)Canvas.Result].SetActive(false);
+        canvases[(int)Canvas.Select].SetActive(false);
+        canvases[(int)Canvas.Editor].SetActive(false);
+    }
+
+    private async Task WaitUntilSheetLoaded()
+    {
+        await Task.Run(() => {
+            while (!SheetLoader.Instance.bLoadFinish)
+            {
+                // 기다림
+            }
+        });
+    }
     IEnumerator IEInit()
     {
         SheetLoader.Instance.Init();
@@ -173,39 +210,13 @@ public class GameManager : MonoBehaviour
         Select();
     }
 
-    IEnumerator IETitle()
+    private void IESelect()
     {
-        // 화면 페이드 인
-        canvases[(int)Canvas.SFX].SetActive(true);
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 1f));
-
-        // 타이틀 인트로 재생
-        canvases[(int)Canvas.Title].GetComponent<Animation>().Play();
-        yield return new WaitForSeconds(5.6f);
-
-        // 선택화면 시작
-        Select();
-    }
-
-    IEnumerator IESelect()
-    {
-        // 화면 페이드 아웃
-        /*canvases[(int)Canvas.SFX].SetActive(true);
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, true, 2f));
-
-        // Title UI 끄기
-        canvases[(int)Canvas.Title].SetActive(false);
-
-        // Result UI 끄기
-        canvases[(int)Canvas.Result].SetActive(false);*/
-
         // Select UI 켜기
         canvases[(int)Canvas.Select].SetActive(true);
 
         canvases[(int)Canvas.Title].SetActive(false);
 
-        // 화면 페이드 인
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 2f));
         canvases[(int)Canvas.SFX].SetActive(false);
 
         // 새 게임을 시작할 수 있게 해줌
@@ -219,13 +230,15 @@ public class GameManager : MonoBehaviour
 
         // 화면 페이드 아웃
         canvases[(int)Canvas.SFX].SetActive(true);
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, true, 2f));
+        //yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, true, 2f));
 
         //  Select UI 끄기
         canvases[(int)Canvas.Select].SetActive(false);
 
         // Sheet 초기화
-        title = sheets.ElementAt(ItemController.Instance.page).Key;
+        //title = sheets.ElementAt(ItemController.Instance.page).Key;
+        title = "Consolation";
+
         sheets[title].Init();
 
         // Audio 삽입
@@ -247,7 +260,7 @@ public class GameManager : MonoBehaviour
         JudgeEffect.Instance.Init();
 
         // 화면 페이드 인
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 2f));
+        //yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 2f));
         canvases[(int)Canvas.SFX].SetActive(false);
 
         // Note 생성
@@ -308,42 +321,5 @@ public class GameManager : MonoBehaviour
 
         // 선택 화면 불러
         Select();
-    }
-
-    IEnumerator IEEdit() // 사용하지 않을 예정
-    {
-        // 새 게임을 시작할 수 없게 해줌
-        isPlaying = true;
-
-        // 화면 페이드 아웃
-        canvases[(int)Canvas.SFX].SetActive(true);
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, true, 2f));
-
-        //  Select UI 끄기
-        canvases[(int)Canvas.Select].SetActive(false);
-
-        // Sheet 초기화
-        title = sheets.ElementAt(ItemController.Instance.page).Key;
-        sheets[title].Init();
-
-        // Audio 삽입
-        AudioManager.Instance.Insert(sheets[title].clip);
-
-        // Grid 생성
-        FindObjectOfType<GridGenerator>().Init();
-
-        // Note 생성
-        NoteGenerator.Instance.GenAll();
-
-        // Editor UI 켜기
-        canvases[(int)Canvas.Editor].SetActive(true);
-
-        // Editor 초기화
-        Editor.Instance.Init();
-
-
-        // 화면 페이드 인
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 2f));
-        canvases[(int)Canvas.SFX].SetActive(false);
     }
 }

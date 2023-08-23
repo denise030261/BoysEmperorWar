@@ -136,11 +136,6 @@ public class InputManager : MonoBehaviour
                 if (!GameManager.Instance.isPlaying)
                     GameManager.Instance.Play();
             }
-            else
-            {
-                if (!GameManager.Instance.isPlaying)
-                    GameManager.Instance.Edit();
-            }
         }
     }
     public void OnExit(InputAction.CallbackContext context)
