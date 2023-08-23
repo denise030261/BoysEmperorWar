@@ -169,7 +169,8 @@ public class GameManager : MonoBehaviour
         ItemGenerator.Instance.Init();
 
         // 타이틀 화면 시작
-        Title();
+        //Title();
+        Select();
     }
 
     IEnumerator IETitle()
@@ -189,17 +190,19 @@ public class GameManager : MonoBehaviour
     IEnumerator IESelect()
     {
         // 화면 페이드 아웃
-        canvases[(int)Canvas.SFX].SetActive(true);
+        /*canvases[(int)Canvas.SFX].SetActive(true);
         yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, true, 2f));
 
         // Title UI 끄기
         canvases[(int)Canvas.Title].SetActive(false);
 
         // Result UI 끄기
-        canvases[(int)Canvas.Result].SetActive(false);
+        canvases[(int)Canvas.Result].SetActive(false);*/
 
         // Select UI 켜기
         canvases[(int)Canvas.Select].SetActive(true);
+
+        canvases[(int)Canvas.Title].SetActive(false);
 
         // 화면 페이드 인
         yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 2f));
@@ -307,7 +310,7 @@ public class GameManager : MonoBehaviour
         Select();
     }
 
-    IEnumerator IEEdit()
+    IEnumerator IEEdit() // 사용하지 않을 예정
     {
         // 새 게임을 시작할 수 없게 해줌
         isPlaying = true;
