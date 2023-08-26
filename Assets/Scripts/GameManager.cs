@@ -237,7 +237,7 @@ public class GameManager : MonoBehaviour
 
         // Sheet √ ±‚»≠
         //title = sheets.ElementAt(ItemController.Instance.page).Key;
-        title = "Consolation";
+        title = "Feelin Like";
 
         sheets[title].Init();
 

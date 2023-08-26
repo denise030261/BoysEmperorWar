@@ -27,7 +27,7 @@ public class Parser
     Step currentStep = Step.Description;
 
     public Sheet sheet;
-    string basePath = $"{Application.dataPath}/Sheet";
+    string basePath = $"{Application.dataPath}/StreamingAssets/Sheet";
 
     public AudioClip clip;
     public Sprite img;
@@ -36,6 +36,15 @@ public class Parser
     {
         sheet = new Sheet();
         string readLine = string.Empty;
+
+        if(basePath!=null)
+        {
+            Debug.Log("경로가 연결되었습니다");
+        }
+        else
+        {
+            Debug.Log(basePath+ "를 찾을 수 없습니다");
+        }
 
         using (StreamReader sr = new StreamReader($"{basePath}/{title}/{title}.sheet"))
         {

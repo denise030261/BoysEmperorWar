@@ -21,7 +21,7 @@ public class GotoLevel1 : MonoBehaviour
         if (collisionDetected && Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("충돌되었습니다"); 
-            SceneManager.LoadScene("Story1");
+            SceneManager.LoadScene("Game");
 
         }
     }

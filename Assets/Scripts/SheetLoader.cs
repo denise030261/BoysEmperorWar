@@ -27,8 +27,8 @@ public class SheetLoader : MonoBehaviour
 
     public void Init()
     {
-        pathSheet = $"{Application.dataPath}/Sheet";
-        
+        pathSheet = $"{Application.dataPath}/StreamingAssets/Sheet";
+
         if (Directory.Exists(pathSheet))
         {
             DirectoryInfo d = new DirectoryInfo(pathSheet);
