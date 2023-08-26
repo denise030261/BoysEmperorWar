@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -63,11 +64,15 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+
+        title = PlayerPrefs.GetString("SongName", "Feelin Like");
+        PlayerPrefs.SetString("SongName", title);
+        Debug.Log("곡 이름 : " + title);
+        // 곡 선택
     }
 
     void Start()
     {
-        //StartCoroutine(IEInit());
         InitializeGame();
     }
 
@@ -131,7 +136,7 @@ public class GameManager : MonoBehaviour
         AudioManager.Instance.progressTime = 0f;
         AudioManager.Instance.Stop();
 
-        Select();
+        SceneManager.LoadScene("StageSelect");
     }
 
     private async void InitializeGame()
@@ -156,7 +161,6 @@ public class GameManager : MonoBehaviour
         ItemGenerator.Instance.Init();
 
         // 타이틀 화면 시작
-        //Title();
         canvases[(int)Canvas.Title].SetActive(false);
         Play();
     }
@@ -178,36 +182,6 @@ public class GameManager : MonoBehaviour
                 // 기다림
             }
         });
-    }
-    IEnumerator IEInit()
-    {
-        SheetLoader.Instance.Init();
-
-        foreach (GameObject go in canvases)
-        {
-            go.SetActive(true);
-        }
-        sfxFade = canvases[(int)Canvas.SFX].GetComponent<CanvasGroup>();
-        sfxFade.alpha = 1f;
-
-        UIController.Instance.Init();
-        Score.Instance.Init();
-
-        // UIObject들이 자기자신을 캐싱할때까지 여유를 주고 비활성화(임시코드)
-        yield return new WaitForSeconds(2f);
-        canvases[(int)Canvas.Game].SetActive(false);
-        canvases[(int)Canvas.GameBGA].SetActive(false);
-        canvases[(int)Canvas.Result].SetActive(false);
-        canvases[(int)Canvas.Select].SetActive(false);        
-        canvases[(int)Canvas.Editor].SetActive(false);
-
-        // 선택화면 아이템 생성
-        yield return new WaitUntil(() => SheetLoader.Instance.bLoadFinish == true);
-        ItemGenerator.Instance.Init();
-
-        // 타이틀 화면 시작
-        //Title();
-        Select();
     }
 
     private void IESelect()
@@ -236,8 +210,7 @@ public class GameManager : MonoBehaviour
         canvases[(int)Canvas.Select].SetActive(false);
 
         // Sheet 초기화
-        //title = sheets.ElementAt(ItemController.Instance.page).Key;
-        title = "Feelin Like";
+        //title = "Feelin Like";
 
         sheets[title].Init();
 
@@ -319,7 +292,7 @@ public class GameManager : MonoBehaviour
         // 5초 대기
         yield return new WaitForSeconds(5f);
 
-        // 선택 화면 불러
-        Select();
+        // 선택창 이동
+        SceneManager.LoadScene("StageSelect");
     }
 }
