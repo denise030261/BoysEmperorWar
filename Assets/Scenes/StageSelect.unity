@@ -304,12 +304,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286252426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.798254, y: -2.1652572, z: -23.767918}
-  m_LocalScale: {x: 2.3767917, y: 2.3767917, z: 2.3767917}
+  m_LocalPosition: {x: 5.011, y: 0.33900005, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1574224932}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &286252430
 MonoBehaviour:
@@ -611,6 +611,7 @@ GameObject:
   - component: {fileID: 1574224933}
   - component: {fileID: 1574224934}
   - component: {fileID: 1574224935}
+  - component: {fileID: 1574224936}
   m_Layer: 0
   m_Name: Charactor
   m_TagString: Untagged
@@ -704,13 +705,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1574224929}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.73, y: 1.25, z: 0}
+  m_LocalPosition: {x: 1.66, y: 1.25, z: 0}
   m_LocalScale: {x: 0.4207352, y: 0.4207352, z: 0.4207352}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 286252429}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1574224933
 MonoBehaviour:
@@ -759,6 +759,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePower: 5
   jumpPower: 1
+--- !u!95 &1574224936
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1574224929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8cb4e5f6ebd737d45bdbb7ec8bd22323, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1578502583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,7 +1118,7 @@ RectTransform:
   - {fileID: 1578502584}
   - {fileID: 622339322}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GotoLevel1 : MonoBehaviour
 {
-    // 두 개의 박스 콜라이더 중 하나가 충돌해야 할 대상의 태그를 설정하세요.
-    private string Level;
+    private string Level; // 스테이지의 이름
 
-    private bool collisionDetected = false;
+    private bool collisionDetected = false; //콜리전 감지 여부
 
-    private void Start()
+    private void Awake()
     {
-        Debug.Log("실행되었습니다");
+        LevelInit();
     }
 
     private void Update()
@@ -59,5 +59,11 @@ public class GotoLevel1 : MonoBehaviour
             Debug.Log("충돌해제");
             collisionDetected = false;
         }
+    }
+
+    private void LevelInit()
+    {
+        Level = PlayerPrefs.GetString("SongName", "Feelin Like");
+        PlayerPrefs.SetString("SongName", Level);
     }
 }

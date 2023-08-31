@@ -1,70 +1,66 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class MoveController : MonoBehaviour
 {
+	private Animator animator; 
+	private Dictionary<int, Vector2> TransformPositions = new Dictionary<int, Vector2>(); // 스테이지에 따른 위치
 
-	public float movePower = 1f;
-	public float jumpPower = 1f;
 
 	Rigidbody2D rigid;
 
 	Vector3 movement;
 	bool isJumping = false;
+    private void Awake()
+    {
+		LevelLocationInit();
+		animator = GetComponent<Animator>();
+		// Prefabs으로 현재 위치 결정
+	}
 
-	//---------------------------------------------------[Override Function]
-	//Initialization
-	void Start()
+    void Start()
 	{
-		rigid = gameObject.GetComponent<Rigidbody2D>();
 	}
 
 	//Graphic & Input Updates	
 	void Update()
 	{
-		if (Input.GetButtonDown("Jump"))
-		{
-			isJumping = true;
+		if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+			SetIsWalk(true, false);
+		}
+		else if(Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+			SetIsWalk(true,true);
 		}
 	}
 
-	//Physics engine Updates
-	void FixedUpdate()
+	public void SetIsWalk(bool walk, bool flip)
 	{
-		Move();
-		Jump();
+		// Set the "IsWalk" parameter of the Animator
+		animator.SetBool("IsWalk", walk);
+
+		if(flip)
+        {
+			Vector2 scale = transform.localScale;
+			scale.x = -Mathf.Abs(scale.x); // Flip x scale
+			transform.localScale = scale;
+		}
+		else
+        {
+			Vector2 scale = transform.localScale;
+			scale.x = +Mathf.Abs(scale.x); // Flip x scale
+			transform.localScale = scale;
+		}
 	}
 
-	//---------------------------------------------------[Movement Function]
-
-	void Move()
+	private void LevelLocationInit()
 	{
-		Vector3 moveVelocity = Vector3.zero;
-
-		if (Input.GetAxisRaw("Horizontal") < 0)
-		{
-			moveVelocity = Vector3.left;
-		}
-
-		else if (Input.GetAxisRaw("Horizontal") > 0)
-		{
-			moveVelocity = Vector3.right;
-		}
-
-		transform.position += moveVelocity * movePower * Time.deltaTime;
-	}
-
-	void Jump()
-	{
-		if (!isJumping)
-			return;
-
-		//Prevent Velocity amplification.
-		rigid.velocity = Vector2.zero;
-
-		Vector2 jumpVelocity = new Vector2(0, jumpPower);
-		rigid.AddForce(jumpVelocity, ForceMode2D.Impulse);
-
-		isJumping = false;
+		TransformPositions[0] = new Vector2(1.66f, 1.25f);
+		TransformPositions[1] = new Vector2(8.18f, 1.25f);
+		TransformPositions[2] = new Vector2(14.56f, 1.25f);
+		TransformPositions[3] = new Vector2(20.3f, 2.49f);
+		TransformPositions[4] = new Vector2(25.41f, 2.49f);
 	}
 }
