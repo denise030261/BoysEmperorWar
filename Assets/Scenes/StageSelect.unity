@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 106180784}
   m_Layer: 0
   m_Name: Level1
-  m_TagString: Level1
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -304,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286252426}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.011, y: 0.33900005, z: -10}
+  m_LocalPosition: {x: 17.53, y: 0.33900005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 406897660}
   m_Layer: 0
   m_Name: Level3
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -372,7 +372,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 622339323}
   m_Layer: 0
   m_Name: Level5
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -475,7 +475,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -608,7 +608,6 @@ GameObject:
   - component: {fileID: 1574224932}
   - component: {fileID: 1574224931}
   - component: {fileID: 1574224930}
-  - component: {fileID: 1574224933}
   - component: {fileID: 1574224934}
   - component: {fileID: 1574224935}
   - component: {fileID: 1574224936}
@@ -687,7 +686,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 6dc1acf70068e6248bc899bc352b4049, type: 3}
-  m_Color: {r: 0.9009434, g: 0.94716984, b: 1, a: 1}
+  m_Color: {r: 0.92156863, g: 0.9411765, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -712,18 +711,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1574224933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1574224929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 885c84f89b111494090d75c54dc23c07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &1574224934
 Rigidbody2D:
   serializedVersion: 4
@@ -757,8 +744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72478aa888feff046b2591a4439c0ffb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movePower: 5
-  jumpPower: 1
+  Level: 
+  WalkSpeed: 4
 --- !u!95 &1574224936
 Animator:
   serializedVersion: 5
@@ -793,7 +780,7 @@ GameObject:
   - component: {fileID: 1578502585}
   m_Layer: 0
   m_Name: Level4
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -828,7 +815,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -896,7 +883,7 @@ GameObject:
   - component: {fileID: 1645215740}
   m_Layer: 0
   m_Name: Level2
-  m_TagString: Level2
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

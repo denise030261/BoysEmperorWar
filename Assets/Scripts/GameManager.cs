@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     Coroutine coPlaying;
 
     public Dictionary<string, Sheet> sheets = new Dictionary<string, Sheet>();
+    private Dictionary<int, string> LevelSong = new Dictionary<int, string>(); // 스테이지에 따른 노래
+    private int CurrentStage;
 
     float speed = 1.0f;
     public float Speed
@@ -65,8 +67,9 @@ public class GameManager : MonoBehaviour
         if (instance == null)
             instance = this;
 
-        title = PlayerPrefs.GetString("SongName", "Feelin Like");
-        PlayerPrefs.SetString("SongName", title);
+        LevelSongInit();
+        CurrentStage = PlayerPrefs.GetInt("Level", 1);
+        title = LevelSong[CurrentStage];
         Debug.Log("곡 이름 : " + title);
         // 곡 선택
     }
@@ -74,6 +77,15 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         InitializeGame();
+    }
+
+    private void LevelSongInit()
+    {
+        LevelSong[1] = "Feelin Like";
+        LevelSong[2] = "Do or Not";
+        LevelSong[3] = "Consolation";
+        LevelSong[4] = "Splendid Circus";
+        LevelSong[5] = "Feelin Like";
     }
 
     public void ChangeMode(UIObject uiObject)
