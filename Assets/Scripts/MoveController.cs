@@ -8,8 +8,8 @@ public class MoveController : MonoBehaviour
 	private Dictionary<int, Vector2> TransformPositions = new Dictionary<int, Vector2>(); // 스테이지에 따른 위치
 	public string Level; // 스테이지의 이름
 	private bool collisionDetected = false; //콜리전 감지 여부
-	private int CurrentLevel;
-	private int PreviousLevel;
+	public int CurrentLevel;
+	public int PreviousLevel;
 	public int WalkSpeed=2;
 
 	private Animator animator;
@@ -17,8 +17,11 @@ public class MoveController : MonoBehaviour
 	private float startTime;
 	private float journeyLength;
 
+	public static MoveController Instance { get; private set; }
+
 	private void Awake()
     {
+		Instance = this;
 		LevelLocationInit();
 		animator = GetComponent<Animator>();
 
