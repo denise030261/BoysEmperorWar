@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MoveController : MonoBehaviour
 { 
@@ -17,6 +18,11 @@ public class MoveController : MonoBehaviour
 	private float startTime;
 	private float journeyLength;
 
+	public Image TitleUI;
+	public Image StageUI;
+	public int UISpeed=2; // UI 변경 속도
+	private int isChange = 0; // UI 변경 여부 (0은 변경 없음, 1은 사라짐, 2는 채워짐)
+
 	public static MoveController Instance { get; private set; }
 
 	private void Awake()
@@ -28,6 +34,9 @@ public class MoveController : MonoBehaviour
 		CurrentLevel =PlayerPrefs.GetInt("Level", 1 );
 		PlayerPrefs.SetInt("Level", CurrentLevel);
 		transform.position = TransformPositions[CurrentLevel];
+
+		TitleUI.sprite = Resources.Load<Sprite>("UI/SongTitle0" + CurrentLevel);
+		StageUI.sprite = Resources.Load<Sprite>("UI/Stage0" + CurrentLevel);
 	}
 
 	//Graphic & Input Updates	
@@ -44,21 +53,9 @@ public class MoveController : MonoBehaviour
 			StartMoving();
 		}
 
-		if (isMoving)
-		{
-			float distanceCovered = (Time.time - startTime) * WalkSpeed; // WalkSpeed는 걷는 속도 
-			float fractionOfJourney = distanceCovered / journeyLength;
+		CharacterMove();
 
-			Vector2 originalPosition = TransformPositions[PreviousLevel];
-			Vector2 targetPosition = TransformPositions[CurrentLevel];
-			transform.position = Vector3.Lerp(originalPosition, targetPosition, fractionOfJourney);
-
-			if (fractionOfJourney >= 1.0f)
-			{
-				isMoving = false;
-				animator.SetBool("IsWalk", false);
-			}
-		}
+		UIChange();
 
 		if (collisionDetected && Input.GetKeyDown(KeyCode.Return))
 		{
@@ -125,6 +122,56 @@ public class MoveController : MonoBehaviour
 		{
 			Debug.Log(PreviousLevel + "벗어남");
 			collisionDetected = false;
+			isChange = 1;
 		}
 	}
+
+	private void UIChange()
+    {
+		if (isChange == 1)
+		{
+			if (!(TitleUI.fillAmount <= 0))
+			{
+				float fillAmount = TitleUI.fillAmount;
+				TitleUI.fillAmount = fillAmount - Time.deltaTime * UISpeed;
+				StageUI.fillAmount = fillAmount - Time.deltaTime * UISpeed;
+			}
+		}
+		else if (isChange == 2)
+		{
+			if (!(TitleUI.fillAmount >= 1))
+			{
+				float fillAmount = TitleUI.fillAmount;
+				TitleUI.fillAmount = fillAmount + Time.deltaTime * UISpeed;
+				StageUI.fillAmount = fillAmount + Time.deltaTime * UISpeed;
+			}
+
+			if (TitleUI.fillAmount >= 1)
+			{
+				isChange = 0;
+			}
+		}
+	} // UI 변경
+
+	private void CharacterMove()
+    {
+		if (isMoving)
+		{
+			float distanceCovered = (Time.time - startTime) * WalkSpeed; // WalkSpeed는 걷는 속도 
+			float fractionOfJourney = distanceCovered / journeyLength;
+
+			Vector2 originalPosition = TransformPositions[PreviousLevel];
+			Vector2 targetPosition = TransformPositions[CurrentLevel];
+			transform.position = Vector3.Lerp(originalPosition, targetPosition, fractionOfJourney);
+
+			if (fractionOfJourney >= 1.0f)
+			{
+				isMoving = false;
+				isChange = 2;
+				animator.SetBool("IsWalk", false);
+				TitleUI.sprite = Resources.Load<Sprite>("UI/SongTitle0" + CurrentLevel);
+				StageUI.sprite = Resources.Load<Sprite>("UI/Stage0" + CurrentLevel);
+			}
+		}
+	} // 캐릭터 움직임
 }

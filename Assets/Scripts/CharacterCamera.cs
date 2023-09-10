@@ -32,7 +32,7 @@ public class CharacterCamera : MonoBehaviour
 			PlayerPrefs.SetInt("CameraLevel", CameraLevel);
 			StartMoving();
 		}
-		else if (Input.GetKeyDown(KeyCode.LeftArrow) && MoveController.Instance.CurrentLevel - 1 == 2 && !isMoving)
+		else if (Input.GetKeyDown(KeyCode.LeftArrow) && MoveController.Instance.CurrentLevel - 1 == 3 && !isMoving)
 		{
 			PreviousCameraLevel = CameraLevel;
 			CameraLevel--;
