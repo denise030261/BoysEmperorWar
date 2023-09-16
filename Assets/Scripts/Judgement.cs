@@ -11,9 +11,10 @@ public enum JudgeType
 
 public class Judgement : MonoBehaviour
 {
-    readonly int miss = 600;
-    readonly int good = 400;
-    readonly int great = 250;
+    readonly int miss = 400;
+    readonly int good = 300;
+    readonly int great = 100; 
+    // 600, 400, 250
 
     List<Queue<Note>> notes = new List<Queue<Note>>();
     Queue<Note> note1 = new Queue<Note>();
@@ -165,6 +166,7 @@ public class Judgement : MonoBehaviour
                 {
                     if (judgeTime < -miss)
                     {
+                        Debug.Log(notes[i]);
                         Score.Instance.data.miss++;
                         Score.Instance.data.judge = JudgeType.Miss;
                         Score.Instance.data.combo = 0;
