@@ -22,6 +22,8 @@ public class MoveController : MonoBehaviour
 	public Image StageUI;
 	public int UISpeed=2; // UI 변경 속도
 	private int isChange = 0; // UI 변경 여부 (0은 변경 없음, 1은 사라짐, 2는 채워짐)
+	private int TitleUIposition=-480;
+	private int StageUIposition=370;
 
 	public static MoveController Instance { get; private set; }
 
@@ -130,27 +132,39 @@ public class MoveController : MonoBehaviour
     {
 		if (isChange == 1)
 		{
-			if (!(TitleUI.fillAmount <= 0))
+			if(TitleUI.rectTransform.anchoredPosition.x>=-480)
 			{
-				float fillAmount = TitleUI.fillAmount;
-				TitleUI.fillAmount = fillAmount - Time.deltaTime * UISpeed;
-				StageUI.fillAmount = fillAmount - Time.deltaTime * UISpeed;
-			}
+				float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x+ Time.deltaTime * 5000;
+				TitleUI.rectTransform.anchoredPosition = new Vector2(UITitleRecX, TitleUI.rectTransform.anchoredPosition.y);
+
+                float UIStageRecX = StageUI.rectTransform.anchoredPosition.x - Time.deltaTime * 4000;
+                StageUI.rectTransform.anchoredPosition = new Vector2(UIStageRecX, StageUI.rectTransform.anchoredPosition.y);
+            }
 		}
 		else if (isChange == 2)
 		{
-			if (!(TitleUI.fillAmount >= 1))
-			{
-				float fillAmount = TitleUI.fillAmount;
-				TitleUI.fillAmount = fillAmount + Time.deltaTime * UISpeed;
-				StageUI.fillAmount = fillAmount + Time.deltaTime * UISpeed;
-			}
+            if (TitleUI.rectTransform.anchoredPosition.x >= 480)
+            {
+                TitleUI.rectTransform.anchoredPosition = new Vector2(480, TitleUI.rectTransform.anchoredPosition.y);
+                StageUI.rectTransform.anchoredPosition = new Vector2(-370, StageUI.rectTransform.anchoredPosition.y);
+            }
+            if (TitleUI.rectTransform.anchoredPosition.x <= 480)
+            {
+                float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x - Time.deltaTime * 5000;
+                TitleUI.rectTransform.anchoredPosition = new Vector2(UITitleRecX, TitleUI.rectTransform.anchoredPosition.y);
 
-			if (TitleUI.fillAmount >= 1)
-			{
-				isChange = 0;
-			}
-		}
+                float UIStageRecX = StageUI.rectTransform.anchoredPosition.x + Time.deltaTime * 4000;
+                StageUI.rectTransform.anchoredPosition = new Vector2(UIStageRecX, StageUI.rectTransform.anchoredPosition.y);
+
+            }
+
+            if (TitleUI.rectTransform.anchoredPosition.x <= -480)
+            {
+                isChange = 0;
+                TitleUI.rectTransform.anchoredPosition = new Vector2(-480, TitleUI.rectTransform.anchoredPosition.y);
+                StageUI.rectTransform.anchoredPosition = new Vector2(370, StageUI.rectTransform.anchoredPosition.y);
+            }
+        }
 	} // UI 변경
 
 	private void CharacterMove()

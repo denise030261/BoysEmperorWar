@@ -14,7 +14,7 @@ public class Judgement : MonoBehaviour
     readonly int miss = 400;
     readonly int good = 300;
     readonly int great = 100; 
-    // 600, 400, 250
+    // 600, 400, 250 200Àº great 100Àº perfect
 
     List<Queue<Note>> notes = new List<Queue<Note>>();
     Queue<Note> note1 = new Queue<Note>();
