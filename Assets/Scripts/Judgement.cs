@@ -4,6 +4,7 @@ using UnityEngine;
 
 public enum JudgeType
 {
+    Perfect,
     Great,
     Good,
     Miss
@@ -13,7 +14,8 @@ public class Judgement : MonoBehaviour
 {
     readonly int miss = 400;
     readonly int good = 300;
-    readonly int great = 100; 
+    readonly int great = 200;
+    readonly int perfect = 100;
     // 600, 400, 250 200Àº great 100Àº perfect
 
     List<Queue<Note>> notes = new List<Queue<Note>>();
@@ -77,8 +79,16 @@ public class Judgement : MonoBehaviour
             {
                 if (judgeTime < great && judgeTime > -great)
                 {
-                    Score.Instance.data.great++;
-                    Score.Instance.data.judge = JudgeType.Great;
+                    if(judgeTime < perfect && judgeTime > -perfect)
+                    {
+                        Score.Instance.data.perfect++;
+                        Score.Instance.data.judge = JudgeType.Perfect;
+                    }
+                    else
+                    {
+                        Score.Instance.data.great++;
+                        Score.Instance.data.judge = JudgeType.Great;
+                    }
                 }
                 else
                 {
@@ -121,9 +131,18 @@ public class Judgement : MonoBehaviour
         {
             if (judgeTime < great && judgeTime > -great)
             {
-                Score.Instance.data.great++;
-                Score.Instance.data.judge = JudgeType.Great;
-                Score.Instance.data.combo++;
+                if (judgeTime < perfect && judgeTime > -perfect)
+                {
+                    Score.Instance.data.perfect++;
+                    Score.Instance.data.judge = JudgeType.Perfect;
+                    Score.Instance.data.combo++;
+                }
+                else
+                {
+                    Score.Instance.data.great++;
+                    Score.Instance.data.judge = JudgeType.Great;
+                    Score.Instance.data.combo++;
+                }
             }
             else
             {
