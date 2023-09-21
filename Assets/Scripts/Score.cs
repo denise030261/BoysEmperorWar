@@ -6,7 +6,6 @@ using UnityEngine;
 
 public struct ScoreData
 {
-    public int perfect;
     public int great;
     public int good;
     public int miss;
@@ -21,7 +20,7 @@ public struct ScoreData
     { 
         get
         {
-            return (perfect*1000)+(great * 500) + (good * 200);
+            return (great * 500) + (good * 200);
         }
         set
         {
@@ -65,7 +64,7 @@ public class Score : MonoBehaviour
     {
         data = new ScoreData();
         data.judgeText = Enum.GetNames(typeof(JudgeType));
-        data.judgeColor = new Color[4] { Color.green,Color.blue, Color.yellow, Color.red };
+        data.judgeColor = new Color[3] { Color.blue, Color.yellow, Color.red };
         uiJudgement.SetText("");
         uiCombo.SetText("");
         uiScore.SetText("0");
