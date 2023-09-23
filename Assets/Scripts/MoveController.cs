@@ -9,8 +9,8 @@ public class MoveController : MonoBehaviour
 	private Dictionary<int, Vector2> TransformPositions = new Dictionary<int, Vector2>(); // 스테이지에 따른 위치
 	public string Level; // 스테이지의 이름
 	private bool collisionDetected = false; //콜리전 감지 여부
-	public int CurrentLevel;
-	public int PreviousLevel;
+	public int CurrentLevel=1;
+	public int PreviousLevel=1;
 	public int WalkSpeed=2;
 
 	private Animator animator;
@@ -22,12 +22,18 @@ public class MoveController : MonoBehaviour
 	public Image StageUI;
 	public int UISpeed=2; // UI 변경 속도
 	private int isChange = 0; // UI 변경 여부 (0은 변경 없음, 1은 사라짐, 2는 채워짐)
-	private int TitleUIposition=-480;
+	private int TitleUIposition=-399;
 	private int StageUIposition=370;
 
-	public static MoveController Instance { get; private set; }
+    public Vector2 Stage1 = new Vector2(1.66f, 1.25f);
+    public Vector2 Stage2 = new Vector2(8.18f, 1.25f);
+    public Vector2 Stage3 = new Vector2(14.56f, 1.25f);
+    public Vector2 Stage4 = new Vector2(20.3f, 2.49f);
+    public Vector2 Stage5 = new Vector2(25.41f, 2.49f);
 
-	private void Awake()
+    public static MoveController Instance { get; private set; }
+
+    private void Awake()
     {
 		Instance = this;
 		LevelLocationInit();
@@ -98,15 +104,6 @@ public class MoveController : MonoBehaviour
 
 	} // 걷기 애니메이션 및 스테이지 변경
 
-	private void LevelLocationInit()
-	{
-		TransformPositions[1] = new Vector2(1.66f, 1.25f); 
-		TransformPositions[2] = new Vector2(8.18f, 1.25f);
-		TransformPositions[3] = new Vector2(14.56f, 1.25f);
-		TransformPositions[4] = new Vector2(20.3f, 2.49f);
-		TransformPositions[5] = new Vector2(25.41f, 2.49f);
-	} // 발판 위치
-
 	private void OnTriggerStay2D(Collider2D other)
 	{
 		// 충돌 대상이 정확한 태그인지 확인합니다.
@@ -127,12 +124,12 @@ public class MoveController : MonoBehaviour
 			isChange = 1;
 		}
 	}
-
+	//480
 	private void UIChange()
     {
 		if (isChange == 1)
 		{
-			if(TitleUI.rectTransform.anchoredPosition.x>=-480)
+			if(TitleUI.rectTransform.anchoredPosition.x>=-399)
 			{
 				float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x+ Time.deltaTime * 5000;
 				TitleUI.rectTransform.anchoredPosition = new Vector2(UITitleRecX, TitleUI.rectTransform.anchoredPosition.y);
@@ -143,12 +140,12 @@ public class MoveController : MonoBehaviour
 		}
 		else if (isChange == 2)
 		{
-            if (TitleUI.rectTransform.anchoredPosition.x >= 480)
+            if (TitleUI.rectTransform.anchoredPosition.x >= 399)
             {
-                TitleUI.rectTransform.anchoredPosition = new Vector2(480, TitleUI.rectTransform.anchoredPosition.y);
+                TitleUI.rectTransform.anchoredPosition = new Vector2(399, TitleUI.rectTransform.anchoredPosition.y);
                 StageUI.rectTransform.anchoredPosition = new Vector2(-370, StageUI.rectTransform.anchoredPosition.y);
             }
-            if (TitleUI.rectTransform.anchoredPosition.x <= 480)
+            if (TitleUI.rectTransform.anchoredPosition.x <= 399)
             {
                 float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x - Time.deltaTime * 5000;
                 TitleUI.rectTransform.anchoredPosition = new Vector2(UITitleRecX, TitleUI.rectTransform.anchoredPosition.y);
@@ -158,10 +155,10 @@ public class MoveController : MonoBehaviour
 
             }
 
-            if (TitleUI.rectTransform.anchoredPosition.x <= -480)
+            if (TitleUI.rectTransform.anchoredPosition.x <= -399)
             {
                 isChange = 0;
-                TitleUI.rectTransform.anchoredPosition = new Vector2(-480, TitleUI.rectTransform.anchoredPosition.y);
+                TitleUI.rectTransform.anchoredPosition = new Vector2(-399, TitleUI.rectTransform.anchoredPosition.y);
                 StageUI.rectTransform.anchoredPosition = new Vector2(370, StageUI.rectTransform.anchoredPosition.y);
             }
         }
@@ -188,4 +185,13 @@ public class MoveController : MonoBehaviour
 			}
 		}
 	} // 캐릭터 움직임
+
+    private void LevelLocationInit()
+    {
+        TransformPositions[1] = Stage1;
+        TransformPositions[2] = Stage2;
+        TransformPositions[3] = Stage3;
+        TransformPositions[4] = Stage4;
+        TransformPositions[5] = Stage5;
+    } // 발판 위치
 }

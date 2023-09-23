@@ -81,11 +81,13 @@ public class Judgement : MonoBehaviour
                 {
                     if(judgeTime < perfect && judgeTime > -perfect)
                     {
+                        Score.Instance.data.combo++;
                         Score.Instance.data.perfect++;
                         Score.Instance.data.judge = JudgeType.Perfect;
                     }
                     else
                     {
+                        Score.Instance.data.combo++;
                         Score.Instance.data.great++;
                         Score.Instance.data.judge = JudgeType.Great;
                     }
@@ -95,7 +97,7 @@ public class Judgement : MonoBehaviour
                     Score.Instance.data.good++;
                     Score.Instance.data.judge = JudgeType.Good;
                 }
-                Score.Instance.data.combo++;
+                //Score.Instance.data.combo++;
             }
             else
             {

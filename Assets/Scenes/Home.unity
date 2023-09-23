@@ -672,4 +672,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TitleLogo: {fileID: 1223595816}
-  TitleLogoDelay: 3
+  TitleLogoDelay: 1
