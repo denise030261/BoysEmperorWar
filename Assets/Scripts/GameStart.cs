@@ -15,9 +15,9 @@ public class GameStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKeyDown && DisplayStart)
+        if (Input.GetKeyDown(KeyCode.Return) && DisplayStart)
         {
-            SceneManager.LoadScene("StageSelect");
+            SceneManager.LoadScene("Loading(Imsi)");
         }
     }
 
