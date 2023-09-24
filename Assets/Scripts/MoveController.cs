@@ -129,7 +129,7 @@ public class MoveController : MonoBehaviour
     {
 		if (isChange == 1)
 		{
-			if(TitleUI.rectTransform.anchoredPosition.x>=-399)
+			if(TitleUI.rectTransform.anchoredPosition.x>=-357)
 			{
 				float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x+ Time.deltaTime * 5000;
 				TitleUI.rectTransform.anchoredPosition = new Vector2(UITitleRecX, TitleUI.rectTransform.anchoredPosition.y);
@@ -140,12 +140,12 @@ public class MoveController : MonoBehaviour
 		}
 		else if (isChange == 2)
 		{
-            if (TitleUI.rectTransform.anchoredPosition.x >= 399)
+            if (TitleUI.rectTransform.anchoredPosition.x >= 357)
             {
-                TitleUI.rectTransform.anchoredPosition = new Vector2(399, TitleUI.rectTransform.anchoredPosition.y);
+                TitleUI.rectTransform.anchoredPosition = new Vector2(357, TitleUI.rectTransform.anchoredPosition.y);
                 StageUI.rectTransform.anchoredPosition = new Vector2(-370, StageUI.rectTransform.anchoredPosition.y);
             }
-            if (TitleUI.rectTransform.anchoredPosition.x <= 399)
+            if (TitleUI.rectTransform.anchoredPosition.x <= 357)
             {
                 float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x - Time.deltaTime * 5000;
                 TitleUI.rectTransform.anchoredPosition = new Vector2(UITitleRecX, TitleUI.rectTransform.anchoredPosition.y);
@@ -155,10 +155,10 @@ public class MoveController : MonoBehaviour
 
             }
 
-            if (TitleUI.rectTransform.anchoredPosition.x <= -399)
+            if (TitleUI.rectTransform.anchoredPosition.x <= -357)
             {
                 isChange = 0;
-                TitleUI.rectTransform.anchoredPosition = new Vector2(-399, TitleUI.rectTransform.anchoredPosition.y);
+                TitleUI.rectTransform.anchoredPosition = new Vector2(-357, TitleUI.rectTransform.anchoredPosition.y);
                 StageUI.rectTransform.anchoredPosition = new Vector2(370, StageUI.rectTransform.anchoredPosition.y);
             }
         }
