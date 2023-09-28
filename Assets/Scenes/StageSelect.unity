@@ -358,7 +358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &362054832
 Transform:
   m_ObjectHideFlags: 0
@@ -823,7 +823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1298661206
 Transform:
   m_ObjectHideFlags: 0
@@ -907,7 +907,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1334019093
 Transform:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1492166600
 Transform:
   m_ObjectHideFlags: 0
@@ -1286,14 +1286,17 @@ MonoBehaviour:
   CurrentLevel: 0
   PreviousLevel: 0
   WalkSpeed: 4
-  TitleUI: {fileID: 1484218250}
-  StageUI: {fileID: 456420337}
-  UISpeed: 5
   Stage1: {x: 1.66, y: 1.25}
   Stage2: {x: 8.18, y: 1.25}
   Stage3: {x: 14.56, y: 1.25}
   Stage4: {x: 20.3, y: 2.1}
   Stage5: {x: 25.41, y: 2.1}
+  StageLight:
+  - {fileID: 362054831}
+  - {fileID: 1298661205}
+  - {fileID: 1334019092}
+  - {fileID: 2095600011}
+  - {fileID: 1492166599}
 --- !u!95 &1574224936
 Animator:
   serializedVersion: 5
@@ -1532,6 +1535,7 @@ GameObject:
   - component: {fileID: 1986108037}
   - component: {fileID: 1986108036}
   - component: {fileID: 1986108035}
+  - component: {fileID: 1986108039}
   m_Layer: 0
   m_Name: SelectLevel
   m_TagString: Untagged
@@ -1665,6 +1669,36 @@ RectTransform:
   m_AnchoredPosition: {x: 17.193615, y: 0.3382854}
   m_SizeDelta: {x: 91.63311, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1986108039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986108034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cf96795e3d091c40ba9d2afab96157a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentLevel: 1
+  PreviousLevel: 1
+  TitleUI: {fileID: 1484218250}
+  StageUI: {fileID: 456420337}
+  UISpeed: 2
+  isChange: 0
+  StageBoard:
+  - {fileID: 106180785}
+  - {fileID: 1645215741}
+  - {fileID: 406897661}
+  - {fileID: 1578502586}
+  - {fileID: 622339324}
+  StageLight:
+  - {fileID: 362054831}
+  - {fileID: 1298661205}
+  - {fileID: 1334019092}
+  - {fileID: 2095600011}
+  - {fileID: 1492166599}
 --- !u!1 &2021249976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,7 +1817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2095600012
 Transform:
   m_ObjectHideFlags: 0

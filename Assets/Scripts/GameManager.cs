@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     static GameManager instance;
+
+    private int[] MaxScore = new int[5]; // 스테이지별 최고 점수
     public static GameManager Instance
     {
         get
@@ -71,6 +73,12 @@ public class GameManager : MonoBehaviour
         CurrentStage = PlayerPrefs.GetInt("Level", 1);
         title = LevelSong[CurrentStage];
         Debug.Log("곡 이름 : " + title);
+
+        for(int i=0;i<5;i++)
+        {
+            MaxScore[i]=PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
+            PlayerPrefs.SetInt((i + 1) + "MaxScore", MaxScore[i]);
+        }
         // 곡 선택
     }
 
@@ -245,7 +253,7 @@ public class GameManager : MonoBehaviour
         JudgeEffect.Instance.Init();
 
         // 화면 페이드 인
-        //yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 2f));
+
         canvases[(int)Canvas.SFX].SetActive(false);
 
         // Note 생성
@@ -265,6 +273,10 @@ public class GameManager : MonoBehaviour
     // 게임 끝
     IEnumerator IEEndPlay()
     {
+        /*if(Score.Instance.data.score>=10000)
+        {
+         성공여부 
+        }*/ 
         while (true)
         {
             if (!AudioManager.Instance.IsPlaying())
@@ -285,6 +297,15 @@ public class GameManager : MonoBehaviour
         UIText rgreat = UIController.Instance.FindUI("UI_R_Great").uiObject as UIText;
         UIText rgood = UIController.Instance.FindUI("UI_R_Good").uiObject as UIText;
         UIText rmiss = UIController.Instance.FindUI("UI_R_Miss").uiObject as UIText;
+
+        Debug.Log(MaxScore[CurrentStage - 1]);
+        Debug.Log(Score.Instance.data.score);
+        if (MaxScore[CurrentStage - 1] <= Score.Instance.data.score)
+        {
+            Debug.Log(Score.Instance.data.score + "를 받음");
+            Debug.Log(CurrentStage + "MaxScore");
+            PlayerPrefs.SetInt(CurrentStage + "MaxScore", Score.Instance.data.score);
+        }
 
         rscore.SetText(Score.Instance.data.score.ToString());
         rgreat.SetText(Score.Instance.data.great.ToString());
