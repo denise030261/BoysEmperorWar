@@ -10,7 +10,6 @@ public class UIStage : MonoBehaviour
 
     public Image TitleUI;
     public Image StageUI;
-    public Text CurrentPage;
     public int UISpeed = 2; // UI 변경 속도
     public int isChange = 0; // UI 변경 여부 (0은 변경 없음, 1은 사라짐, 2는 채워짐)
 
@@ -19,11 +18,6 @@ public class UIStage : MonoBehaviour
 
     public GameObject[] StageLight; // 스테이지 불
     public bool[] IsEnter = new bool[5];
-
-    public GameObject WarningDisplay;
-    public GameObject OptionDisplay;
-    public GameObject ManualDisplay;
-    public GameObject[] Manual;
 
     public static UIStage Instance { get; private set; }
 
@@ -104,39 +98,4 @@ public class UIStage : MonoBehaviour
             }
         }
     } // UI 변경
-
-    public void Onclick_Warning(bool On)
-    {
-        WarningDisplay.SetActive(On);
-    } // 현재 스테이지 입장 불가 경고
-
-    public void OnClick_OptionOn(bool On)
-    {
-        OptionDisplay.SetActive(On); 
-    }
-
-    public void OnClick_ManualDisplay(bool On)
-    {
-        ManualDisplay.SetActive(On);
-    }
-
-    public void OnClick_GameEnd()
-    {
-        Application.Quit();
-    }
-
-    public void OnClick_ManulPage(int Page)
-    {
-        CurrentPage.text = Page.ToString();
-        if (Page == 1)
-        {
-            Manual[Page - 1].SetActive(true);
-            Manual[Page].SetActive(false);
-        }
-        else if(Page==2)
-        {
-            Manual[Page - 1].SetActive(true);
-            Manual[Page-2].SetActive(false);
-        }
-    }
 }

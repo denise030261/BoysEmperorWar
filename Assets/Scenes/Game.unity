@@ -20882,7 +20882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parent: {fileID: 1081325745}
   notePrefab: {fileID: 524847784843648390, guid: 3b5e911c3cef1034bbc43d3e0dd1f50f, type: 3}
-  lineRendererMaterial: {fileID: 2100000, guid: e5648cc902d3b4f4a987954caeb2e449, type: 2}
+  lineRendererMaterial: {fileID: 2100000, guid: 18b7f4bcf146a1143b8726bb472a42b0, type: 2}
   toReleaseList: []
 --- !u!4 &1719851596
 Transform:

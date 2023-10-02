@@ -59,10 +59,6 @@ public class MoveController : MonoBehaviour
 		{
 			SceneManager.LoadScene("Game");
 		} // 스테이지 입장
-		else if(collisionDetected && Input.GetKeyDown(KeyCode.Return) && !UIStage.Instance.IsEnter[CurrentLevel - 1])
-		{
-			UIStage.Instance.WarningDisplay.SetActive(true);
-        }
 	}
 
 	private void StartMoving()
