@@ -187,7 +187,6 @@ public class Judgement : MonoBehaviour
                 {
                     if (judgeTime < -miss)
                     {
-                        Debug.Log(notes[i]);
                         Score.Instance.data.miss++;
                         Score.Instance.data.judge = JudgeType.Miss;
                         Score.Instance.data.combo = 0;
