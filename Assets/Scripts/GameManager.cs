@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class GameManager : MonoBehaviour
     private int CurrentStage;
 
     float speed = 1.0f;
+    public Image ResultImage;
+    public Image ResultStage;
     public float Speed
     {
         get
@@ -273,10 +276,7 @@ public class GameManager : MonoBehaviour
     // 게임 끝
     IEnumerator IEEndPlay()
     {
-        /*if(Score.Instance.data.score>=10000)
-        {
-         성공여부 
-        }*/ 
+        ResultStage.sprite= Resources.Load<Sprite>("Result/ResultLevel"+CurrentStage);
         while (true)
         {
             if (!AudioManager.Instance.IsPlaying())
@@ -294,26 +294,38 @@ public class GameManager : MonoBehaviour
         canvases[(int)Canvas.Result].SetActive(true);
 
         UIText rscore = UIController.Instance.FindUI("UI_R_Score").uiObject as UIText;
+        UIText rcombo = UIController.Instance.FindUI("UI_R_Combo").uiObject as UIText;
+        UIText rperfect = UIController.Instance.FindUI("UI_R_Perfect").uiObject as UIText;
         UIText rgreat = UIController.Instance.FindUI("UI_R_Great").uiObject as UIText;
         UIText rgood = UIController.Instance.FindUI("UI_R_Good").uiObject as UIText;
         UIText rmiss = UIController.Instance.FindUI("UI_R_Miss").uiObject as UIText;
 
-        Debug.Log(MaxScore[CurrentStage - 1]);
-        Debug.Log(Score.Instance.data.score);
         if (MaxScore[CurrentStage - 1] <= Score.Instance.data.score)
         {
             Debug.Log(Score.Instance.data.score + "를 받음");
-            Debug.Log(CurrentStage + "MaxScore");
             PlayerPrefs.SetInt(CurrentStage + "MaxScore", Score.Instance.data.score);
         }
 
+        if (Score.Instance.data.score >= 10000)
+        {
+            Debug.Log("성공");
+            ResultImage.sprite = Resources.Load<Sprite>("Result/Success");
+        }
+        else
+        {
+            Debug.Log("실패");
+            ResultImage.sprite = Resources.Load<Sprite>("Result/Fail");
+        }
+
         rscore.SetText(Score.Instance.data.score.ToString());
+        rcombo.SetText(Score.Instance.data.combo.ToString());
+        rperfect.SetText(Score.Instance.data.perfect.ToString());
         rgreat.SetText(Score.Instance.data.great.ToString());
         rgood.SetText(Score.Instance.data.good.ToString());
         rmiss.SetText(Score.Instance.data.miss.ToString());
 
-        UIImage rBG = UIController.Instance.FindUI("UI_R_BG").uiObject as UIImage;
-        rBG.SetSprite(sheets[title].img);
+        //UIImage rBG = UIController.Instance.FindUI("UI_R_BG").uiObject as UIImage;
+        //rBG.SetSprite(sheets[title].img);
 
         NoteGenerator.Instance.StopGen();
         AudioManager.Instance.Stop();
