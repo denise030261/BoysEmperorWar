@@ -22,4 +22,11 @@ public class UIImage : UIObject
     {
         image.color = color;
     }
+
+    public void SetAlphaToOne(int state)
+    {
+        Color currentColor = image.color;
+        currentColor.a = state;
+        image.color = currentColor;
+    }
 }

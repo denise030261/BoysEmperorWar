@@ -37,11 +37,12 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<string, Sheet> sheets = new Dictionary<string, Sheet>();
     private Dictionary<int, string> LevelSong = new Dictionary<int, string>(); // 스테이지에 따른 노래
-    private int CurrentStage;
+    public int CurrentStage;
 
     float speed = 1.0f;
     public Image ResultImage;
     public Image ResultStage;
+
     public float Speed
     {
         get
@@ -227,13 +228,9 @@ public class GameManager : MonoBehaviour
 
         // 화면 페이드 아웃
         canvases[(int)Canvas.SFX].SetActive(true);
-        //yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, true, 2f));
 
         //  Select UI 끄기
         canvases[(int)Canvas.Select].SetActive(false);
-
-        // Sheet 초기화
-        //title = "Feelin Like";
 
         sheets[title].Init();
 
@@ -288,7 +285,6 @@ public class GameManager : MonoBehaviour
 
         // 화면 페이드 아웃
         canvases[(int)Canvas.SFX].SetActive(true);
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, true, 2f));
         canvases[(int)Canvas.Game].SetActive(false);
         canvases[(int)Canvas.GameBGA].SetActive(false);
         canvases[(int)Canvas.Result].SetActive(true);
@@ -324,14 +320,9 @@ public class GameManager : MonoBehaviour
         rgood.SetText(Score.Instance.data.good.ToString());
         rmiss.SetText(Score.Instance.data.miss.ToString());
 
-        //UIImage rBG = UIController.Instance.FindUI("UI_R_BG").uiObject as UIImage;
-        //rBG.SetSprite(sheets[title].img);
-
         NoteGenerator.Instance.StopGen();
         AudioManager.Instance.Stop();
 
-        // 화면 페이드 인
-        yield return StartCoroutine(AniPreset.Instance.IEAniFade(sfxFade, false, 2f));
         canvases[(int)Canvas.SFX].SetActive(false);
 
         // 5초 대기

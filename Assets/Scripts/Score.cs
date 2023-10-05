@@ -40,7 +40,8 @@ public class Score : MonoBehaviour
 
     public ScoreData data;
 
-    UIText uiJudgement;
+    UIImage uiJudgement;
+    UIImage uiStage;
     UIText uiCombo;
     UIText uiScore;
 
@@ -52,10 +53,12 @@ public class Score : MonoBehaviour
 
     public void Init()
     {
-        uiJudgement = UIController.Instance.FindUI("UI_G_Judgement").uiObject as UIText;
+        uiStage = UIController.Instance.FindUI("UI_I_Stage").uiObject as UIImage;
+        uiJudgement = UIController.Instance.FindUI("UI_G_Judgement").uiObject as UIImage;
         uiCombo = UIController.Instance.FindUI("UI_G_Combo").uiObject as UIText;
         uiScore = UIController.Instance.FindUI("UI_G_Score").uiObject as UIText;
 
+        AniPreset.Instance.Join(uiStage.Name);
         AniPreset.Instance.Join(uiJudgement.Name);
         AniPreset.Instance.Join(uiCombo.Name);
         AniPreset.Instance.Join(uiScore.Name);
@@ -63,29 +66,32 @@ public class Score : MonoBehaviour
 
     public void Clear()
     {
+        Sprite uiStageSprite = Resources.Load<Sprite>("Play/SmallST" + GameManager.Instance.CurrentStage);
         data = new ScoreData();
         data.judgeText = Enum.GetNames(typeof(JudgeType));
-        data.judgeColor = new Color[4] { Color.green,Color.blue, Color.yellow, Color.red };
-        uiJudgement.SetText("");
+        uiStage.SetSprite(uiStageSprite);
+        uiJudgement.SetSprite(null);
+        uiJudgement.SetAlphaToOne(0);
         uiCombo.SetText("");
         uiScore.SetText("0");
     }
 
     public void SetScore()
     {
-        uiJudgement.SetText(data.judgeText[(int)data.judge]);
-        uiJudgement.SetColor(data.judgeColor[(int)data.judge]);
+        Sprite uiJudgementSprite = Resources.Load<Sprite>("Play/" + data.judgeText[(int)data.judge]);
+        uiJudgement.SetSprite(uiJudgementSprite);
+        uiJudgement.SetAlphaToOne(1);
         uiCombo.SetText($"{data.combo}");
         uiScore.SetText($"{data.score}");
 
         AniPreset.Instance.PlayPop(uiJudgement.Name, uiJudgement.rect);
         AniPreset.Instance.PlayPop(uiCombo.Name, uiCombo.rect);
-        //UIController.Instance.find.Invoke(uiJudgement.Name);
-        //UIController.Instance.find.Invoke(uiCombo.Name);
+        UIController.Instance.find.Invoke(uiJudgement.Name);
+        UIController.Instance.find.Invoke(uiCombo.Name);
     }
 
     public void Ani(UIObject uiObject)
     {
-        //AniPreset.Instance.PlayPop(uiObject.Name, uiObject.rect);
+       // AniPreset.Instance.PlayPop(uiObject.Name, uiObject.rect);
     }
 }

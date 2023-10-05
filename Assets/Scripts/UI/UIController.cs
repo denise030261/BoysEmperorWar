@@ -27,6 +27,7 @@ public class UIController : MonoBehaviour
         UIObject[] objs = FindObjectsOfType<UIObject>();
         foreach (UIObject obj in objs)
         {
+            Debug.Log(obj.name);
             uiObjectDic.Add(obj.Name, new UIActor(obj, null));
         }
 
@@ -35,7 +36,6 @@ public class UIController : MonoBehaviour
         uiObjectDic["UI_G_Judgement"].action = Score.Instance.Ani;
         uiObjectDic["UI_G_Combo"].action = Score.Instance.Ani;
 
-        //uiObjectDic["UI_E_ProgressBar"].action = Editor.Instance.Progress;
         uiObjectDic["UI_E_Play"].action = Editor.Instance.Play;
         uiObjectDic["UI_E_Stop"].action = Editor.Instance.Stop;
     }
