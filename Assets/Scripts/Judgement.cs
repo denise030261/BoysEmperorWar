@@ -97,7 +97,6 @@ public class Judgement : MonoBehaviour
                     Score.Instance.data.good++;
                     Score.Instance.data.judge = JudgeType.Good;
                 }
-                //Score.Instance.data.combo++;
             }
             else
             {

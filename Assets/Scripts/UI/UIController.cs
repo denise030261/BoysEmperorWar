@@ -27,11 +27,8 @@ public class UIController : MonoBehaviour
         UIObject[] objs = FindObjectsOfType<UIObject>();
         foreach (UIObject obj in objs)
         {
-            Debug.Log(obj.name);
             uiObjectDic.Add(obj.Name, new UIActor(obj, null));
         }
-
-        uiObjectDic["UI_S_SelectMode"].action = GameManager.Instance.ChangeMode;
 
         uiObjectDic["UI_G_Judgement"].action = Score.Instance.Ani;
         uiObjectDic["UI_G_Combo"].action = Score.Instance.Ani;

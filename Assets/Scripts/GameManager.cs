@@ -23,8 +23,7 @@ public class GameManager : MonoBehaviour
 
     public enum GameState
     {
-        Game,
-        Edit,
+        Game
     }
     public GameState state = GameState.Game;
 
@@ -39,21 +38,8 @@ public class GameManager : MonoBehaviour
     private Dictionary<int, string> LevelSong = new Dictionary<int, string>(); // 스테이지에 따른 노래
     public int CurrentStage;
 
-    float speed = 1.0f;
     public Image ResultImage;
     public Image ResultStage;
-
-    public float Speed
-    {
-        get
-        {
-            return speed;
-        }
-        set
-        {
-            speed = Mathf.Clamp(value, 1.0f, 5.0f);
-        }
-    }
 
     public List<GameObject> canvases = new List<GameObject>();
     enum Canvas
@@ -100,27 +86,6 @@ public class GameManager : MonoBehaviour
         LevelSong[5] = "Feelin Like";
     }
 
-    public void ChangeMode(UIObject uiObject)
-    {
-        if (state == GameState.Game)
-        {
-            state = GameState.Edit;
-            TextMeshProUGUI text = uiObject.transform.GetComponentInChildren<TextMeshProUGUI>();
-            text.text = "Edit\nMode";
-        }
-        else
-        {
-            state = GameState.Game;
-            TextMeshProUGUI text = uiObject.transform.GetComponentInChildren<TextMeshProUGUI>();
-            text.text = "Game\nMode";
-        }
-    }
-
-    public void Select()
-    {
-        IESelect();
-    }
-
     public void Play()
     {
         StartCoroutine(IEInitPlay());
@@ -139,18 +104,6 @@ public class GameManager : MonoBehaviour
                 StopCoroutine(coPlaying);
                 coPlaying = null;
             }
-        }
-        else
-        {
-            // Editor UI 끄기
-            canvases[(int)Canvas.Editor].SetActive(false);
-            Editor.Instance.Stop();
-
-            FindObjectOfType<GridGenerator>().InActivate();
-
-            // 에디터에서 수정된 오브젝트가 있을 수 있으므로 갱신해줌
-            StartCoroutine(Parser.Instance.IEParse(title));
-            sheets[title] = Parser.Instance.sheet;
         }
 
         // 노트 Gen 끄기
@@ -182,7 +135,6 @@ public class GameManager : MonoBehaviour
 
         // 선택화면 아이템 생성
         await WaitUntilSheetLoaded();
-        ItemGenerator.Instance.Init();
 
         // 타이틀 화면 시작
         canvases[(int)Canvas.Title].SetActive(false);
@@ -206,19 +158,6 @@ public class GameManager : MonoBehaviour
                 // 기다림
             }
         });
-    }
-
-    private void IESelect()
-    {
-        // Select UI 켜기
-        canvases[(int)Canvas.Select].SetActive(true);
-
-        canvases[(int)Canvas.Title].SetActive(false);
-
-        canvases[(int)Canvas.SFX].SetActive(false);
-
-        // 새 게임을 시작할 수 있게 해줌
-        isPlaying = false;
     }
 
     IEnumerator IEInitPlay()

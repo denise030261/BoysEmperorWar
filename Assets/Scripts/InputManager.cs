@@ -22,12 +22,6 @@ public class InputManager : MonoBehaviour
         sync = FindObjectOfType<Sync>();
     }
 
-    void Update()
-    {
-        if (GameManager.Instance.state == GameManager.GameState.Edit)
-            mousePos = Mouse.current.position.ReadValue();
-    }
-
     public void OnNoteLine0(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -80,28 +74,7 @@ public class InputManager : MonoBehaviour
             keyEffects[3].gameObject.SetActive(false);
         }
     }
-    public void OnSpeedDown(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            GameManager.Instance.Speed -= 0.1f;
-            NoteGenerator.Instance.Interpolate();
 
-            UIText speedUI = UIController.Instance.find.Invoke("UI_G_Speed").uiObject as UIText;
-            speedUI.SetText("Speed " + GameManager.Instance.Speed.ToString("0.0"));
-        }
-    }
-    public void OnSpeedUp(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            GameManager.Instance.Speed += 0.1f;
-            NoteGenerator.Instance.Interpolate();
-
-            UIText speedUI = UIController.Instance.find.Invoke("UI_G_Speed").uiObject as UIText;
-            speedUI.SetText("Speed " + GameManager.Instance.Speed.ToString("0.0"));
-        }
-    }
     public void OnJudgeDown(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -145,61 +118,5 @@ public class InputManager : MonoBehaviour
             if (GameManager.Instance.isPlaying)
                 GameManager.Instance.Stop();
         }
-    }
-
-    // 에디터
-    public void OnMouseBtn(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            if (GameManager.Instance.state == GameManager.GameState.Edit)
-                EditorController.Instance.MouseBtn(context.control.name);                
-        }
-    }
-
-    public void OnMouseWheel(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            if (GameManager.Instance.state == GameManager.GameState.Edit)
-            {
-                EditorController.Instance.Scroll(context.ReadValue<float>());
-            }
-        }
-    }
-
-    public void OnSpace(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            if (GameManager.Instance.state == GameManager.GameState.Edit)
-                EditorController.Instance.Space();
-        }
-    }
-
-    public void OnCtrl(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            if (GameManager.Instance.state == GameManager.GameState.Edit)
-            {
-                EditorController.Instance.isCtrl = true;
-                EditorController.Instance.Ctrl();
-            }
-        }
-        else if (context.canceled)
-        {
-            if (GameManager.Instance.state == GameManager.GameState.Edit)
-                EditorController.Instance.isCtrl = false;
-        }
-    }
-
-    // 테스트용 코드
-    public void OnTest(InputAction.CallbackContext context)
-    {
-        // Audio Time을 끝으로 옮겨 결과창을 바로 볼 수 있게 위함
-        AudioManager.Instance.audioSource.time = AudioManager.Instance.Length;
-
-        //FindObjectOfType<SheetStorage>().Save();
     }
 }
