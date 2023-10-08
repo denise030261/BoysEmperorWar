@@ -37,15 +37,6 @@ public class Parser
         sheet = new Sheet();
         string readLine = string.Empty;
 
-        /*if(basePath!=null)
-        {
-            Debug.Log("경로가 연결되었습니다");
-        }
-        else
-        {
-            Debug.Log(basePath+ "를 찾을 수 없습니다");
-        }*/
-
         using (StreamReader sr = new StreamReader($"{basePath}/{title}/{title}.sheet"))
         {
             readLine = sr.ReadLine();
@@ -109,10 +100,8 @@ public class Parser
         }
 
         yield return IEGetClip(title);
-        yield return IEGetImg(title);
 
         sheet.clip = clip;
-        sheet.img = img;
     }
 
     public IEnumerator IEGetClip(string title)
@@ -125,14 +114,4 @@ public class Parser
         }
     }
 
-    public IEnumerator IEGetImg(string title)
-    {
-        using (UnityWebRequest request = UnityWebRequestTexture.GetTexture($"{basePath}/{title}/{title}.jpg"))
-        {
-            yield return request.SendWebRequest();
-            Texture2D t = DownloadHandlerTexture.GetContent(request);
-            img = Sprite.Create(t, new Rect(0, 0, t.width, t.height), new Vector2(0.5f, 0.5f));
-            img.name = title;
-        }
-    }
 }

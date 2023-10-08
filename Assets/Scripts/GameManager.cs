@@ -41,12 +41,11 @@ public class GameManager : MonoBehaviour
     public Image ResultImage;
     public Image ResultStage;
 
+    public int LoadingTime=5;
+
     public List<GameObject> canvases = new List<GameObject>();
     enum Canvas
     {
-        Title,
-        Select,
-        SFX,
         GameBGA,
         Game,
         Result,
@@ -129,15 +128,13 @@ public class GameManager : MonoBehaviour
         Score.Instance.Init();
 
         // UIObject들이 자기자신을 캐싱할때까지 여유를 주고 비활성화(임시코드)
-        await Task.Delay(2000); // 2초 동안 대기
+        await Task.Delay(1000 * LoadingTime); // 대기
 
         DisableCanvases();
 
         // 선택화면 아이템 생성
         await WaitUntilSheetLoaded();
 
-        // 타이틀 화면 시작
-        canvases[(int)Canvas.Title].SetActive(false);
         Play();
     }
 
@@ -146,7 +143,6 @@ public class GameManager : MonoBehaviour
         canvases[(int)Canvas.Game].SetActive(false);
         canvases[(int)Canvas.GameBGA].SetActive(false);
         canvases[(int)Canvas.Result].SetActive(false);
-        canvases[(int)Canvas.Select].SetActive(false);
         canvases[(int)Canvas.Editor].SetActive(false);
     }
 
@@ -164,12 +160,6 @@ public class GameManager : MonoBehaviour
     {        
         // 새 게임을 시작할 수 없게 해줌
         isPlaying = true;
-
-        // 화면 페이드 아웃
-        canvases[(int)Canvas.SFX].SetActive(true);
-
-        //  Select UI 끄기
-        canvases[(int)Canvas.Select].SetActive(false);
 
         sheets[title].Init();
 
@@ -190,10 +180,6 @@ public class GameManager : MonoBehaviour
 
         // 판정 이펙트 초기화
         JudgeEffect.Instance.Init();
-
-        // 화면 페이드 인
-
-        canvases[(int)Canvas.SFX].SetActive(false);
 
         // Note 생성
         NoteGenerator.Instance.StartGen();
@@ -223,7 +209,6 @@ public class GameManager : MonoBehaviour
         }
 
         // 화면 페이드 아웃
-        canvases[(int)Canvas.SFX].SetActive(true);
         canvases[(int)Canvas.Game].SetActive(false);
         canvases[(int)Canvas.GameBGA].SetActive(false);
         canvases[(int)Canvas.Result].SetActive(true);
@@ -261,8 +246,6 @@ public class GameManager : MonoBehaviour
 
         NoteGenerator.Instance.StopGen();
         AudioManager.Instance.Stop();
-
-        canvases[(int)Canvas.SFX].SetActive(false);
 
         // 5초 대기
         yield return new WaitForSeconds(5f);

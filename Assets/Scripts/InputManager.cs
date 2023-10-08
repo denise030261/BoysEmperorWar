@@ -100,17 +100,6 @@ public class InputManager : MonoBehaviour
         }
     }
 
-    public void OnEnter(InputAction.CallbackContext context)
-    {
-        if (context.started)
-        {
-            if (GameManager.Instance.state == GameManager.GameState.Game)
-            {
-                if (!GameManager.Instance.isPlaying)
-                    GameManager.Instance.Play();
-            }
-        }
-    }
     public void OnExit(InputAction.CallbackContext context)
     {
         if (context.started)
