@@ -42,6 +42,11 @@ public class GameManager : MonoBehaviour
     public Image ResultStage;
 
     public int LoadingTime=5;
+    private bool IsPaused=false; // 멈춤 여부
+    private bool IsPlay = false; // 플레이 여부
+    private bool IsCount = false;
+    private float timer = 3f;
+    private float CurrentTime;
 
     public List<GameObject> canvases = new List<GameObject>();
     enum Canvas
@@ -76,6 +81,36 @@ public class GameManager : MonoBehaviour
         InitializeGame();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && IsPlay)
+        {
+            IsPaused = !IsPaused;
+            if (IsPaused)
+            {
+                Debug.Log("멈춥니다");
+                AudioManager.Instance.Pause();
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Debug.Log("3초 뒤에 시작합니다");
+                CurrentTime = Time.unscaledTime;
+                IsCount = true;
+            }
+        }
+
+        if(IsCount)
+        {
+            if (Time.unscaledTime-CurrentTime>=3f)
+            {
+                IsCount = false;
+                AudioManager.Instance.UnPause();
+                Time.timeScale = 1;
+            }
+        }
+    }
+
     private void LevelSongInit()
     {
         LevelSong[1] = "Feelin Like";
@@ -87,6 +122,7 @@ public class GameManager : MonoBehaviour
 
     public void Play()
     {
+        IsPlay = true;
         StartCoroutine(IEInitPlay());
     }
 
@@ -207,6 +243,8 @@ public class GameManager : MonoBehaviour
             }
             yield return new WaitForSeconds(1f);
         }
+
+        IsPlay = false;
 
         // 화면 페이드 아웃
         canvases[(int)Canvas.Game].SetActive(false);
