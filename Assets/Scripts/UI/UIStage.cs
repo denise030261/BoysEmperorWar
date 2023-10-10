@@ -25,6 +25,8 @@ public class UIStage : MonoBehaviour
     public GameObject ManualDisplay;
     public GameObject[] Manual;
 
+    public int[] StandardScore = new int[5];
+
     public static UIStage Instance { get; private set; }
 
     private void Awake()
@@ -36,7 +38,6 @@ public class UIStage : MonoBehaviour
 
         TitleUI.sprite = Resources.Load<Sprite>("UI/SongTitle0" + CurrentLevel);
         StageUI.sprite = Resources.Load<Sprite>("UI/Stage0" + CurrentLevel);
-        StageLight[CurrentLevel - 1].SetActive(true);
         IsEnter[0] = true;
     }
 
@@ -46,7 +47,7 @@ public class UIStage : MonoBehaviour
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
 
-            if (StageMaxScore[i] >= 10000)
+            if (StageMaxScore[i] >= StandardScore[i])
             {
                 StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelArea");
                 IsEnter[i+1] = true;
@@ -57,6 +58,12 @@ public class UIStage : MonoBehaviour
                 IsEnter[i + 1] = false;
             }
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
+        }
+
+
+        if (StageBoard[CurrentLevel - 1].sprite.name == "LevelArea")
+        {
+            StageLight[CurrentLevel - 1].SetActive(true);
         }
     }
 
@@ -100,7 +107,12 @@ public class UIStage : MonoBehaviour
                 isChange = 0;
                 TitleUI.rectTransform.anchoredPosition = new Vector2(-357, TitleUI.rectTransform.anchoredPosition.y);
                 StageUI.rectTransform.anchoredPosition = new Vector2(370, StageUI.rectTransform.anchoredPosition.y);
-                StageLight[CurrentLevel - 1].SetActive(true); // 스테이지 불 키기
+                // if문
+                //StageLight[CurrentLevel - 1].SetActive(true); // 스테이지 불 키기
+                if (StageBoard[CurrentLevel - 1].sprite.name == "LevelArea")
+                {
+                    StageLight[CurrentLevel - 1].SetActive(true);
+                }
             }
         }
     } // UI 변경

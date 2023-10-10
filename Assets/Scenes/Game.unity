@@ -14222,7 +14222,7 @@ Animator:
   m_GameObject: {fileID: 1534841176}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0ef132994058475478446fd1830692c0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4aeff685139d9524f8a66e244a840127, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -19911,7 +19911,7 @@ MonoBehaviour:
   CurrentStage: 0
   ResultImage: {fileID: 1955156302}
   ResultStage: {fileID: 1236494013}
-  LoadingTime: 5
+  LoadingTime: 7
   canvases:
   - {fileID: 1809573596}
   - {fileID: 1498581019}

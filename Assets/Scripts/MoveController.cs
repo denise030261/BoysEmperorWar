@@ -148,3 +148,5 @@ public class MoveController : MonoBehaviour
         TransformPositions[5] = Stage5;
     } // 발판 위치
 }
+
+// 움직일 때 키보드 인식하지 않게 만들기

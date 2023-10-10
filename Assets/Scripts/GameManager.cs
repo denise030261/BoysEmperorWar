@@ -264,7 +264,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt(CurrentStage + "MaxScore", Score.Instance.data.score);
         }
 
-        if (Score.Instance.data.score >= 10000)
+        if (Score.Instance.data.score >= UIStage.Instance.StandardScore[CurrentStage-1])
         {
             Debug.Log("¼º°ø");
             ResultImage.sprite = Resources.Load<Sprite>("Result/Success");
