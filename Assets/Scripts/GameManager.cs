@@ -40,12 +40,12 @@ public class GameManager : MonoBehaviour
 
     public Image ResultImage;
     public Image ResultStage;
+    public Image BackGroundImage;
 
     public int LoadingTime=5;
     private bool IsPaused=false; // ∏ÿ√„ ø©∫Œ
     private bool IsPlay = false; // «√∑π¿Ã ø©∫Œ
     private bool IsCount = false;
-    private float timer = 3f;
     private float CurrentTime;
 
     public List<GameObject> canvases = new List<GameObject>();
@@ -74,6 +74,8 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt((i + 1) + "MaxScore", MaxScore[i]);
         }
         // ∞Ó º±≈√
+
+        BackGroundImage.sprite= Resources.Load<Sprite>("Play/BackGround" + CurrentStage);
     }
 
     void Start()
@@ -115,7 +117,7 @@ public class GameManager : MonoBehaviour
     {
         LevelSong[1] = "Feelin Like";
         LevelSong[2] = "Do or Not";
-        LevelSong[3] = "Consolation";
+        LevelSong[3] = "Dr.BeBe";
         LevelSong[4] = "Splendid Circus";
         LevelSong[5] = "Feelin Like";
     }

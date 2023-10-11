@@ -25,6 +25,10 @@ public class UIStage : MonoBehaviour
     public GameObject ManualDisplay;
     public GameObject[] Manual;
 
+    public float FadeDuration = 3.0f; // 페이드 인 지속 시간 (초)
+    private float StartTime;
+    public Image FadeImage; // 페이드 인 대상 이미지
+
     public int[] StandardScore = new int[5];
 
     public static UIStage Instance { get; private set; }
@@ -65,10 +69,27 @@ public class UIStage : MonoBehaviour
         {
             StageLight[CurrentLevel - 1].SetActive(true);
         }
+
+        StartTime = Time.time;
     }
 
     void Update()
     {
+        // 현재 시간과 시작 시간 사이의 시간 경과를 계산합니다.
+        float elapsedTime = Time.time - StartTime;
+
+        // 경과 시간을 기반으로 투명도(알파) 값을 조정하여 페이드 인 효과를 생성합니다.
+        float alpha = 1 - Mathf.Clamp01(elapsedTime / FadeDuration);
+
+        // 이미지의 투명도를 설정합니다.
+        FadeImage.color = new Color(FadeImage.color.r, FadeImage.color.g, FadeImage.color.b, alpha);
+
+        // 페이드 인이 완료되면 스크립트를 비활성화합니다.
+        if (alpha <= 0)
+        {
+            enabled = false;
+        }
+
         CurrentLevel = PlayerPrefs.GetInt("Level", 1);
         UIChange();
     }
