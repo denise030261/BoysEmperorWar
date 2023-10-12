@@ -111,10 +111,12 @@ public class MoveController : MonoBehaviour
 		// 충돌이 해제되었을 때 상태를 초기화합니다.
 		if (other.CompareTag("Level"))
 		{
+			Debug.Log("스테이지에 벗어났습니다");
             UIStage.Instance.StageLight[PreviousLevel-1].SetActive(false);
             collisionDetected = false;
 			UIStage.Instance.isChange = 1;
-		}
+            Debug.Log(UIStage.Instance.isChange);
+        }
 	}
 
 	private void CharacterMove()

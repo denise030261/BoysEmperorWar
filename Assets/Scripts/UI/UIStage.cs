@@ -27,6 +27,10 @@ public class UIStage : MonoBehaviour
 
     public int[] StandardScore = new int[5];
 
+    public float FadeDuration = 3.0f; 
+    private float StartTime;
+    public Image FadeImage; 
+
     public static UIStage Instance { get; private set; }
 
     private void Awake()
@@ -65,10 +69,23 @@ public class UIStage : MonoBehaviour
         {
             StageLight[CurrentLevel - 1].SetActive(true);
         }
+
+        StartTime = Time.time;
     }
 
     void Update()
     {
+        float elapsedTime = Time.time - StartTime;
+
+        float alpha = 1 - Mathf.Clamp01(elapsedTime / FadeDuration);
+
+        FadeImage.color = new Color(FadeImage.color.r, FadeImage.color.g, FadeImage.color.b, alpha);
+
+        if (alpha <= 0)
+        {
+            enabled = false;
+        }
+
         CurrentLevel = PlayerPrefs.GetInt("Level", 1);
         UIChange();
     }
@@ -107,8 +124,6 @@ public class UIStage : MonoBehaviour
                 isChange = 0;
                 TitleUI.rectTransform.anchoredPosition = new Vector2(-357, TitleUI.rectTransform.anchoredPosition.y);
                 StageUI.rectTransform.anchoredPosition = new Vector2(370, StageUI.rectTransform.anchoredPosition.y);
-                // if문
-                //StageLight[CurrentLevel - 1].SetActive(true); // 스테이지 불 키기
                 if (StageBoard[CurrentLevel - 1].sprite.name == "LevelArea")
                 {
                     StageLight[CurrentLevel - 1].SetActive(true);
