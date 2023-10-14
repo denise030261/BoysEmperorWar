@@ -45,8 +45,9 @@ public class GameManager : MonoBehaviour
     private bool IsPaused=false; // 멈춤 여부
     private bool IsPlay = false; // 플레이 여부
     private bool IsCount = false;
-    private float timer = 3f;
     private float CurrentTime;
+
+    public Image BackGroundImage;
 
     public List<GameObject> canvases = new List<GameObject>();
     enum Canvas
@@ -115,7 +116,7 @@ public class GameManager : MonoBehaviour
     {
         LevelSong[1] = "Feelin Like";
         LevelSong[2] = "Do or Not";
-        LevelSong[3] = "Consolation";
+        LevelSong[3] = "Dr.BeBe";
         LevelSong[4] = "Splendid Circus";
         LevelSong[5] = "Feelin Like";
     }
@@ -170,6 +171,9 @@ public class GameManager : MonoBehaviour
 
         // 선택화면 아이템 생성
         await WaitUntilSheetLoaded();
+
+        Debug.Log(CurrentStage);
+        BackGroundImage.sprite = Resources.Load<Sprite>("Play/Stage" + CurrentStage);
 
         Play();
     }
@@ -284,11 +288,16 @@ public class GameManager : MonoBehaviour
 
         NoteGenerator.Instance.StopGen();
         AudioManager.Instance.Stop();
+    }
 
-        // 5초 대기
-        yield return new WaitForSeconds(5f);
-
-        // 선택창 이동
+    public void OnClick_Next()
+    {
         SceneManager.LoadScene("StageSelect");
+    }
+
+    public void OnClick_Retry()
+    {
+        DisableCanvases();
+        Play();
     }
 }

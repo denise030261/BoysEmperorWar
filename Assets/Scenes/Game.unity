@@ -576,7 +576,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 338569537}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1844198987}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnClick_Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &338569537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3927,7 +3939,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1205795413}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1844198987}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: OnClick_Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1205795413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5724,6 +5748,7 @@ MonoBehaviour:
   ResultImage: {fileID: 1955156302}
   ResultStage: {fileID: 1236494013}
   LoadingTime: 7
+  BackGroundImage: {fileID: 3142537937865653661}
   canvases:
   - {fileID: 1809573596}
   - {fileID: 1498581019}
@@ -6568,3 +6593,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6124eb1b472f9ae449e9277e5679f660, type: 3}
+--- !u!114 &3142537937865653661 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3142537937652468939, guid: 6124eb1b472f9ae449e9277e5679f660, type: 3}
+  m_PrefabInstance: {fileID: 3142537937865653660}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
