@@ -34,7 +34,8 @@ public class InputManager : MonoBehaviour
             judgement.CheckLongNote(0);
             keyEffects[0].gameObject.SetActive(false);
         }
-    }
+    } //길게 눌러지면 짧은 노드(started)가 떴다가 떼면 노드가 긴 노드라고 뜸
+
     public void OnNoteLine1(InputAction.CallbackContext context)
     {
         if (context.started)

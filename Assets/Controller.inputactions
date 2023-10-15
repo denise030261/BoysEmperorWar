@@ -42,24 +42,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "SpeedDown",
-                    "type": "Button",
-                    "id": "84480ec6-379b-4f01-87b9-097aa18cacc2",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "SpeedUp",
-                    "type": "Button",
-                    "id": "40fa9caf-89b3-4f6e-bcfb-b22bce928c65",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "ItemMove",
                     "type": "Value",
                     "id": "1d020abc-8dce-4ed2-ad16-e2c35be98f4d",
@@ -192,28 +174,6 @@
                     "processors": "",
                     "groups": "",
                     "action": "NoteLine3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d2759c70-999d-4424-93d8-9bf0e6f68ed8",
-                    "path": "<Keyboard>/1",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SpeedDown",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "26255616-73ec-4e04-a286-429f71ee312e",
-                    "path": "<Keyboard>/2",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "SpeedUp",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
