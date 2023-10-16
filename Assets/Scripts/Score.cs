@@ -17,6 +17,8 @@ public struct ScoreData
     public Color[] judgeColor;
     public JudgeType judge;
     public int combo;
+    public int maxcombo;
+
     public int score 
     { 
         get
@@ -83,6 +85,11 @@ public class Score : MonoBehaviour
         uiJudgement.SetAlphaToOne(1);
         uiCombo.SetText($"{data.combo}");
         uiScore.SetText($"{data.score}");
+
+        if(data.maxcombo<data.combo)
+        {
+            data.maxcombo = data.combo; 
+        }
 
         AniPreset.Instance.PlayPop(uiJudgement.Name, uiJudgement.rect);
         AniPreset.Instance.PlayPop(uiCombo.Name, uiCombo.rect);

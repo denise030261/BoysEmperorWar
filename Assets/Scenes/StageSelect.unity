@@ -1945,6 +1945,7 @@ MonoBehaviour:
   StandardScore: 1027000010270000102700001027000010270000
   FadeDuration: 0.5
   FadeImage: {fileID: 1474893939}
+  FadeInObject: {fileID: 1474893937}
 --- !u!1 &2021249976
 GameObject:
   m_ObjectHideFlags: 0

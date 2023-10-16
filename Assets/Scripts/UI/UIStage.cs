@@ -29,7 +29,8 @@ public class UIStage : MonoBehaviour
 
     public float FadeDuration = 3.0f; 
     private float StartTime;
-    public Image FadeImage; 
+    public Image FadeImage;
+    public GameObject FadeInObject;
 
     public static UIStage Instance { get; private set; }
 
@@ -47,6 +48,7 @@ public class UIStage : MonoBehaviour
 
     private void Start()
     {
+        FadeInObject.SetActive(true);
         for (int i = 0; i < StageMaxScore.Length - 1; i++)
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
@@ -84,6 +86,7 @@ public class UIStage : MonoBehaviour
         if (alpha <= 0)
         {
             enabled = false;
+            FadeInObject.SetActive(false);
         }
 
         CurrentLevel = PlayerPrefs.GetInt("Level", 1);

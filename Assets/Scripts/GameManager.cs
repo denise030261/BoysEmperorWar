@@ -280,7 +280,7 @@ public class GameManager : MonoBehaviour
         }
 
         rscore.SetText(Score.Instance.data.score.ToString());
-        rcombo.SetText(Score.Instance.data.combo.ToString());
+        rcombo.SetText(Score.Instance.data.maxcombo.ToString());
         rperfect.SetText(Score.Instance.data.perfect.ToString());
         rgreat.SetText(Score.Instance.data.great.ToString());
         rgood.SetText(Score.Instance.data.good.ToString());

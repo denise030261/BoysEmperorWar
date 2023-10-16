@@ -151,6 +151,7 @@ public class Judgement : MonoBehaviour
             {
                 Score.Instance.data.longMiss++;
             }
+            JudgeEffect.Instance.OnEffect(line); // ∂Æ¿ª ∂ß ¿Ã∆Â∆Æ
             Score.Instance.SetScore();
             longNoteCheck[line] = 0;
             notes[line].Dequeue();
