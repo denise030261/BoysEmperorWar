@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StageSelect.unity
     guid: da93f8e5ce83e7849bc57f40e0c14815
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Story1.unity
     guid: a5a12b6464fdf314c887e38c28f8f880
   - enabled: 1
@@ -19,9 +19,12 @@ EditorBuildSettings:
     guid: 1f90dd45f7ef2c94fa05aa325f297362
   - enabled: 0
     path: 
-    guid: 089f2a94a491c754e8ea95d0d42b9666
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Loading(Imsi).unity
     guid: 9519559955fbf2046900ab1888eea915
+  - enabled: 1
+    path: Assets/Scenes/Story.unity
+    guid: 87729785cd992164b868cc050b6399b3
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: a59f1365a24f1af439f28b52ab675b2a, type: 2}
