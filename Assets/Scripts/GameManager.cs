@@ -117,7 +117,7 @@ public class GameManager : MonoBehaviour
         LevelSong[1] = "Feelin Like";
         LevelSong[2] = "Do or Not";
         LevelSong[3] = "Dr.BeBe";
-        LevelSong[4] = "Splendid Circus";
+        LevelSong[4] = "Humph";
         LevelSong[5] = "Feelin Like";
     }
 
