@@ -73,8 +73,6 @@ public class Judgement : MonoBehaviour
         Note note = notes[line].Peek();
         int judgeTime = curruntTime - note.time + judgeTimeFromUserSetting;
 
-        if (judgeTime < miss && judgeTime > -miss)
-        {
             if (judgeTime < good && judgeTime > -good)
             {
                 if (judgeTime < great && judgeTime > -great)
@@ -97,13 +95,6 @@ public class Judgement : MonoBehaviour
                     Score.Instance.data.good++;
                     Score.Instance.data.judge = JudgeType.Good;
                 }
-            }
-            else
-            {
-                Score.Instance.data.fastMiss++;
-                Score.Instance.data.judge = JudgeType.Miss;
-                Score.Instance.data.combo = 0;
-            }
             Score.Instance.SetScore();
             JudgeEffect.Instance.OnEffect(line);
 
@@ -147,10 +138,11 @@ public class Judgement : MonoBehaviour
                     Score.Instance.data.combo++;
                 }
             }
-            else
+            /*else 
             {
-                Score.Instance.data.longMiss++;
-            }
+                Score.Instance.data.miss++;
+                Debug.Log(note.time+"긴 노드 오류입니다");
+            }*/
             JudgeEffect.Instance.OnEffect(line); // 땠을 때 이펙트
             Score.Instance.SetScore();
             longNoteCheck[line] = 0;
@@ -181,7 +173,7 @@ public class Judgement : MonoBehaviour
                     {
                         if (judgeTime < -miss)
                         {
-                            Debug.Log("오류입니다");
+                            Debug.Log(note.time+"헤드 판정이 되지 않았습니다");
                             Score.Instance.data.miss++;
                             Score.Instance.data.judge = JudgeType.Miss;
                             Score.Instance.data.combo = 0;
@@ -195,7 +187,7 @@ public class Judgement : MonoBehaviour
                 {
                     if (judgeTime < -miss)
                     {
-                        Debug.Log("오류입니다");
+                        Debug.Log(note.time+"그 외의 실질 오류입니다");
                         Score.Instance.data.miss++;
                         Score.Instance.data.judge = JudgeType.Miss;
                         Score.Instance.data.combo = 0;
