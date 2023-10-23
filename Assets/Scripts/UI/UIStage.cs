@@ -1,3 +1,4 @@
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,11 +28,6 @@ public class UIStage : MonoBehaviour
 
     public int[] StandardScore = new int[5];
 
-    public float FadeDuration = 3.0f; 
-    private float StartTime;
-    public Image FadeImage;
-    public GameObject FadeInObject;
-
     public static UIStage Instance { get; private set; }
 
     private void Awake()
@@ -48,7 +44,6 @@ public class UIStage : MonoBehaviour
 
     private void Start()
     {
-        FadeInObject.SetActive(true);
         for (int i = 0; i < StageMaxScore.Length - 1; i++)
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
@@ -72,30 +67,20 @@ public class UIStage : MonoBehaviour
             StageLight[CurrentLevel - 1].SetActive(true);
         }
 
-        StartTime = Time.time;
+        //StartTime = Time.time;
     }
 
     void Update()
     {
-        float elapsedTime = Time.time - StartTime;
-
-        float alpha = 1 - Mathf.Clamp01(elapsedTime / FadeDuration);
-
-        FadeImage.color = new Color(FadeImage.color.r, FadeImage.color.g, FadeImage.color.b, alpha);
-
-        if (alpha <= 0)
-        {
-            enabled = false;
-            FadeInObject.SetActive(false);
-        }
-
         CurrentLevel = PlayerPrefs.GetInt("Level", 1);
         UIChange();
     }
     private void UIChange()
     {
+        Debug.Log("함수 호출");
         if (isChange == 1)
         {
+            Debug.Log("왼쪽으로 움직였습니다");
             if (TitleUI.rectTransform.anchoredPosition.x >= -357)
             {
                 float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x + Time.deltaTime * 5000;
@@ -107,6 +92,7 @@ public class UIStage : MonoBehaviour
         }
         else if (isChange == 2)
         {
+            Debug.Log("오른쪽으로 움직였습니다");
             if (TitleUI.rectTransform.anchoredPosition.x >= 357)
             {
                 TitleUI.rectTransform.anchoredPosition = new Vector2(357, TitleUI.rectTransform.anchoredPosition.y);

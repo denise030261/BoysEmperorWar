@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChatManager : MonoBehaviour
+public class ChatManager : DataManager
 {
-    public string[] BeforeChat1;
+
     string practicestring;
     public int CharPerSecnds;
     public Text PracticeText;

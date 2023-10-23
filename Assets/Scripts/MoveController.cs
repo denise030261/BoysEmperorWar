@@ -111,11 +111,10 @@ public class MoveController : MonoBehaviour
 		// 충돌이 해제되었을 때 상태를 초기화합니다.
 		if (other.CompareTag("Level"))
 		{
-			Debug.Log("스테이지에 벗어났습니다");
             UIStage.Instance.StageLight[PreviousLevel-1].SetActive(false);
             collisionDetected = false;
 			UIStage.Instance.isChange = 1;
-            Debug.Log(UIStage.Instance.isChange);
+            Debug.Log("스테이지에 벗어났습니다 "+UIStage.Instance.isChange);
         }
 	}
 
@@ -137,6 +136,7 @@ public class MoveController : MonoBehaviour
                 animator.SetBool("IsWalk", false);
 				UIStage.Instance.TitleUI.sprite = Resources.Load<Sprite>("UI/SongTitle0" + CurrentLevel);
                 UIStage.Instance.StageUI.sprite = Resources.Load<Sprite>("UI/Stage0" + CurrentLevel);
+                Debug.Log("스테이지가 바뀌었습니다 " + UIStage.Instance.isChange);
             }
 		}
 	} // 캐릭터 움직임
