@@ -1,20 +1,56 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
+using UnityEditor.Rendering;
 using UnityEngine;
 
 public class DataManager : MonoBehaviour
 {
+    private int CurrentStage;
+
     protected List<string> LeftCharacterData = new List<string>();
     protected List<string> RightCharacterData = new List<string>();
     protected List<string> ChatData = new List<string>();
     protected List<string> ChatWindowData = new List<string>();
-    protected List<string> PlaceData = new List<string>();
+    public List<string> PlaceData = new List<string>();
 
+    public int SceneNum = 0;
+    public bool IsProgress=false;
+    public bool IsChat = false;
+    public bool IsPlaceWindow = false;   
+
+    public static DataManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+        LoadJsonFile();
+    }
     // Start is called before the first frame update
     void Start()
     {
-        LoadJsonFile();
+        CurrentStage = PlayerPrefs.GetInt("Level", 1);
+        // 게임 전후 구분 Prefs 필요
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.Return) && IsProgress && !IsChat)
+        {
+            if(PlaceData[SceneNum + 1] != "")
+            {
+                SceneNum++;
+                IsChat = false;
+                IsProgress = false;
+            }
+            else
+            {
+                SceneNum++;
+                IsChat = true;
+                IsProgress = false;
+            }
+        }
     }
 
     private void LoadJsonFile()
