@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
         LevelSong[2] = "Do or Not";
         LevelSong[3] = "Dr.BeBe";
         LevelSong[4] = "Humph";
-        LevelSong[5] = "Feelin Like";
+        LevelSong[5] = "Daisy";
     }
 
     public void Play()
