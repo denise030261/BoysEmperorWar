@@ -13,11 +13,15 @@ public class ChatManager : DataManager
     float interval;
     private Image ChatTitle;
 
+    public Image LeftCharacter;
+    public Image RightCharacter;
+
     // DataManager에서 인스턴스 한것을 상속 받은 변수에 저장
-        void Start()
+    void Start()
     {
         ChatTitle = GetComponent<Image>();
         ChatInit();
+        CharacterInit();
     }
 
     private void Update()
@@ -32,6 +36,36 @@ public class ChatManager : DataManager
             Input.GetKeyUp(KeyCode.Return) && DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
         {
             ChatInit();
+        }
+
+        if(ChatTitle.color.a==1f)
+        {
+            if(LeftCharacterData[DataManager.Instance.SceneNum] == "없음")
+            {
+                LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 0);
+            }
+            else if(LeftCharacterData[DataManager.Instance.SceneNum] != "")
+            {
+                LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 1);
+                LeftCharacter.sprite = Resources.Load<Sprite>
+            ("Story/Ep1/LeftCharacter/Before/" + LeftCharacterData[DataManager.Instance.SceneNum]);
+            }
+
+            if(RightCharacterData[DataManager.Instance.SceneNum] == "없음")
+            {
+                RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 0);
+            }
+            else if(RightCharacterData[DataManager.Instance.SceneNum] != "")
+            {
+                RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 1);
+                RightCharacter.sprite = Resources.Load<Sprite>
+            ("Story/Ep1/RightCharacter/Before/" + RightCharacterData[DataManager.Instance.SceneNum]);
+            }
+        }
+        else if (ChatTitle.color.a == 0f)
+        {
+            LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 0);
+            RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 0);
         }
     }
 
@@ -77,5 +111,11 @@ public class ChatManager : DataManager
         ChatTitle.color = new Color(ChatTitle.color.r, ChatTitle.color.g, ChatTitle.color.b, 0);
         PracticeText.text = "";
         StartCoroutine(DelayChat());
+    }
+
+    private void CharacterInit()
+    {
+        LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 0);
+        RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 0);
     }
 }
