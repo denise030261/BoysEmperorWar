@@ -92,7 +92,6 @@ public class UIStage : MonoBehaviour
         }
         else if (isChange == 2)
         {
-            Debug.Log("오른쪽으로 움직였습니다");
             if (TitleUI.rectTransform.anchoredPosition.x >= 357)
             {
                 TitleUI.rectTransform.anchoredPosition = new Vector2(357, TitleUI.rectTransform.anchoredPosition.y);

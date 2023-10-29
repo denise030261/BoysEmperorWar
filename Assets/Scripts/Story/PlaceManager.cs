@@ -56,16 +56,12 @@ public class PlaceManager : UIFade
         if (DataManager.Instance.SceneNum == 0)
         {
             StoryBackGround.sprite = Resources.Load<Sprite>
-           ("Story/Ep"+ DataManager.Instance.CurrentStage +"/Place/" + DataManager.Instance.PlaceData[DataManager.Instance.SceneNum]);
-            /*FadeImage.sprite = Resources.Load<Sprite>
-                ("Story/Ep"+CurrentStage+ "/PlaceWindow/"+CurrentState+"/" + DataManager.Instance.PlaceData[DataManager.Instance.SceneNum]);*/
+           ("Story/Place/" + DataManager.Instance.PlaceData[DataManager.Instance.SceneNum]);
         }
         else
         {
             StoryBackGround.sprite = Resources.Load<Sprite>
-          ("Story/Ep"+CurrentStage+"/Place/"+ DataManager.Instance.PlaceData[DataManager.Instance.SceneNum+1]);
-            /*FadeImage.sprite = Resources.Load<Sprite>
-                ("Story/Ep"+CurrentStage+"/PlaceWindow/"+CurrentState+"/" + DataManager.Instance.PlaceData[DataManager.Instance.SceneNum+1]);*/
+          ("Story/Place/"+ DataManager.Instance.PlaceData[DataManager.Instance.SceneNum+1]);
         }
 
         yield return new WaitForSeconds(DelayTime);

@@ -59,9 +59,9 @@ public class AudioManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    void Start()
+    private void Start()
     {
-
+        audioSource.volume= PlayerPrefs.GetFloat("BGM", 0.5f);
     }
 
     public void Play()

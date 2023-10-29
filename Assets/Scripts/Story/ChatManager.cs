@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class ChatManager : DataManager
 {
     public int DelayChatSpeed = 5;
-    string practicestring;
     public int CharPerSecnds;
     public Text PracticeText;
     int index;
@@ -21,9 +20,6 @@ public class ChatManager : DataManager
     {
         ChatInit();
         CharacterInit();
-
-        Debug.Log(CurrentStage);
-        Debug.Log(CurrentState);
     }
 
     private void Update()
@@ -53,7 +49,7 @@ public class ChatManager : DataManager
             {
                 LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 1);
                 LeftCharacter.sprite = Resources.Load<Sprite>
-            ("Story/Ep1/LeftCharacter/Before/" + LeftCharacterData[DataManager.Instance.SceneNum]);
+            ("Story/LeftCharacter/" + LeftCharacterData[DataManager.Instance.SceneNum]);
             }
 
             if (RightCharacterData[DataManager.Instance.SceneNum] == "¾øÀ½")
@@ -64,7 +60,7 @@ public class ChatManager : DataManager
             {
                 RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 1);
                 RightCharacter.sprite = Resources.Load<Sprite>
-            ("Story/Ep1/RightCharacter/Before/" + RightCharacterData[DataManager.Instance.SceneNum]);
+            ("Story/RightCharacter/" + RightCharacterData[DataManager.Instance.SceneNum]);
             }
         }
         else if (ChatTitle.color.a == 0f)
@@ -76,7 +72,7 @@ public class ChatManager : DataManager
         if (ChatWindowData[DataManager.Instance.SceneNum] != "")
         {
             ChatTitle.sprite = Resources.Load<Sprite>
-            ("Story/Ep1/ChatWindow/Before/" + ChatWindowData[DataManager.Instance.SceneNum]);
+            ("Story/ChatWindow/" + ChatWindowData[DataManager.Instance.SceneNum]);
         }
     }
 

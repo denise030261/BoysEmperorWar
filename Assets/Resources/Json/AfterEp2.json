@@ -1,0 +1,94 @@
+{
+  "Story":[
+    {
+      "Num": 1,
+      "LeftCharacter": "나",
+      "RightCharacter": "없음",
+      "Chat": "이것은 실험입니다 실험입니다 실험입니다 실험입니다",
+      "ChatWindow": "나",
+      "Place": "Room",
+      "BGM": "현재"
+    },
+    {
+      "Num": 2,
+      "LeftCharacter": "",
+      "RightCharacter": "",
+      "Chat": "하기가 귀찮네요",
+      "ChatWindow": "",
+      "Place": "",
+      "BGM": ""
+    },
+    {
+      "Num": 3,
+      "LeftCharacter": "",
+      "RightCharacter": "너",
+      "Chat": "어처피 해야함",
+      "ChatWindow": "너",
+      "Place": "",
+      "BGM": ""
+    },
+    {
+      "Num": 4,
+      "LeftCharacter": "",
+      "RightCharacter": "",
+      "Chat": "그렇긴 함",
+      "ChatWindow": "나",
+      "Place": "",
+      "BGM": ""
+    },
+    {
+      "Num": 5,
+      "LeftCharacter": "",
+      "RightCharacter": "",
+      "Chat": "배고파",
+      "ChatWindow": "너",
+      "Place": "",
+      "BGM": "급박"
+    },
+    {
+      "Num": 6,
+      "LeftCharacter": "우리",
+      "RightCharacter": "너희",
+      "Chat": "배고프니까 뭐 먹을래",
+      "ChatWindow": "우리",
+      "Place": "Stage",
+      "BGM": ""
+    },
+    {
+      "Num": 7,
+      "LeftCharacter": "",
+      "RightCharacter": "",
+      "Chat": "초밥",
+      "ChatWindow": "",
+      "Place": "",
+      "BGM": ""
+    },
+    {
+      "Num": 8,
+      "LeftCharacter": "",
+      "RightCharacter": "",
+      "Chat": "피자",
+      "ChatWindow": "",
+      "Place": "",
+      "BGM": ""
+    },
+    {
+      "Num": 9,
+      "LeftCharacter": "",
+      "RightCharacter": "",
+      "Chat": "(걍 다 먹고 싶다)",
+      "ChatWindow": "",
+      "Place": "",
+      "BGM": ""
+    },
+    {
+      "Num": 10,
+      "LeftCharacter": "",
+      "RightCharacter": "",
+      "Chat": "난 떡볶이",
+      "ChatWindow": "너희",
+      "Place": "",
+      "BGM": ""
+    }
+  ]
+}
