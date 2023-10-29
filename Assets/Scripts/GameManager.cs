@@ -300,6 +300,7 @@ public class GameManager : MonoBehaviour
 
     public void OnClick_Retry()
     {
+        MainAudioManager.Instance.StopBGM();
         DisableCanvases();
         Play();
     }
