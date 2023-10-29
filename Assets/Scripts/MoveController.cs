@@ -38,9 +38,13 @@ public class MoveController : MonoBehaviour
 		PlayerPrefs.SetInt("Level", CurrentLevel);
 		transform.position = TransformPositions[CurrentLevel];
     }
+    private void Start()
+    {
+		MainAudioManager.Instance.PlayBGM("국악");
+    }
 
-	//Graphic & Input Updates	
-	void Update()
+    //Graphic & Input Updates	
+    void Update()
 	{
 		if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentLevel+1<=5 && !isMoving)
         {
@@ -57,7 +61,8 @@ public class MoveController : MonoBehaviour
 
 		if (collisionDetected && Input.GetKeyDown(KeyCode.Return) && UIStage.Instance.IsEnter[CurrentLevel-1])
 		{
-			SceneManager.LoadScene("Game");
+            PlayerPrefs.SetString("State", "Before");
+            SceneManager.LoadScene("Story");
 		} // 스테이지 입장
 		else if(collisionDetected && Input.GetKeyDown(KeyCode.Return) && !UIStage.Instance.IsEnter[CurrentLevel - 1])
 		{

@@ -255,6 +255,8 @@ public class GameManager : MonoBehaviour
         canvases[(int)Canvas.GameBGA].SetActive(false);
         canvases[(int)Canvas.Result].SetActive(true);
 
+        MainAudioManager.Instance.PlayBGM("ÀÚ¿¬");
+
         UIText rscore = UIController.Instance.FindUI("UI_R_Score").uiObject as UIText;
         UIText rcombo = UIController.Instance.FindUI("UI_R_Combo").uiObject as UIText;
         UIText rperfect = UIController.Instance.FindUI("UI_R_Perfect").uiObject as UIText;
@@ -292,7 +294,8 @@ public class GameManager : MonoBehaviour
 
     public void OnClick_Next()
     {
-        SceneManager.LoadScene("StageSelect");
+        PlayerPrefs.SetString("State", "After");
+        SceneManager.LoadScene("Story");
     }
 
     public void OnClick_Retry()

@@ -24,6 +24,7 @@ public class UIStage : MonoBehaviour
     public GameObject WarningDisplay;
     public GameObject OptionDisplay;
     public GameObject ManualDisplay;
+    public GameObject MusicOptionDisplay;
     public GameObject[] Manual;
 
     public int[] StandardScore = new int[5];
@@ -77,7 +78,6 @@ public class UIStage : MonoBehaviour
     }
     private void UIChange()
     {
-        Debug.Log("함수 호출");
         if (isChange == 1)
         {
             Debug.Log("왼쪽으로 움직였습니다");
@@ -154,5 +154,10 @@ public class UIStage : MonoBehaviour
             Manual[Page - 1].SetActive(true);
             Manual[Page-2].SetActive(false);
         }
+    }
+
+    public void OnClick_MusicOption(bool On)
+    {
+        MusicOptionDisplay.SetActive(On);   
     }
 }

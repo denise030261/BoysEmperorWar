@@ -11,51 +11,56 @@ public class ChatManager : DataManager
     public Text PracticeText;
     int index;
     float interval;
-    private Image ChatTitle;
 
     public Image LeftCharacter;
     public Image RightCharacter;
+    public Image ChatTitle;
 
     // DataManager에서 인스턴스 한것을 상속 받은 변수에 저장
     void Start()
     {
-        ChatTitle = GetComponent<Image>();
         ChatInit();
         CharacterInit();
+
+        Debug.Log(CurrentStage);
+        Debug.Log(CurrentState);
     }
 
     private void Update()
     {
-        if(DataManager.Instance.IsChat)
+        if (DataManager.Instance.SceneNum + 1 <= DataManager.Instance.PlaceData.Count)
         {
-            Debug.Log("대화가 시작됩니다");
-            DataManager.Instance.IsChat = false;
-            EffectStart();
-        }
-        else if (!DataManager.Instance.IsChat && DataManager.Instance.IsProgress &&
-            Input.GetKeyUp(KeyCode.Return) && DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
-        {
-            ChatInit();
+            if (DataManager.Instance.IsChat)
+            {
+                Debug.Log("대화가 시작됩니다");
+                DataManager.Instance.IsChat = false;
+                EffectStart();
+            }
+            else if (!DataManager.Instance.IsChat && DataManager.Instance.IsProgress &&
+                Input.GetKeyUp(KeyCode.Return) && DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
+            {
+                ChatInit();
+            }
         }
 
-        if(ChatTitle.color.a==1f)
+        if (ChatTitle.color.a == 1f)
         {
-            if(LeftCharacterData[DataManager.Instance.SceneNum] == "없음")
+            if (LeftCharacterData[DataManager.Instance.SceneNum] == "없음")
             {
                 LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 0);
             }
-            else if(LeftCharacterData[DataManager.Instance.SceneNum] != "")
+            else if (LeftCharacterData[DataManager.Instance.SceneNum] != "")
             {
                 LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 1);
                 LeftCharacter.sprite = Resources.Load<Sprite>
             ("Story/Ep1/LeftCharacter/Before/" + LeftCharacterData[DataManager.Instance.SceneNum]);
             }
 
-            if(RightCharacterData[DataManager.Instance.SceneNum] == "없음")
+            if (RightCharacterData[DataManager.Instance.SceneNum] == "없음")
             {
                 RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 0);
             }
-            else if(RightCharacterData[DataManager.Instance.SceneNum] != "")
+            else if (RightCharacterData[DataManager.Instance.SceneNum] != "")
             {
                 RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 1);
                 RightCharacter.sprite = Resources.Load<Sprite>
@@ -67,14 +72,18 @@ public class ChatManager : DataManager
             LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 0);
             RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 0);
         }
+
+        if (ChatWindowData[DataManager.Instance.SceneNum] != "")
+        {
+            ChatTitle.sprite = Resources.Load<Sprite>
+            ("Story/Ep1/ChatWindow/Before/" + ChatWindowData[DataManager.Instance.SceneNum]);
+        }
     }
 
     IEnumerator DelayChat()
     {
         yield return new WaitForSeconds(DelayChatSpeed);
         ChatTitle.color = new Color(ChatTitle.color.r, ChatTitle.color.g, ChatTitle.color.b, 1);
-        ChatTitle.sprite= Resources.Load<Sprite>
-            ("Story/Ep1/ChatWindow/Before/" + ChatWindowData[DataManager.Instance.SceneNum]);
         EffectStart();
     }
 

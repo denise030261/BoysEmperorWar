@@ -4,16 +4,19 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DataManager : MonoBehaviour
 {
-    private int CurrentStage;
+    public int CurrentStage;
+    public string CurrentState;
 
     protected List<string> LeftCharacterData = new List<string>();
     protected List<string> RightCharacterData = new List<string>();
     protected List<string> ChatData = new List<string>();
     protected List<string> ChatWindowData = new List<string>();
     public List<string> PlaceData = new List<string>();
+    public List<string> BGMData = new List<string>();
 
     public int SceneNum = 0;
     public bool IsProgress=false;
@@ -25,12 +28,15 @@ public class DataManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        CurrentStage = PlayerPrefs.GetInt("Level", 1);
+        CurrentState = PlayerPrefs.GetString("State", "Before");
         LoadJsonFile();
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        CurrentStage = PlayerPrefs.GetInt("Level", 1);
+        MainAudioManager.Instance.PlayBGM("현재");
         // 게임 전후 구분 Prefs 필요
     }
 
@@ -38,24 +44,42 @@ public class DataManager : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.Return) && IsProgress && !IsChat)
         {
-            if(PlaceData[SceneNum + 1] != "")
+            if(PlaceData.Count==SceneNum+1)
             {
-                SceneNum++;
-                IsChat = false;
-                IsProgress = false;
+                MainAudioManager.Instance.StopBGM();
+
+                if (CurrentState == "Before")
+                    SceneManager.LoadScene("Game");
+                else
+                    SceneManager.LoadScene("StageSelect");
             }
-            else
+
+            if (DataManager.Instance.SceneNum + 1 <= DataManager.Instance.PlaceData.Count)
             {
-                SceneNum++;
-                IsChat = true;
-                IsProgress = false;
+                if (PlaceData[SceneNum + 1] != "")
+                {
+                    SceneNum++;
+                    IsChat = false;
+                    IsProgress = false;
+                }
+                else
+                {
+                    SceneNum++;
+                    IsChat = true;
+                    IsProgress = false;
+                }
+            }
+
+            if (BGMData[SceneNum] != "")
+            {
+                MainAudioManager.Instance.PlayBGM("급박");
             }
         }
     }
 
     private void LoadJsonFile()
     {
-        TextAsset jsonFile = Resources.Load<TextAsset>("Json/BeforeEp1");
+        TextAsset jsonFile = Resources.Load<TextAsset>("Json/" + CurrentState + "Ep" + CurrentStage);
         if (jsonFile != null)
         {
             string jsonData = jsonFile.text;
@@ -71,6 +95,7 @@ public class DataManager : MonoBehaviour
                     ChatData.Add(StoryData.Chat);
                     ChatWindowData.Add(StoryData.ChatWindow);
                     PlaceData.Add(StoryData.Place);
+                    BGMData.Add(StoryData.BGM);
                 }
             }
             else
@@ -99,4 +124,5 @@ public class StoryDatas
     public string Chat;
     public string ChatWindow;
     public string Place;
+    public string BGM;
 }
