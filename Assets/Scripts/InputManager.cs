@@ -106,7 +106,10 @@ public class InputManager : MonoBehaviour
         if (context.started)
         {
             if (GameManager.Instance.isPlaying)
+            {
                 GameManager.Instance.Stop();
+                Time.timeScale = 1;
+            }
         }
     }
 }

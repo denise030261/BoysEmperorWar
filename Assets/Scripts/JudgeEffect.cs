@@ -7,7 +7,7 @@ public class JudgeEffect : MonoBehaviour
     static JudgeEffect instance;
     public static JudgeEffect Instance { get { return instance; } }
 
-    List<ParticleSystem> particles = new List<ParticleSystem>();
+    public List<ParticleSystem> particles = new List<ParticleSystem>();
 
     void Awake()
     {

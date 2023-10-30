@@ -108,6 +108,20 @@ public class DataManager : MonoBehaviour
             Debug.LogError("JSON file not found.");
         }
     }
+
+    public void OnClick_Back()
+    {
+        SceneManager.LoadScene("StageSelect");
+    }
+
+    public void OnClick_Skip()
+    {
+        MainAudioManager.Instance.StopBGM();
+        if(CurrentState=="Before")
+            SceneManager.LoadScene("Game");
+        else
+            SceneManager.LoadScene("StageSelect");
+    }
 }
 
 [System.Serializable]
