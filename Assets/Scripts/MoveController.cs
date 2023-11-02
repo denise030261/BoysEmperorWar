@@ -14,7 +14,7 @@ public class MoveController : MonoBehaviour
 	public int WalkSpeed=2;
 
 	private Animator animator;
-	private bool isMoving = false;
+	public bool isMoving = false;
 	private float startTime;
 	private float journeyLength;
 
@@ -48,12 +48,14 @@ public class MoveController : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentLevel+1<=5 && !isMoving)
         {
-			SetIsWalk(true, false);
+            UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
+            SetIsWalk(true, false);
 			StartMoving();
 		}
 		else if(Input.GetKeyDown(KeyCode.LeftArrow) && CurrentLevel - 1 > 0 && !isMoving)
         {
-			SetIsWalk(true,true);
+            UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
+            SetIsWalk(true,true);
 			StartMoving();
 		}
 
@@ -102,7 +104,6 @@ public class MoveController : MonoBehaviour
 		PlayerPrefs.SetInt("Level", CurrentLevel);
 
 	} // 걷기 애니메이션 및 스테이지 변경
-
     private void OnTriggerStay2D(Collider2D other)
 	{
 		// 충돌 대상이 정확한 태그인지 확인합니다.
@@ -115,9 +116,8 @@ public class MoveController : MonoBehaviour
 	private void OnTriggerExit2D(Collider2D other)
 	{
 		// 충돌이 해제되었을 때 상태를 초기화합니다.
-		if (other.CompareTag("Level"))
+		if (other.CompareTag("Level") && !isMoving)
 		{
-            UIStage.Instance.StageLight[PreviousLevel-1].SetActive(false);
             collisionDetected = false;
 			UIStage.Instance.isChange = 1;
             Debug.Log("스테이지에 벗어났습니다 "+UIStage.Instance.isChange);

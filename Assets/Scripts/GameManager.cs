@@ -295,7 +295,11 @@ public class GameManager : MonoBehaviour
     public void OnClick_Next()
     {
         PlayerPrefs.SetString("State", "After");
-        SceneManager.LoadScene("Story");
+
+        if (UIStage.Instance.StandardScore[CurrentStage] > Score.Instance.data.score)
+            SceneManager.LoadScene("StageSelect");
+        else
+            SceneManager.LoadScene("Story");
     }
 
     public void OnClick_Retry()

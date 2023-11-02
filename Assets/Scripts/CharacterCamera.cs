@@ -39,18 +39,20 @@ public class CharacterCamera : MonoBehaviour
 
     void Update()
 	{
-        if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentCamera + 1 <= 5 && !isMoving)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentCamera + 1 <= 5 
+            && !isMoving && !MoveController.Instance.isMoving)
 		{
-			PreviousCamera = CurrentCamera;
+            PreviousCamera = CurrentCamera;
 			CurrentCamera++;
             StartMoving();
 		}
-		else if (Input.GetKeyDown(KeyCode.LeftArrow) && CurrentCamera - 1 > 0 && !isMoving)
+		else if (Input.GetKeyDown(KeyCode.LeftArrow) && CurrentCamera - 1 > 0 
+            && !isMoving && !MoveController.Instance.isMoving)
 		{
             PreviousCamera = CurrentCamera;
             CurrentCamera--;
             StartMoving();
-		}
+        }
 
 		if (isMoving)
 		{
@@ -68,7 +70,7 @@ public class CharacterCamera : MonoBehaviour
 		}
 	}
 
-	private void StartMoving()
+    private void StartMoving()
     {
         isMoving = true;
         startTime = Time.time;
