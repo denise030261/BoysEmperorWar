@@ -786,7 +786,7 @@ MonoBehaviour:
   IsChat: 0
   IsPlaceWindow: 0
   DelayChatSpeed: 4
-  CharPerSecnds: 5
+  CharPerSecnds: 10
   PracticeText: {fileID: 481687439}
   LeftCharacter: {fileID: 956880471}
   RightCharacter: {fileID: 171065603}

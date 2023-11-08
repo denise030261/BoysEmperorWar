@@ -36,7 +36,7 @@ public class MoveController : MonoBehaviour
 
 		CurrentLevel =PlayerPrefs.GetInt("Level", 1 );
 		PlayerPrefs.SetInt("Level", CurrentLevel);
-		transform.position = TransformPositions[CurrentLevel];
+        transform.position = TransformPositions[CurrentLevel];
     }
     private void Start()
     {
@@ -63,6 +63,7 @@ public class MoveController : MonoBehaviour
 
 		if (collisionDetected && Input.GetKeyDown(KeyCode.Return) && UIStage.Instance.IsEnter[CurrentLevel-1])
 		{
+            PlayerPrefs.SetInt("StoryLevel", 0);
             PlayerPrefs.SetString("State", "Before");
             // After : PlayerPrefs.SetString("State", "After"); Before : PlayerPrefs.SetString("State", "Before");
             SceneManager.LoadScene("Story");

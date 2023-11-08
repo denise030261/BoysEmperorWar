@@ -296,7 +296,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetString("State", "After");
 
-        if (UIStage.Instance.StandardScore[CurrentStage] > Score.Instance.data.score)
+        if (UIStage.Instance.StandardScore[CurrentStage-1] > Score.Instance.data.score)
             SceneManager.LoadScene("StageSelect");
         else
             SceneManager.LoadScene("Story");

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIStage : MonoBehaviour
@@ -25,6 +26,7 @@ public class UIStage : MonoBehaviour
     public GameObject OptionDisplay;
     public GameObject ManualDisplay;
     public GameObject MusicOptionDisplay;
+    public GameObject StoryDisplay;
     public GameObject[] Manual;
 
     public int[] StandardScore = new int[5];
@@ -158,5 +160,16 @@ public class UIStage : MonoBehaviour
     public void OnClick_MusicOption(bool On)
     {
         MusicOptionDisplay.SetActive(On);   
+    }
+
+    public void Onclick_Story(bool On)
+    {
+        StoryDisplay.SetActive(On);
+    }
+
+    public void OnClick_StoryButton(int level)
+    {
+        PlayerPrefs.SetInt("StoryLevel", level);
+        SceneManager.LoadScene("Story");
     }
 }

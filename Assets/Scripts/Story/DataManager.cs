@@ -28,15 +28,32 @@ public class DataManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        CurrentStage = PlayerPrefs.GetInt("Level", 1);
-        CurrentState = PlayerPrefs.GetString("State", "Before");
-        LoadJsonFile();
-        
+        CurrentStage= PlayerPrefs.GetInt("StoryLevel", 0);
+        if (CurrentStage > 0 && CurrentStage<6)
+        {
+            Debug.Log("이전 스토리 모드 진입" + CurrentStage);
+            PlayerPrefs.SetString("State", "Before");
+        }
+        else if(CurrentStage>5)
+        {
+            CurrentStage -= 5;
+            Debug.Log("이후 스토리 모드 진입" + CurrentStage);
+            PlayerPrefs.SetString("State", "After");
+        }
+        else
+        {
+            CurrentStage = PlayerPrefs.GetInt("Level", 1);
+        }
+
+        CurrentState= PlayerPrefs.GetString("State","Before");
+
+        LoadJsonFile(); 
     }
     // Start is called before the first frame update
     void Start()
     {
         MainAudioManager.Instance.PlayBGM("현재");
+        Debug.Log(CurrentStage + " " + CurrentState);
         // 게임 전후 구분 Prefs 필요
     }
 
@@ -48,13 +65,14 @@ public class DataManager : MonoBehaviour
             {
                 MainAudioManager.Instance.StopBGM();
 
-                if (CurrentState == "Before")
+                int StoryLevel = PlayerPrefs.GetInt("StoryLevel", 0);
+                if (CurrentState == "Before" && StoryLevel==0)
                     SceneManager.LoadScene("Game");
                 else
                     SceneManager.LoadScene("StageSelect");
             }
 
-            if (DataManager.Instance.SceneNum + 1 <= DataManager.Instance.PlaceData.Count)
+            if (SceneNum + 1 <= PlaceData.Count)
             {
                 if (PlaceData[SceneNum + 1] != "")
                 {
@@ -80,6 +98,7 @@ public class DataManager : MonoBehaviour
     private void LoadJsonFile()
     {
         TextAsset jsonFile = Resources.Load<TextAsset>("Json/" + CurrentState + "Ep" + CurrentStage);
+        Debug.Log("Json 파일은 " + "Json/" + CurrentState + "Ep" + CurrentStage);
         if (jsonFile != null)
         {
             string jsonData = jsonFile.text;
@@ -117,7 +136,8 @@ public class DataManager : MonoBehaviour
     public void OnClick_Skip()
     {
         MainAudioManager.Instance.StopBGM();
-        if(CurrentState=="Before")
+        int StoryLevel = PlayerPrefs.GetInt("StoryLevel", 0);
+        if (CurrentState=="Before" && StoryLevel==0)
             SceneManager.LoadScene("Game");
         else
             SceneManager.LoadScene("StageSelect");
