@@ -62,15 +62,21 @@ public class MainAudioManager : MonoBehaviour
         {
             for (int i = 0; i < sfxSource.Length; ++i)
             {
-                if (sfxSource[i].isPlaying == false)
+                Debug.Log("SFX 시작");
+                sfxSource[i].clip = sfxClip;
+                sfxSource[i].volume = PlayerPrefs.GetFloat("SFX", 0.6f);
+                sfxSource[i].spatialBlend = 0;
+                sfxSource[i].Play();
+                return;
+                if (sfxSource[i].isPlaying == true)
                 {
-                    sfxSource[i].clip = sfxClip;
-                    sfxSource[i].volume = PlayerPrefs.GetFloat("SFX", 0.6f);
-                    sfxSource[i].spatialBlend = 0;
-                    sfxSource[i].Play();
-                    return;
+                    ;
                 }
             }
+        }
+        else
+        {
+            Debug.LogError("SFX가 없습니다");
         }
     }
 

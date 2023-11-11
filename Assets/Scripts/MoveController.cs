@@ -12,7 +12,10 @@ public class MoveController : MonoBehaviour
 	public int CurrentLevel=1;
 	public int PreviousLevel=1;
 	public int WalkSpeed=2;
+
     public string BGMName;
+	public string SFXMove;
+	public string SFXEnter;
 
     private Animator animator;
 	public bool isMoving = false;
@@ -49,12 +52,14 @@ public class MoveController : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentLevel+1<=5 && !isMoving && UIStage.Instance.isChange==0)
         {
+			MainAudioManager.Instance.PlaySFX(SFXMove);
             UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
             SetIsWalk(true, false);
 			StartMoving();
 		}
 		else if(Input.GetKeyDown(KeyCode.LeftArrow) && CurrentLevel - 1 > 0 && !isMoving && UIStage.Instance.isChange == 0)
         {
+            MainAudioManager.Instance.PlaySFX(SFXMove);
             UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
             SetIsWalk(true,true);
 			StartMoving();
@@ -64,6 +69,7 @@ public class MoveController : MonoBehaviour
 
 		if (collisionDetected && Input.GetKeyDown(KeyCode.Return) && UIStage.Instance.IsEnter[CurrentLevel-1])
 		{
+            MainAudioManager.Instance.PlaySFX(SFXEnter);
             PlayerPrefs.SetInt("StoryLevel", 0);
             PlayerPrefs.SetString("State", "Before");
             // After : PlayerPrefs.SetString("State", "After"); Before : PlayerPrefs.SetString("State", "Before");
@@ -71,7 +77,8 @@ public class MoveController : MonoBehaviour
 		} // 스테이지 입장
 		else if(collisionDetected && Input.GetKeyDown(KeyCode.Return) && !UIStage.Instance.IsEnter[CurrentLevel - 1])
 		{
-			UIStage.Instance.WarningDisplay.SetActive(true);
+            MainAudioManager.Instance.PlaySFX(SFXEnter);
+            UIStage.Instance.WarningDisplay.SetActive(true);
         }
 	}
 
