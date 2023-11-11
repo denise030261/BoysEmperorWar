@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public Image ResultImage;
     public Image ResultStage;
+    public string BGMName;
 
     public int LoadingTime=5;
     private bool IsPaused=false; // ∏ÿ√„ ø©∫Œ
@@ -255,7 +256,7 @@ public class GameManager : MonoBehaviour
         canvases[(int)Canvas.GameBGA].SetActive(false);
         canvases[(int)Canvas.Result].SetActive(true);
 
-        MainAudioManager.Instance.PlayBGM("¿⁄ø¨");
+        MainAudioManager.Instance.PlayBGM(BGMName);
 
         UIText rscore = UIController.Instance.FindUI("UI_R_Score").uiObject as UIText;
         UIText rcombo = UIController.Instance.FindUI("UI_R_Combo").uiObject as UIText;

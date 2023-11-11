@@ -11,11 +11,13 @@ public class GameStart : MonoBehaviour
     public SpriteRenderer TitleLogo;
     public int TitleLogoDelay = 3;
     public int FadeSpeed = 5;
+    public string BGMName;
 
     private bool DisplayTitle = false;
     private bool DisplayStart = false;
     private void Start()
     {
+        MainAudioManager.Instance.PlayBGM(BGMName);
         StartCoroutine(LogoStart());
         StartCoroutine(PressLogoStart());
     }

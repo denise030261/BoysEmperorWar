@@ -250,9 +250,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 276709583}
     m_Modifications:
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6620677520508765711, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_Name
       value: JudgeEffects (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8148387504366578416, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_RootOrder
@@ -2685,9 +2733,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 276709583}
     m_Modifications:
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6620677520508765711, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_Name
       value: JudgeEffects (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8148387504366578416, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_RootOrder
@@ -3808,9 +3904,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 276709583}
     m_Modifications:
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6620677520508765711, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_Name
       value: JudgeEffects (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8148387504366578416, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_RootOrder
@@ -4616,9 +4760,57 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 276709583}
     m_Modifications:
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 785984215286186732, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1181263732979057397, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5375150018470416982, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493875953992144185, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6523912059439015765, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6620677520508765711, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_Name
       value: JudgeEffects (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263951473788047458, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
+      propertyPath: lengthInSec
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8148387504366578416, guid: 36fc67c6271c9404c99574d02fb452e5, type: 3}
       propertyPath: m_RootOrder
@@ -5748,6 +5940,7 @@ MonoBehaviour:
   CurrentStage: 0
   ResultImage: {fileID: 1955156302}
   ResultStage: {fileID: 1236494013}
+  BGMName: "\uC790\uC5F0"
   LoadingTime: 7
   BackGroundImage: {fileID: 3142537937865653661}
   canvases:

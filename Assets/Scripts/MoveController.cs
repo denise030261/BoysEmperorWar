@@ -12,8 +12,9 @@ public class MoveController : MonoBehaviour
 	public int CurrentLevel=1;
 	public int PreviousLevel=1;
 	public int WalkSpeed=2;
+    public string BGMName;
 
-	private Animator animator;
+    private Animator animator;
 	public bool isMoving = false;
 	private float startTime;
 	private float journeyLength;
@@ -40,7 +41,7 @@ public class MoveController : MonoBehaviour
     }
     private void Start() 
     {
-		MainAudioManager.Instance.PlayBGM("±¹¾Ç");
+		MainAudioManager.Instance.PlayBGM(BGMName);
     }
 
     //Graphic & Input Updates	

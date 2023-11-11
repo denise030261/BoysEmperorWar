@@ -1798,6 +1798,7 @@ MonoBehaviour:
   CurrentLevel: 0
   PreviousLevel: 0
   WalkSpeed: 4
+  BGMName: "\uAD6D\uC545"
   isMoving: 0
   Stage1: {x: 1.66, y: 1.25}
   Stage2: {x: 8.18, y: 1.25}
