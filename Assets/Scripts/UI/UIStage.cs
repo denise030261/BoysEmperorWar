@@ -13,6 +13,7 @@ public class UIStage : MonoBehaviour
     public Image TitleUI;
     public Image StageUI;
     public Text CurrentPage;
+    public Text MaxScore;
     public int UISpeed = 2; // UI 변경 속도
     public int isChange = 0; // UI 변경 여부 (0은 변경 없음, 1은 사라짐, 2는 채워짐)
 
@@ -47,19 +48,19 @@ public class UIStage : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < StageMaxScore.Length - 1; i++)
+        for (int i = 0; i < StageMaxScore.Length; i++)
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
 
             if (StageMaxScore[i] >= StandardScore[i])
             {
-                StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelArea");
-                IsEnter[i+1] = true;
+                StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelArea");
+                IsEnter[i] = true;
             } // 일정 점수를 넘겨야 풀리는 것이지만 아직 점수가 정해지지 않았으니 디폴트로 만점으로 처리한다.
             else if (i != 0)
             {
-                StageBoard[i+1].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
-                IsEnter[i + 1] = false;
+                StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
+                IsEnter[i] = false;
             }
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
         }
@@ -70,7 +71,7 @@ public class UIStage : MonoBehaviour
             StageLight[CurrentLevel - 1].SetActive(true);
         }
 
-        //StartTime = Time.time;
+        MaxScore.text = StageMaxScore[CurrentLevel - 1].ToString();
     }
 
     void Update()
@@ -117,6 +118,7 @@ public class UIStage : MonoBehaviour
                 if (StageBoard[CurrentLevel - 1].sprite.name == "LevelArea")
                 {
                     StageLight[CurrentLevel - 1].SetActive(true);
+                    MaxScore.text = StageMaxScore[CurrentLevel - 1].ToString();
                 }
             }
         }

@@ -8,6 +8,7 @@ public class PlaceManager : UIFade
 {
     private Image StoryBackGround; // 배경화면
     public float DelayTime;
+    public Text PlaceName;
 
     private int CurrentStage;
     private string CurrentState;
@@ -17,6 +18,7 @@ public class PlaceManager : UIFade
     void Start()
     {
         StoryBackGround=GetComponent<Image>();
+        PlaceName.text = DataManager.Instance.PlaceData[DataManager.Instance.SceneNum];
         FadeInInit();
         StartCoroutine(DelayTitle());
     }
@@ -29,6 +31,7 @@ public class PlaceManager : UIFade
             if (!DataManager.Instance.IsChat && DataManager.Instance.IsProgress &&
             Input.GetKeyUp(KeyCode.Return) && DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
             {
+                PlaceName.text = DataManager.Instance.PlaceData[DataManager.Instance.SceneNum+1];
                 FadeInInit();
                 StartCoroutine(DelayTitle());
             }// index 넘는거 조심

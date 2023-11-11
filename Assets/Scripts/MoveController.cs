@@ -38,7 +38,7 @@ public class MoveController : MonoBehaviour
 		PlayerPrefs.SetInt("Level", CurrentLevel);
         transform.position = TransformPositions[CurrentLevel];
     }
-    private void Start()
+    private void Start() 
     {
 		MainAudioManager.Instance.PlayBGM("국악");
     }
@@ -46,13 +46,13 @@ public class MoveController : MonoBehaviour
     //Graphic & Input Updates	
     void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentLevel+1<=5 && !isMoving)
+		if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentLevel+1<=5 && !isMoving && UIStage.Instance.isChange==0)
         {
             UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
             SetIsWalk(true, false);
 			StartMoving();
 		}
-		else if(Input.GetKeyDown(KeyCode.LeftArrow) && CurrentLevel - 1 > 0 && !isMoving)
+		else if(Input.GetKeyDown(KeyCode.LeftArrow) && CurrentLevel - 1 > 0 && !isMoving && UIStage.Instance.isChange == 0)
         {
             UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
             SetIsWalk(true,true);
@@ -111,13 +111,13 @@ public class MoveController : MonoBehaviour
 		if (other.CompareTag("Level"))
 		{
 			collisionDetected = true;
-		}
+        }
 	} 
 
 	private void OnTriggerExit2D(Collider2D other)
 	{
 		// 충돌이 해제되었을 때 상태를 초기화합니다.
-		if (other.CompareTag("Level") && !isMoving)
+		if (other.CompareTag("Level"))
 		{
             collisionDetected = false;
 			UIStage.Instance.isChange = 1;
