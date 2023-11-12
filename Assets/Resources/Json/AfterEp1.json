@@ -1,84 +1,44 @@
 {
-  "Story":[
-    {
-      "LeftCharacter": "나",
-      "RightCharacter": "없음",
-      "Chat": "이것은 실험입니다",
-      "ChatWindow": "나",
-      "Place": "Room",
-      "BGM": "현재"
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "하기가 귀찮네요",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "너",
-      "Chat": "어처피 해야함",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "그렇긴 함",
-      "ChatWindow": "나",
-      "Place": "블랙홀",
-      "BGM": ""
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "배고파",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": "급박"
-    },
-    {
-      "LeftCharacter": "우리",
-      "RightCharacter": "너희",
-      "Chat": "배고프니까 뭐 먹을래",
-      "ChatWindow": "우리",
-      "Place": "Stage",
-      "BGM": ""
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "초밥",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "피자",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "(걍 다 먹고 싶다)",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "난 떡볶이",
-      "ChatWindow": "너희",
-      "Place": "",
-      "BGM": ""
-    }
-  ]
+    "Story": [
+        {
+            "LeftCharacter": "(r)Noah_u_odoroki",
+            "RightCharacter": "없음",
+            "Chat": "테스트완~~",
+            "ChatWindow": "CW2_Hoshi",
+            "Place": "촬영장",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(r)Midnight_yareyare",
+            "Chat": "테스트투~~~",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(r)Noah_u_odoroki",
+            "RightCharacter": "없음",
+            "Chat": "장소변경!!",
+            "ChatWindow": "CW2_Hoshi",
+            "Place": "연습실",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(r)Midnight_yareyare",
+            "Chat": "테스트쓰리~~~",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "Chat": "뿡",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        }
+    ]
 }
