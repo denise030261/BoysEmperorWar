@@ -14,6 +14,7 @@ public class DataManager : MonoBehaviour
     protected List<string> LeftCharacterData = new List<string>();
     protected List<string> RightCharacterData = new List<string>();
     protected List<string> CenterCharacterData = new List<string>();
+    protected List<string> CenterCharacterTwoData = new List<string>();
     protected List<string> ChatData = new List<string>();
     protected List<string> ChatWindowData = new List<string>();
     public List<string> PlaceData = new List<string>();
@@ -113,6 +114,7 @@ public class DataManager : MonoBehaviour
                     LeftCharacterData.Add(StoryData.LeftCharacter);
                     RightCharacterData.Add(StoryData.RightCharacter);
                     CenterCharacterData.Add(StoryData.CenterCharacter);
+                    CenterCharacterTwoData.Add(StoryData.CenterCharacterTwo);
                     ChatData.Add(StoryData.Chat);
                     ChatWindowData.Add(StoryData.ChatWindow);
                     PlaceData.Add(StoryData.Place);
@@ -158,6 +160,7 @@ public class StoryDatas
     public string LeftCharacter;
     public string RightCharacter;
     public string CenterCharacter;
+    public string CenterCharacterTwo;
     public string Chat;
     public string ChatWindow;
     public string Place;
