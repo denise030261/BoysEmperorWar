@@ -1,44 +1,49 @@
 {
     "Story": [
-        {
-            "LeftCharacter": "(r)Noah_u_odoroki",
-            "RightCharacter": "없음",
-            "Chat": "테스트완~~",
-            "ChatWindow": "CW2_Hoshi",
-            "Place": "촬영장",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "",
-            "RightCharacter": "(r)Midnight_yareyare",
-            "Chat": "테스트투~~~",
-            "ChatWindow": "CW_Yuuto",
-            "Place": "",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "(r)Noah_u_odoroki",
-            "RightCharacter": "없음",
-            "Chat": "장소변경!!",
-            "ChatWindow": "CW2_Hoshi",
-            "Place": "연습실",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "",
-            "RightCharacter": "(r)Midnight_yareyare",
-            "Chat": "테스트쓰리~~~",
-            "ChatWindow": "CW_Yuuto",
-            "Place": "",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "",
-            "RightCharacter": "",
-            "Chat": "뿡",
-            "ChatWindow": "",
-            "Place": "",
-            "BGM": ""
-        }
+      {
+        "LeftCharacter": "(r)Noah_u_odoroki",
+        "RightCharacter": "없음",
+        "CenterCharacter": "너",
+        "Chat": "테스트완~~",
+        "ChatWindow": "CW2_Hoshi",
+        "Place": "촬영장",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "",
+        "RightCharacter": "(r)Midnight_yareyare",
+        "CenterCharacter": "없음",
+        "Chat": "테스트투~~~",
+        "ChatWindow": "CW_Yuuto",
+        "Place": "",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "(r)Noah_u_odoroki",
+        "RightCharacter": "없음",
+        "CenterCharacter": "",
+        "Chat": "장소변경!!",
+        "ChatWindow": "CW2_Hoshi",
+        "Place": "연습실",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "",
+        "RightCharacter": "(r)Midnight_yareyare",
+        "CenterCharacter": "",
+        "Chat": "테스트쓰리~~~",
+        "ChatWindow": "CW_Yuuto",
+        "Place": "",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "",
+        "RightCharacter": "",
+        "CenterCharacter": "",
+        "Chat": "뿡",
+        "ChatWindow": "",
+        "Place": "",
+        "BGM": ""
+      }
     ]
 }
