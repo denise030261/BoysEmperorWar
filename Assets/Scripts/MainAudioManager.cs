@@ -68,10 +68,6 @@ public class MainAudioManager : MonoBehaviour
                 sfxSource[i].spatialBlend = 0;
                 sfxSource[i].Play();
                 return;
-                if (sfxSource[i].isPlaying == true)
-                {
-                    ;
-                }
             }
         }
         else

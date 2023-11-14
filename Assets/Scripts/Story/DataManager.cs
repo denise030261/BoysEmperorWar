@@ -76,17 +76,24 @@ public class DataManager : MonoBehaviour
 
             if (SceneNum + 1 <= PlaceData.Count)
             {
-                if (PlaceData[SceneNum + 1] != "")
+                if (SceneNum + 1 == PlaceData.Count)
                 {
-                    SceneNum++;
-                    IsChat = false;
-                    IsProgress = false;
+                    return;
                 }
                 else
                 {
-                    SceneNum++;
-                    IsChat = true;
-                    IsProgress = false;
+                    if (PlaceData[SceneNum + 1] != "")
+                    {
+                        SceneNum++;
+                        IsChat = false;
+                        IsProgress = false;
+                    }
+                    else
+                    {
+                        SceneNum++;
+                        IsChat = true;
+                        IsProgress = false;
+                    }
                 }
             }
 

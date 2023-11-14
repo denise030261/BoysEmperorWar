@@ -52,15 +52,18 @@ public class UIStage : MonoBehaviour
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
 
-            if (StageMaxScore[i] >= StandardScore[i])
+            if (i!=StageMaxScore.Length-1)
             {
-                StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelArea");
-                IsEnter[i] = true;
-            } // 일정 점수를 넘겨야 풀리는 것이지만 아직 점수가 정해지지 않았으니 디폴트로 만점으로 처리한다.
-            else if (i != 0)
-            {
-                StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
-                IsEnter[i] = false;
+                if (StageMaxScore[i] >= StandardScore[i])
+                {
+                    StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelArea");
+                    IsEnter[i + 1] = true;
+                } // 일정 점수를 넘겨야 풀리는 것이지만 아직 점수가 정해지지 않았으니 디폴트로 만점으로 처리한다.
+                else if (i != 0)
+                {
+                    StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
+                    IsEnter[i + 1] = false;
+                }
             }
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
         }

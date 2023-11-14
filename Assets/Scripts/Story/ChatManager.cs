@@ -35,9 +35,12 @@ public class ChatManager : DataManager
                 EffectStart();
             }
             else if (!DataManager.Instance.IsChat && DataManager.Instance.IsProgress &&
-                Input.GetKeyUp(KeyCode.Return) && DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
+                Input.GetKeyUp(KeyCode.Return))
             {
-                ChatInit();
+                if (DataManager.Instance.SceneNum + 1 == DataManager.Instance.PlaceData.Count)
+                    return;
+                else if(DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
+                    ChatInit();
             }
         }
 
@@ -76,15 +79,15 @@ public class ChatManager : DataManager
             ("Story/CenterCharacter/" + CenterCharacterData[DataManager.Instance.SceneNum]);
             }
 
-            if (CenterCharacterData[DataManager.Instance.SceneNum] == "없음")
+            if (CenterCharacterTwoData[DataManager.Instance.SceneNum] == "없음")
             {
-                CenterCharacter.color = new Color(CenterCharacter.color.r, CenterCharacter.color.g, CenterCharacter.color.b, 0);
+                CenterCharacterTwo.color = new Color(CenterCharacterTwo.color.r, CenterCharacterTwo.color.g, CenterCharacterTwo.color.b, 0);
             }
             else if (CenterCharacterTwoData[DataManager.Instance.SceneNum] != "")
             {
                 CenterCharacterTwo.color = new Color(CenterCharacterTwo.color.r, CenterCharacterTwo.color.g, CenterCharacterTwo.color.b, 1);
                 CenterCharacterTwo.sprite = Resources.Load<Sprite>
-            ("Story/CenterCharacter/" + CenterCharacterTwoData[DataManager.Instance.SceneNum]);
+            ("Story/CenterCharacterTwo/" + CenterCharacterTwoData[DataManager.Instance.SceneNum]);
             }
         }
         else if (ChatTitle.color.a == 0f)
