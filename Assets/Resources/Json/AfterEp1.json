@@ -1,44 +1,54 @@
 {
     "Story": [
-        {
-            "LeftCharacter": "(r)Noah_u_odoroki",
-            "RightCharacter": "없음",
-            "Chat": "「出演者の自主投票」は、以前行ったとおり各チーム4人が自分のチームを除く5チームを順位をつけて書いて提出する方式で、\n「オンライン評価団」は、120人が全員の舞台を見て最もよくやったと思う3チームに投票する方式です。",
-            "ChatWindow": "CW2_Hoshi",
-            "Place": "촬영장",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "",
-            "RightCharacter": "(r)Midnight_yareyare",
-            "Chat": "테스트투~~~",
-            "ChatWindow": "CW_Yuuto",
-            "Place": "",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "(r)Noah_u_odoroki",
-            "RightCharacter": "없음",
-            "Chat": "장소변경!!",
-            "ChatWindow": "CW2_Hoshi",
-            "Place": "연습실",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "",
-            "RightCharacter": "(r)Midnight_yareyare",
-            "Chat": "테스트쓰리~~~",
-            "ChatWindow": "CW_Yuuto",
-            "Place": "",
-            "BGM": ""
-        },
-        {
-            "LeftCharacter": "",
-            "RightCharacter": "",
-            "Chat": "뿡",
-            "ChatWindow": "",
-            "Place": "",
-            "BGM": ""
-        }
+      {
+        "LeftCharacter": "(r)Noah_u_odoroki",
+        "RightCharacter": "없음",
+        "CenterCharacter": "너",
+        "CenterCharacterTwo": "없음",
+        "Chat": "테스트완~~",
+        "ChatWindow": "CW2_Hoshi",
+        "Place": "촬영장",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "",
+        "RightCharacter": "(r)Midnight_yareyare",
+        "CenterCharacter": "없음",
+        "CenterCharacterTwo": "",
+        "Chat": "테스트투~~~",
+        "ChatWindow": "CW_Yuuto",
+        "Place": "",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "(r)Noah_u_odoroki",
+        "RightCharacter": "없음",
+        "CenterCharacter": "",
+        "CenterCharacterTwo": "",
+        "Chat": "장소변경!!",
+        "ChatWindow": "CW2_Hoshi",
+        "Place": "연습실",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "",
+        "RightCharacter": "(r)Midnight_yareyare",
+        "CenterCharacter": "",
+        "CenterCharacterTwo": "",
+        "Chat": "테스트쓰리~~~",
+        "ChatWindow": "CW_Yuuto",
+        "Place": "",
+        "BGM": ""
+      },
+      {
+        "LeftCharacter": "",
+        "RightCharacter": "",
+        "CenterCharacter": "",
+        "CenterCharacterTwo": "",
+        "Chat": "뿡",
+        "ChatWindow": "",
+        "Place": "",
+        "BGM": ""
+      }
     ]
 }

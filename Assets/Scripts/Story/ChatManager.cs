@@ -13,6 +13,8 @@ public class ChatManager : DataManager
 
     public Image LeftCharacter;
     public Image RightCharacter;
+    public Image CenterCharacter;
+    public Image CenterCharacterTwo;
     public Image ChatTitle;
 
     // DataManager에서 인스턴스 한것을 상속 받은 변수에 저장
@@ -33,9 +35,12 @@ public class ChatManager : DataManager
                 EffectStart();
             }
             else if (!DataManager.Instance.IsChat && DataManager.Instance.IsProgress &&
-                Input.GetKeyUp(KeyCode.Return) && DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
+                Input.GetKeyUp(KeyCode.Return))
             {
-                ChatInit();
+                if (DataManager.Instance.SceneNum + 1 == DataManager.Instance.PlaceData.Count)
+                    return;
+                else if(DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
+                    ChatInit();
             }
         }
 
@@ -62,11 +67,35 @@ public class ChatManager : DataManager
                 RightCharacter.sprite = Resources.Load<Sprite>
             ("Story/RightCharacter/" + RightCharacterData[DataManager.Instance.SceneNum]);
             }
+
+            if (CenterCharacterData[DataManager.Instance.SceneNum] == "없음")
+            {
+                CenterCharacter.color = new Color(CenterCharacter.color.r, CenterCharacter.color.g, CenterCharacter.color.b, 0);
+            }
+            else if (CenterCharacterData[DataManager.Instance.SceneNum] != "")
+            {
+                CenterCharacter.color = new Color(CenterCharacter.color.r, CenterCharacter.color.g, CenterCharacter.color.b, 1);
+                CenterCharacter.sprite = Resources.Load<Sprite>
+            ("Story/CenterCharacter/" + CenterCharacterData[DataManager.Instance.SceneNum]);
+            }
+
+            if (CenterCharacterTwoData[DataManager.Instance.SceneNum] == "없음")
+            {
+                CenterCharacterTwo.color = new Color(CenterCharacterTwo.color.r, CenterCharacterTwo.color.g, CenterCharacterTwo.color.b, 0);
+            }
+            else if (CenterCharacterTwoData[DataManager.Instance.SceneNum] != "")
+            {
+                CenterCharacterTwo.color = new Color(CenterCharacterTwo.color.r, CenterCharacterTwo.color.g, CenterCharacterTwo.color.b, 1);
+                CenterCharacterTwo.sprite = Resources.Load<Sprite>
+            ("Story/CenterCharacterTwo/" + CenterCharacterTwoData[DataManager.Instance.SceneNum]);
+            }
         }
         else if (ChatTitle.color.a == 0f)
         {
             LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 0);
             RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 0);
+            CenterCharacter.color = new Color(CenterCharacter.color.r, CenterCharacter.color.g, CenterCharacter.color.b, 0);
+            CenterCharacterTwo.color = new Color(CenterCharacterTwo.color.r, CenterCharacterTwo.color.g, CenterCharacterTwo.color.b, 0);
         }
 
         if (ChatWindowData[DataManager.Instance.SceneNum] != "")
@@ -122,5 +151,7 @@ public class ChatManager : DataManager
     {
         LeftCharacter.color = new Color(LeftCharacter.color.r, LeftCharacter.color.g, LeftCharacter.color.b, 0);
         RightCharacter.color = new Color(RightCharacter.color.r, RightCharacter.color.g, RightCharacter.color.b, 0);
+        CenterCharacter.color = new Color(CenterCharacter.color.r, CenterCharacter.color.g, CenterCharacter.color.b, 0);
+        CenterCharacterTwo.color = new Color(CenterCharacterTwo.color.r, CenterCharacterTwo.color.g, CenterCharacterTwo.color.b, 0);
     }
 }

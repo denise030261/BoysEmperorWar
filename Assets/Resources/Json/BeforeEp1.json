@@ -3,7 +3,9 @@
     {
       "LeftCharacter": "나",
       "RightCharacter": "없음",
-      "Chat": "이것은 실험입니다 실험입니다 실험입니다 실험입니다",
+      "CenterCharacter": "너",
+      "CenterCharacterTwo": "없음",
+      "Chat": "이것은 실험입니다 실험입니다 실험입니다 \n 실험입니다",
       "ChatWindow": "나",
       "Place": "Room",
       "BGM": "현재"
@@ -11,6 +13,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "",
+      "CenterCharacter": "없음",
+      "CenterCharacterTwo": "",
       "Chat": "하기가 귀찮네요",
       "ChatWindow": "",
       "Place": "",
@@ -19,6 +23,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "너",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "어처피 해야함",
       "ChatWindow": "너",
       "Place": "",
@@ -27,6 +33,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "그렇긴 함",
       "ChatWindow": "나",
       "Place": "",
@@ -35,6 +43,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "배고파",
       "ChatWindow": "너",
       "Place": "",
@@ -43,6 +53,8 @@
     {
       "LeftCharacter": "우리",
       "RightCharacter": "너희",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "배고프니까 뭐 먹을래",
       "ChatWindow": "우리",
       "Place": "Stage",
@@ -51,6 +63,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "초밥",
       "ChatWindow": "",
       "Place": "",
@@ -59,6 +73,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "피자",
       "ChatWindow": "",
       "Place": "",
@@ -67,6 +83,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "(걍 다 먹고 싶다)",
       "ChatWindow": "",
       "Place": "",
@@ -75,6 +93,8 @@
     {
       "LeftCharacter": "",
       "RightCharacter": "",
+      "CenterCharacter": "",
+      "CenterCharacterTwo": "",
       "Chat": "난 떡볶이",
       "ChatWindow": "너희",
       "Place": "",

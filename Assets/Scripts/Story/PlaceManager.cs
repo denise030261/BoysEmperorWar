@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,11 +28,16 @@ public class PlaceManager : UIFade
         if (DataManager.Instance.SceneNum + 1 <= DataManager.Instance.PlaceData.Count)
         {
             if (!DataManager.Instance.IsChat && DataManager.Instance.IsProgress &&
-            Input.GetKeyUp(KeyCode.Return) && DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
+            Input.GetKeyUp(KeyCode.Return))
             {
-                PlaceName.text = DataManager.Instance.PlaceData[DataManager.Instance.SceneNum+1];
-                FadeInInit();
-                StartCoroutine(DelayTitle());
+                if (DataManager.Instance.SceneNum + 1 == DataManager.Instance.PlaceData.Count)
+                    return;
+                else if(DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1] != "")
+                {
+                    PlaceName.text = DataManager.Instance.PlaceData[DataManager.Instance.SceneNum + 1];
+                    FadeInInit();
+                    StartCoroutine(DelayTitle());
+                }
             }// index 넘는거 조심
 
             if (IsFade && FadeImage.rectTransform.anchoredPosition.x >= -800)
