@@ -88,8 +88,8 @@ public class Judgement : MonoBehaviour
                         Score.Instance.data.combo++;
                         Score.Instance.data.great++;
                         Score.Instance.data.judge = JudgeType.Great;
-                    Debug.Log(note.time + " 그레이트 입니다");
-                }
+                        //Debug.Log(note.time + " 그레이트 입니다");
+                    }
                 }
                 else
                 {
@@ -137,7 +137,7 @@ public class Judgement : MonoBehaviour
                     Score.Instance.data.great++;
                     Score.Instance.data.judge = JudgeType.Great;
                     Score.Instance.data.combo++;
-                    Debug.Log(note.time + " 그레이트 입니다");
+                    //Debug.Log(note.time + " 그레이트 입니다");
                 }
             }
             JudgeEffect.Instance.OnEffect(line); // 땠을 때 이펙트

@@ -60,15 +60,10 @@ public class MainAudioManager : MonoBehaviour
 
         if (sfxClip != null)
         {
-            for (int i = 0; i < sfxSource.Length; ++i)
-            {
-                Debug.Log("SFX ½ÃÀÛ");
-                sfxSource[i].clip = sfxClip;
-                sfxSource[i].volume = PlayerPrefs.GetFloat("SFX", 0.6f);
-                sfxSource[i].spatialBlend = 0;
-                sfxSource[i].Play();
-                return;
-            }
+            sfxSource[0].clip = sfxClip;
+            sfxSource[0].volume = PlayerPrefs.GetFloat("SFX", 0.6f);
+            sfxSource[0].spatialBlend = 0;
+            sfxSource[0].Play();
         }
         else
         {
