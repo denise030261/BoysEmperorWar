@@ -268,7 +268,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1535457182}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -588,7 +588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4E00\u6B21\u7AF6\u6F14\u5F53\u65E5\u3001\u5F85\u5408\u5BA4"
+  m_Text: "\u30C6\u30E9\u30B9\u306E\u4F11\u61A9\u30B9\u30DA\u30FC\u30B9"
 --- !u!222 &947720155
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -628,7 +628,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1535457182}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -943,8 +943,8 @@ MonoBehaviour:
   IsProgress: 0
   IsChat: 0
   IsPlaceWindow: 0
-  DelayChatSpeed: 8
-  CharPerSecnds: 50
+  DelayChatSpeed: 4
+  CharPerSecnds: 45
   PracticeText: {fileID: 481687439}
   LeftCharacter: {fileID: 956880471}
   RightCharacter: {fileID: 171065603}
@@ -1083,9 +1083,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 606010066}
-  - {fileID: 956880470}
-  - {fileID: 2114575555}
   - {fileID: 184050617}
+  - {fileID: 2114575555}
+  - {fileID: 956880470}
   - {fileID: 171065602}
   - {fileID: 1485114179}
   - {fileID: 1107434744}

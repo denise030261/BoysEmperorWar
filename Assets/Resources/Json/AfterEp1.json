@@ -1,54 +1,364 @@
 {
     "Story": [
-      {
-        "LeftCharacter": "(r)Noah_u_odoroki",
-        "RightCharacter": "없음",
-        "CenterCharacter": "너",
-        "CenterCharacterTwo": "없음",
-        "Chat": "테스트완~~",
-        "ChatWindow": "CW2_Hoshi",
-        "Place": "촬영장",
-        "BGM": ""
-      },
-      {
-        "LeftCharacter": "",
-        "RightCharacter": "(r)Midnight_yareyare",
-        "CenterCharacter": "없음",
-        "CenterCharacterTwo": "",
-        "Chat": "테스트투~~~",
-        "ChatWindow": "CW_Yuuto",
-        "Place": "",
-        "BGM": ""
-      },
-      {
-        "LeftCharacter": "(r)Noah_u_odoroki",
-        "RightCharacter": "없음",
-        "CenterCharacter": "",
-        "CenterCharacterTwo": "",
-        "Chat": "장소변경!!",
-        "ChatWindow": "CW2_Hoshi",
-        "Place": "연습실",
-        "BGM": ""
-      },
-      {
-        "LeftCharacter": "",
-        "RightCharacter": "(r)Midnight_yareyare",
-        "CenterCharacter": "",
-        "CenterCharacterTwo": "",
-        "Chat": "테스트쓰리~~~",
-        "ChatWindow": "CW_Yuuto",
-        "Place": "",
-        "BGM": ""
-      },
-      {
-        "LeftCharacter": "",
-        "RightCharacter": "",
-        "CenterCharacter": "",
-        "CenterCharacterTwo": "",
-        "Chat": "뿡",
-        "ChatWindow": "",
-        "Place": "",
-        "BGM": ""
-      }
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "없음",
+            "Chat": "はい、「ボーイズ·エンペラーズ·ウォー」の 投票が全て終了されました。",
+            "ChatWindow": "CW_MC",
+            "Place": "撮影スタジオ",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "結果を発表する前に、素敵なステージを見せてくれた6チームに拍手を送りたいと思います。 \nお疲れ様でした~！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "お疲れ様でした~！",
+            "ChatWindow": "CW_Everybody",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "本当に最高でした！ \nそれでは一次競演、 今から6チームの皆さんの一人一人の自己投票100%で決定された最終順位を確認したいと思います。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_e",
+            "CenterCharacterTwo": "",
+            "Chat": "今回の一次と次の二次競演点数の合算で初脱落チームが決定されます。 \nそれだけ今日の投票結果が重要です。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それでは、",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "1차 결과",
+            "Chat": "結果を公開します！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_odoroki_AAA_dere",
+            "RightCharacter": "(R)Shunpei_2_odoroki_AAA_deredere",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "わーっ！！",
+            "ChatWindow": "CW_Hoshi+Shunpei",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Ivan_2_odoroki_AAA",
+            "CenterCharacterTwo": "",
+            "Chat": "4、4位？！",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Valentin_saigo",
+            "CenterCharacterTwo": "",
+            "Chat": "最下位じゃないって！？！",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Sizma_1_close_wa",
+            "CenterCharacterTwo": "",
+            "Chat": "言ったでしょ！俺たちは想像以上にすごいんだって！！",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(r)Noah_e_sad",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "… …予想はしていたけど、",
+            "ChatWindow": "CW_Noah2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(r)Yobanashi_umakatta",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "いや、俺たちも上手かった。\nでも他のチームのパフォーマンスが圧倒的すぎて…",
+            "ChatWindow": "CW_Yobanashi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_1_Aa_dere",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あの…ECLIPSEの先輩方。 \n…私、先輩方のライブ大好きです。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Noah_u_odoroki",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…!",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Noah_um_sad",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…ありがとう。君がメインボーカルだったか？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい、私とバレンタイン…赤毛と二人でメインボーカルなんです。 \n私たちは上位にECLIPSEを書いて提出しました。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "だから… \n引き続き素敵なステージを見せてください！ \n偉そうに聞こえたら、ごめんなさい。 \n尊敬しています。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Noah_wa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "これまで俺たちがボーカルに執着しすぎたせいだな。…いい勉強になった。\n次は全力で行くからな。\n今回の評価基準はちょっと物足りなかった。",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(r)Lui_yokuyatta",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "UNIVERSE、本当によくやったよ〜。 \nうちの新人の頃は想像もできないくらいだよ。",
+            "ChatWindow": "CW_Lui",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(r)Midnight_kimitachi",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "君たち、実は新人じゃないよね？",
+            "ChatWindow": "CW_Midnight",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はは、ありがとうございます。 \nメンバーたちにも伝えておきます。きっと喜ぶはずですよ。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Noah_wa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あぁ、じゃあね。",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい、失礼しました！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_half_a",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…確かにアイドルは歌だけ上手いんじゃ駄目なんだな。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "ECLIPSEとの話の後",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_3_half_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "当然だ。他のことも重要なんだ。",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Shunpei_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "例えば？",
+            "ChatWindow": "CW_Shunpei",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_3_close_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "顔。アイドルはブサイクだと使えない。\nそれに俺はブサイクは嫌だ。",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_1_Aa_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うわぁ…イヴァンが言うから何も言えない…",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "はい！！競演前に説明したとおり、\n一次競演1位を達成することになった「IDEA」が二次競演順番を直接作成することになりました。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_a",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "シオンさん、何か言いたいことはありますか？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_2_1_he",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、はい…まず1位、本当にありがとうございます。 \n…私たちの書いた順番を見て驚いてくれたら嬉しいです。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_2_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あまり恨まないでください。以上です。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Hoshi_sad_oo_a_panic",
+            "CenterCharacterTwo": "",
+            "Chat": "(まさか復讐しようとするのは…ないだろ…\n二番目で指名すれば良かったかな…)",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "それでは、2次競演のテーマでまたお伺いします、\nありがとうございました！",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "王座を獲得せよ！ 「ボーイズ·エンペラーズ·ウォー」！ 以上で終わります。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        }
     ]
 }
