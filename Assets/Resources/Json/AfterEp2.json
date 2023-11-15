@@ -1,94 +1,444 @@
 {
-  "Story":[
-    {
-      "Num": 1,
-      "LeftCharacter": "나",
-      "RightCharacter": "없음",
-      "Chat": "이것은 실험입니다 실험입니다 실험입니다 실험입니다",
-      "ChatWindow": "나",
-      "Place": "Room",
-      "BGM": "현재"
-    },
-    {
-      "Num": 2,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "하기가 귀찮네요",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 3,
-      "LeftCharacter": "",
-      "RightCharacter": "너",
-      "Chat": "어처피 해야함",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 4,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "그렇긴 함",
-      "ChatWindow": "나",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 5,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "배고파",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": "급박"
-    },
-    {
-      "Num": 6,
-      "LeftCharacter": "우리",
-      "RightCharacter": "너희",
-      "Chat": "배고프니까 뭐 먹을래",
-      "ChatWindow": "우리",
-      "Place": "Stage",
-      "BGM": ""
-    },
-    {
-      "Num": 7,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "초밥",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 8,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "피자",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 9,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "(걍 다 먹고 싶다)",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 10,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "난 떡볶이",
-      "ChatWindow": "너희",
-      "Place": "",
-      "BGM": ""
-    }
-  ]
+    "Story": [
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "二次競演を無事に終えた6チーム、本当にお疲れ様でした。\nこれよりもっと上手くできるかな、という言葉が 公演ごとに出るほど驚くべきステージでした。",
+            "ChatWindow": "CW_MC",
+            "Place": "二次競演終了",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "一次の時は「出演者の自主投票」でしたが、\n二次は「出演者の自主投票30%」に「オンライン評価団70%」で行われます。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "「出演者の自主投票」は、以前行ったとおり各チーム4人が自分のチームを除く5チームを順位をつけて書いて提出する方式で、\n「オンライン評価団」は、120人が全員の舞台を見て最もよくやったと思う3チームに投票する方式です。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_e",
+            "CenterCharacterTwo": "",
+            "Chat": "…\n残念ながら,\n今日は最初の脱落者が出る日です。 \n最下位の1チームは「ボーイズ・エンペラーズ・ウォー」を去ることになります。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "2차 결과",
+            "Chat": "では、\n一次&二次競演累積順位を発表します。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_2_1_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "さすがIDEA…切ない恋テーマが本当に独創的で強かった…",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)kyle_o_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "誰がもっと甘いか対決する間に差別化をしたね。\n京都店にしかない味茶味パンケーキみたいー。",
+            "ChatWindow": "CW_Kyle",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Yuuto_half_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "比喩が変だけど確かにね…",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Legdan_sad_1_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "コンセプトから始めて空間と小道具の使い方、演出が強すぎだろ〜！\n あんなアイデアは本当にどうやって出すんだ…？",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_sad_half_a",
+            "CenterCharacterTwo": "",
+            "Chat": "…（次はまたどれくらい準備すればいいんだ？\n最初から力を入れすぎたかな…）",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)IDEA_tired",
+            "CenterCharacterTwo": "",
+            "Chat": "ハハ、ありがとうございます、…",
+            "ChatWindow": "CW_IDEA",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_sad_1_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "（メンバーたちもちょっと疲れているようだし…）",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(r)Ifrit_veryAngry_AA",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "は…　愛していないと全部壊すコンセプトで行ったらよかったのに！",
+            "ChatWindow": "CW_Ifrit2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Jeyun_angry_AA",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "だから壊すのやめてよ〜！；",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_o",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "今回も4位か、…",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "どうだ、ホシ？\nもう満足できないでしょ？",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_angry_half_Aa_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うん、もう欲が出てきた。\n本当に。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Midnight_u_sad",
+            "CenterCharacterTwo": "없음",
+            "Chat": "ああ、こんな…",
+            "ChatWindow": "CW_Midnight",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Ian_shikushiku",
+            "CenterCharacterTwo": "",
+            "Chat": "… …しくしく、…",
+            "ChatWindow": "CW_Ian",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Noah_e_sad",
+            "CenterCharacterTwo": "",
+            "Chat": "… …大丈夫、泣かないで。\n君たちは十分によくやったよ、後悔はなかった。",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Noah_um_tear",
+            "CenterCharacterTwo": "",
+            "Chat": "……（くっそ、悔しい。泣きそう…）",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile_sad",
+            "CenterCharacterTwo": "",
+            "Chat": "…ECLIPSE、難しくなければ一言お願いします。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Noah_e_sad",
+            "CenterCharacterTwo": "",
+            "Chat": "はい、…あ、すみません。喉をちょっと潤すので。\n今回のステージは実際に…私の役割が非常に重要だと思うんです。",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Noah_e_sad_2",
+            "CenterCharacterTwo": "",
+            "Chat": "だから、\n…こんな結果が、",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Yobanashi_chigau",
+            "CenterCharacterTwo": "",
+            "Chat": "違う。",
+            "ChatWindow": "CW_Yobanashi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Noah_e_sad_2_tear",
+            "CenterCharacterTwo": "",
+            "Chat": "こんな結果が出たのは私のせいではないかと思って…",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_sad_1_a",
+            "CenterCharacterTwo": "",
+            "Chat": "… …（本当に初めての脱落者が出た。） \n（映像ではなくライブ現場で行われる評価であれば必ず上位を占めていたはずだ。 \n現場で直接感じる響きは、 画面上とは明らかに違うから。）",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_sad_1_um",
+            "CenterCharacterTwo": "",
+            "Chat": "（俺も残念だけど、本人たちはどれだけ残念だろう。\n絶対そんなスコアを受けるグループではないのに…）",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Valentin_sad_a_e",
+            "CenterCharacterTwo": "",
+            "Chat": "（俺のメインボーカルの夢に影響を与えるほど、\nECLIPSEの現場ライブは没頭感がすごくて陶酔的だ。）",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Valentin_3_1_um_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "（評価基準と状況が一つのグループにここまでペナルティになるとは思わなかった。…簡単ではない。）",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Noah_e_tear",
+            "CenterCharacterTwo": "",
+            "Chat": "次はこんな姿を見せないようにもっと頑張ります。\nありがとうございました！",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Wataru_close_A",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "お疲れ様、よくやったよ！",
+            "ChatWindow": "CW_Wataru2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "Philip_sad_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ECLIPSEも本当によくやった…\nみんながこの公演を現場で見るべきだったのに…",
+            "ChatWindow": "CW_Philip",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_smile_sad",
+            "CenterCharacterTwo": "",
+            "Chat": "たとえボーイズエンペラーズウォーを去ることになりますが、 \nこれからもっと違う場所で かっこいいステージを見せてくださるじゃないですか？",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "本当に応援しています、ECLIPSE。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(l)Lui_tonari",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "ノア…ノアが俺たち全員よくやったって言ったでしょう？\nでも俺は、ノアが一番よくやったと思う。\n少なくとも隣にいた俺はそう感じたよ。",
+            "ChatWindow": "CW_Lui2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Noah_um_sad",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "… …ありがとう。",
+            "ChatWindow": "CW_Noah",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_e",
+            "CenterCharacterTwo": "",
+            "Chat": "王座を獲得するための「ボーイズ·エンペラーズ·ウォー」、\n残りのチームは5チームです。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "3次競演は、今までとは違って1位から3位まで追加点数が付与されます。\n1位は5000点、2位は3000点、3位は1000点が追加で合算されます。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "まさに逆転できる絶好のチャンスですね。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_1_odoroki_AAA_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "5000点？！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Ifrit_1_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "3000点も少なくない。",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "では、3次競演のテーマは…··· … …",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "次回に発表するようにします！\n王座を獲得せよ！ 「ボーイズ·エンペラーズ·ウォー」！ 以上で終わります。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        }
+    ]
 }

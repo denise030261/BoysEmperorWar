@@ -1,94 +1,644 @@
 {
-  "Story":[
-    {
-      "Num": 1,
-      "LeftCharacter": "나",
-      "RightCharacter": "없음",
-      "Chat": "이것은 실험입니다 실험입니다 실험입니다 실험입니다",
-      "ChatWindow": "나",
-      "Place": "Room",
-      "BGM": "현재"
-    },
-    {
-      "Num": 2,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "하기가 귀찮네요",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 3,
-      "LeftCharacter": "",
-      "RightCharacter": "너",
-      "Chat": "어처피 해야함",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 4,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "그렇긴 함",
-      "ChatWindow": "나",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 5,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "배고파",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": "급박"
-    },
-    {
-      "Num": 6,
-      "LeftCharacter": "우리",
-      "RightCharacter": "너희",
-      "Chat": "배고프니까 뭐 먹을래",
-      "ChatWindow": "우리",
-      "Place": "Stage",
-      "BGM": ""
-    },
-    {
-      "Num": 7,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "초밥",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 8,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "피자",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 9,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "(걍 다 먹고 싶다)",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 10,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "난 떡볶이",
-      "ChatWindow": "너희",
-      "Place": "",
-      "BGM": ""
-    }
-  ]
+    "Story": [
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Hoshi_2_1_a_wet",
+            "CenterCharacterTwo": "없음",
+            "Chat": "ヤバ……マジで強烈すぎる…本当に刃を研いでいたんだ…",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "KNOX公演の終わり",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Legdan_1_1_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "ラスト順番であったのも一役買ったと思う…",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_sad_smile_Aa_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "今度はKNOXが勝ちそう…、厳しいな。負けちゃうかも。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Jeyun_half_um_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "（エンディングポーズも問題なく完璧だった。\n今からライトが消えるまで約５秒...）",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Jeyun_Odoroki_o_wet",
+            "CenterCharacterTwo": "꺼진무대",
+            "Chat": "え？",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_2_odoroki_a_wet",
+            "RightCharacter": "cash_eng",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "え？",
+            "ChatWindow": "CW_Lucas+Cash",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Ifrit_angry_aa",
+            "CenterCharacterTwo": "",
+            "Chat": "いいぞ、走れ！",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)KNOX_OOO",
+            "CenterCharacterTwo": "",
+            "Chat": "おーっ！！",
+            "ChatWindow": "CW_KNOX",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Jeyun_Odoroki_e_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "お、おい！お前たちどこ行くんだー！",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "(ジェユンを残して舞台の下に駆けつける)",
+            "ChatWindow": "CW_KNOX",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "영상편지",
+            "Chat": "え？",
+            "ChatWindow": "CW_everybody",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Jeyun_Odoroki_um",
+            "CenterCharacterTwo": "",
+            "Chat": "...ビデオメッセージ？",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Ifrit_video",
+            "CenterCharacterTwo": "",
+            "Chat": "[ジェユン〜。ジェユンがいたから 俺たちが上手く耐えられたのは知ってるよね？]",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Director_video",
+            "CenterCharacterTwo": "",
+            "Chat": "[ジェユンと一緒に過ごした時間、 本当に幸せだった。]",
+            "ChatWindow": "CW_Director",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Aaron_video",
+            "CenterCharacterTwo": "",
+            "Chat": "[ジェユン、体に気をつけて、元気に行ってきてね。]",
+            "ChatWindow": "CW_Aaron",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Wataru_video",
+            "CenterCharacterTwo": "",
+            "Chat": "[今この姿そのままで待ってるよ。]",
+            "ChatWindow": "CW_Wataru",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)DAISUKI",
+            "CenterCharacterTwo": "",
+            "Chat": "[ジェユン、大好きだ！]",
+            "ChatWindow": "CW_KNOX",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_sad_1_a",
+            "CenterCharacterTwo": "",
+            "Chat": "… … \nもうすぐか···兵役。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Jeyun_half_e_tear",
+            "CenterCharacterTwo": "",
+            "Chat": "…\nなにこれ…しくっ…\nだから俺抜きで4人で話したんだ···",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(r)Ifrit_setsu_singut",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "ジェユン。\nもう降りてきてもいいよ。",
+            "ChatWindow": "CW_Ifrit2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Jeyun_half_e_tear",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺は、お前たちと··· \n 3年以上一緒に過ごして、いつも幸せだった。",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Jeyun_half_smile_tear",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "だから… KNOXは、終わるまで幸せにやるよ！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Gaia_seidai",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "盛大に準備したね。 舞台だけでなく。",
+            "ChatWindow": "CW_Gaia2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_sad_1_pic",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ある意味、あの子たちは今回が5人完全体活動の最後になるかもしれないから。 \nあの気持ち、よく分かるよ。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Hoshi_sad_half_um",
+            "CenterCharacterTwo": "",
+            "Chat": "… … …(俺たちの未来になるかもしれない。)",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "はい、「ボーイズ·エンペラーズ·ウォー」の三次競演の投票が終了しました。 \n果たしてこの5000点という大きな追加点を抱えて逆転するチームは誰になるのでしょうか！",
+            "ChatWindow": "CW_MC",
+            "Place": "三次結果発表",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "3차 결과",
+            "Chat": "結果を、\n公開します！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Ifrit_angry_aa",
+            "CenterCharacterTwo": "",
+            "Chat": "よっしゃー！一位～！！！",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Aaron_close_laugh",
+            "CenterCharacterTwo": "",
+            "Chat": "当たり前だろぉぉぉ！！！",
+            "ChatWindow": "CW_Aaron",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_2_odoroki_AAA_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "なにっ？！2位？！？！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Valentin_takai",
+            "CenterCharacterTwo": "",
+            "Chat": "な、なんで？（高…すぎる…！）",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_a2",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "あ~！！！ KNOX、堂々と1位を獲得します！ \n一言お願いしてもいいですか？",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ifrit_setsu_singut",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "実は私たちはこの「ボーイズ・エンペラーズ・ウォー」が、 \n最後の完全体舞台になると思ってました。 \nそれでこうやって··ジェユンのために、サプライズを準備することになりました。",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Jeyun_smile_um",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "すぐ行ってくるから···\nよくやっていてね。 わかった？",
+            "ChatWindow": "CW_Jeyun2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Aaron_sad_tear",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...しく,",
+            "ChatWindow": "CW_Aaron",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Jeyun_Wakatte",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "君たちは何でも上手だから···みんな分かってくれるはずよ。",
+            "ChatWindow": "CW_Jeyun2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ifrit_tear",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...うん。 っ……ふ……っ",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(l)Director_cry",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うわああぁぁぁ...ふっ…",
+            "ChatWindow": "CW_Director2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Wataru_cry",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "グスッ…、 しくしく...",
+            "ChatWindow": "CW_Wataru",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_1_o_wet",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "げっ、泣いてる...",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_sad_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "登場した時は本当に怖そうに見えたけど...\n実は、その逆のグループだったんだ。",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_sad_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺たちもあんな風になりたいな。\nUNIVERSEで俺が一番で軍隊に行くことになるけどさ、\n俺にもあんなことしてくれよー。",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "その前まで何の問題も論議もなければ、もちろんね〜。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_sad_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…ハハ。\n（現実は、問題があっても··· 事務所の力が大きければイシューにもならないのに。）",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "ジェユンくんが無事に行って来られるように、多くの方々が\n応援してくださることをお願いします。また、待っていてくださることを、彼らの先輩として私からお願いします。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "無事に帰ってきてくださいー",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_1_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "お待ちしておりますー",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "以上、「ボーイズ・エンペラーズ・ウォー」の3次競演を終了します！\nでは次回は4次競演のテーマでお会いしましょう。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "王座を獲得せよ！ 「ボーイズ·エンペラーズ·ウォー」！ 以上で終わります。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_1_o_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "...ところで、俺たちが...2位？ \n高すぎるんじゃない？",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "廊下",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_1_1_he",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "いーや、君たちよくやった。2位に相応しい結果だよ？",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、RECORDの先輩たちだ。",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_odoroki_e",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "（ビクッ）",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "『暴れる曲』のテーマの中で『心が病んで狂う』という考えをしたのは本当に画期的だったよ。テーマも良かったし、選曲と表現力も素晴らしかった。",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Valentin_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "そうですか？エヘヘ、ありがとうございます。\nレコードの『ゾンビ・アポカリプス学校』のコンセプトもとても素敵でした。",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_1_close_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ありがとうな〜。それ、俺が出したアイデアなんだよ。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_yoko_e_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_sad_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…クスクス。ところでシズマくんは元々こんなに口数が少なかったっけ？\n何か言ってみなよ〜…",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_e_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "……",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_1_1_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...シズマ？（なんだ...？なんで目も合わせないんだ？\n 二人は知り合いだったのか？初対面だと思ってたのに。）",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_3_half_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "そして先輩が話したら挨拶するべきだろ。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_1_e_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_3_half_he",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "四次競演、期待してるよ、シズマ。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_1_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "... ...はい... ..",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        }
+    ]
 }

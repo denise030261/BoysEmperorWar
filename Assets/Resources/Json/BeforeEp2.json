@@ -1,94 +1,1154 @@
 {
-  "Story":[
-    {
-      "Num": 1,
-      "LeftCharacter": "나",
-      "RightCharacter": "없음",
-      "Chat": "이것은 실험입니다 실험입니다 실험입니다 실험입니다",
-      "ChatWindow": "나",
-      "Place": "Room",
-      "BGM": "현재"
-    },
-    {
-      "Num": 2,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "하기가 귀찮네요",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 3,
-      "LeftCharacter": "",
-      "RightCharacter": "너",
-      "Chat": "어처피 해야함",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 4,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "그렇긴 함",
-      "ChatWindow": "나",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 5,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "배고파",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": "급박"
-    },
-    {
-      "Num": 6,
-      "LeftCharacter": "우리",
-      "RightCharacter": "너희",
-      "Chat": "배고프니까 뭐 먹을래",
-      "ChatWindow": "우리",
-      "Place": "Stage",
-      "BGM": ""
-    },
-    {
-      "Num": 7,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "초밥",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 8,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "피자",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 9,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "(걍 다 먹고 싶다)",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 10,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "난 떡볶이",
-      "ChatWindow": "너희",
-      "Place": "",
-      "BGM": ""
-    }
-  ]
+    "Story": [
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "없음",
+            "Chat": "2次競演のテーマは、\n「愛の曲」です！",
+            "ChatWindow": "CW_MC",
+            "Place": "撮影スタジオ",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "アイドルとして、人々の心を掴むことは当然ですね。愛の対象はさまざまな形を取ります。\n解釈方法によって、さまざまな表現が可能と思います。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "曲の選択範囲も広いため、他のグループのカバーも許可されています。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Ivan_1_1_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "絶対にカバーしなきゃいけないね。 \nそのテーマだと認知度の低い収録曲しかないから。",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Yuuto_Close_wa",
+            "CenterCharacterTwo": "",
+            "Chat": "あらー、 いいテーマじゃない。",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "1차 결과",
+            "Chat": "現在までの結果です。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "今回の競演を通じて最初の脱落者が決まるだけに、\n最善を尽くさなければなりませんよね？",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "없음",
+            "Chat": "上位を記録した方々は油断してはいけません 。\n優勝するためには高い点数を 取り続けないといけないので。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "争いはすでに始まりました。 \n王座を獲得せよ！「 ボーイズ·エンペラーズ·ウォー」！\n素敵なステージの準備を楽しみにしています。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Philip_angry_1_wet_a",
+            "RightCharacter": "Legdan_sad_close_Aa_wet",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "もう脱落者が出るのか。今回は本当に上手くやらなきゃ…\n新人よりも下の5位だなんて危険だ。",
+            "ChatWindow": "CW_Philip2",
+            "Place": "廊下",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_sad_close_Aa_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "清涼感はインパクトは少ないけど、聞きやすい特性だから仕方ないよ〜…",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_sad_1_he",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それでもテーマが「愛の曲」だろ？少なくとも3位以上になるよ。",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Kinder_smile_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "「愛の曲」か~...",
+            "ChatWindow": "CW_Kinder2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "cash_senmon",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "このコンセプトは俺たちの専門だよね〜~",
+            "ChatWindow": "CW_Cash",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)kyle_half_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ゆうとがステージでウィンクしながら「姉さん大好きぃ♡」一回言ったら\n優勝できると思うけど～",
+            "ChatWindow": "CW_Kyle2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Yuuto_Close_o_dere",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "… …何言ってるの、カイルゥゥー!",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "4位だなんて~めちゃめちゃ嬉しい~",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_sad_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ホシ、本当に浮かれてるね。でもそれだけで満足しちゃダメだよ。",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_a_dere",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "でも嬉しいじゃん〜 \n今回はどんな曲にしようかな~？",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_sad_smile_Aa_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "気分が良さそうだからそのままにしとこう、バレンティン…",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_half_a_panic_ao",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…本当にどんな曲にしようかな……............",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "会議室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_sad_1_Aa_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あんまり良くなさそうに見えるけど…",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_3_half_o_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "さっきまで良さそうに見えたのに…",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_1_1_e",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "でも俺たちは最年少グループだから、\n最年少グループというキーワードから考えると…",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "年下彼氏コンセプトにするとアンコラに埋もれてしまうよ…",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "でも私たちは本当に年下だから…\nオリジナルな初々しさを出せば何とかなるかも…",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "(コンコン)",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はーい、どうぞー。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "失礼します。ホシくんいますか？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_odoroki_AAA_dere",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "IDEAのシ、シ、シオン先輩？！ ホシくんいます！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_sad_smile_niya",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "「 ホシくんいます」って…くくっ…",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ちょっと二人で話があるので…ちょっと連れていってもいいですか？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Shunpei_2_odoroki_o_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…えっ？",
+            "ChatWindow": "CW_Shunpei",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Valentin_2_1_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "え…はい、大丈夫です。いってらっしゃい、ホシ。",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "Xion_basic_half_ung",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "こんにちは、彗星のように現れた新人、UNIVERSEのリーダーのホシくん。 \n改めて自己紹介するよ、俺はIDEAのリーダー、シオンだ。",
+            "ChatWindow": "CW_Xion",
+            "Place": "空室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "こんにちは、シオン先輩！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "一次競演、見たよ。 新人のレベルを既に超えているね。\nこれからの成長が恐ろしいぐらいだ。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_half_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "IDEAのリーダーからそんな言葉を聞けて光栄です！ \n私、昔からIDEAに憧れていたんです。 \n学生時代、IDEAの曲を聴きながらアイドルの夢を育んできたんですよ！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "へぇ、その年齢層か。嬉しい、俺たちが誰かの偶像になったということが。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_o",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ところで… \n何のために私を…？",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_ung",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あぁ、大したことはない。 \nホシくんなら野心があるように見えるからホシくんと取引したいと思って訪ねてきたの。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "取引ですか？",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_sad_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うん、そう。取引。\n…お願いかもしれないけど。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_3_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "次の二次競演でUNIVERSEがうちのIDEAの曲を使って公演してほしい。 \nその代わりに、 \n俺たちのチーム全員、少なくとも3人以上がUNIVERSEに1位で投票してあげる。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_3_close_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "どうしても2次が厳しければ、3次競演で使っても構わない。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_odoroki_um",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...!!! （評価基準が1次の時と同じであれば··· 少なくとも落ちる確率は少ない！ むしろ上位圏を狙うこともありかも？）",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "君たち、曲数も多くないでしょう？ \n一次の時にオリジナルの必殺技曲をもう使ったし… \n今回どの曲をカバーしようか迷ってなかった？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "だから、俺たちIDEAの曲を使ってくれる？\nアレンジが必要なら私がプロデュースしてあげられるから。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_half_um_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…\n(IDEAは…ユニバスと音楽の方向性も合ってるし、 \n名曲が多いのは事実だ。曲の雰囲気のスペクトラムも広い。) \n(でも…なんで？)",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_1_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "確かに名曲が多いのは事実です。IDEAの曲が候補になっていたのも事実ですし。 \nでも... \nなぜ...こんな提案を私にされるんですか？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_2_half_um",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "... ...",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_half_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "正直に言って、IDEAはスキルはすでに言うこともありません。 \nMCのコリンさんまで強力な優勝候補と言われました。 \nレベルが違うということぐらいは知っています。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "もともとなぜ出演されることになったのか、気になっていました。 \nIDEAならばもうすでに知名度も十分高くないですか？ \n何のために出演されたんですか？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_sad_half_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺は...  \n...(どこから話せばいいんだ。)",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_sad_half_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...メンバーたちと...離れたくないから...?",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_1_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...？はい？それと何の関係が...",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_2_Close_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "....まあ。とにかく。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_3_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺は君たちが成長する可能性が高いと思って提案したのさ。 \nアーティストは自分の曲が自分のものとして覚えられることを望むでしょう？ \nほぼ曲のアイデンティティを与えることと同じことなんだ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_3_1_um",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...もしかしたら、俺が君たちUNIVERSEの成長可能性を 間違って判断したかもしれないから質問一つだけする。 \n君の答えを聞いてこそUNIVERSEの成長可能性が分かると思うから。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ホシくん。 \nホシくんの究極的な目標は何？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...UNIVERSEが海外でも有名になることです。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "海外か。前回もそうだったけど何か異様に海外に反応するね。 \nじゃあもし国内ではあまり有名にならなくても関係ないってこと？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "個人的な意見は... ... ...  \nはい。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_o",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...現実的にあまりよくないと思うけど\n特に理由でもある？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "……兄が………\nごめんなさい、家庭のことに関わるので言いづらいんです。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_ung",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うーん。それでも明確な目標があることだよね。 \n…いいよ、俺は間違った判断をしたとは思わない。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それで…俺が言ったこと、どうする？ \n俺たちのメンバー全員が君たちに投票すれば、脱落は確実に回避できる。 \n放送の論議の心配はいらない。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "私たち、勝ちたいんです。 \n勝って海外公演を絶対にしたいんです！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_o",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "でも人為的な投票は必要ないんです。 \nそれに匿名投票じゃないですか！IDEA特定のメンバーがUNIVERSEに1位に投票したか、私たちはどうやってわかるんですか？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_close_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "断るのか…でも最低点以上はできるから証明でき…\nまあ、いいや。わかった。俺が無駄なことを言ったんだな。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…代わりにこれはどうですか？",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_um",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ん？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "UNIVERSEが脱落せずにファイナル競演に進むことができるなら、 \nそのときIDEAの曲を使います。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_ung",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "代わりに私もお願いがあります。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "何だ？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "2次競演順番、 \n最後のフィナーレになれるように最後の6番目にお願いします！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_bikkuri_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "……それでいい？",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい。 \nだから、そのパフォーマンスを見た後にちゃんと評価してください。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あー、こうしてフィナーレを飾る機会を持っていくとは…くく… \nいいよ。UNIVERSEに喜んで差し上げる。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "言う通りにしよう。 \n俺から見ると、君たちが脱落するようには思えないんだ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_1_Aa_",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あと、次に私が聞くときはもっと詳しく教えてください。 \nIDEAの、シオンさんの…出演のきっかけです。\n回答ちゃんと聞けなかったようで。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...ええ、わかった。 \n 楽しみにしてるよ、UNIVERSE。 \nお話できて嬉しかった。早く君のメンバーたちのところに行ってあげて。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それでは先に失礼します！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ただいまー。帰ってきたよ。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "会議室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "おかえり。何と言われた？",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_Ahaha",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、いや、なんでもないよ〜...これからも応援するって。\n新人だから可愛く見てくれたみたい。\n（ちょっと引っかかるけど）...",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "でも、一つ確かなことは、\n俺たちは俺たちらしくやればいいんじゃないかなって思うんだ。\n何かうまくいきそうな気がする。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_sad_half_wa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "おやつでも持ってきてくれればよかったのに〜",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Valentin_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ー続いてテーマのことなんだけど、 \n俺たちは実際にすべてのグループの中で 幼い方だから \n他のグループのことは気にしないで、年下の彼氏コンセプトで行こう。",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "でもあまり振り回されずに、ある程度リードできる年下彼氏にするのは？",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "いいじゃんー。そこで俺がちょっとアレンジ作業をしたら…",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Xion_angry_half_a",
+            "CenterCharacterTwo": "",
+            "Chat": "…IDEAは... \n事務所に「まだ使えるグループ」であることを証明しなければならない。",
+            "ChatWindow": "CW_Xion",
+            "Place": "空室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_angry_close_a",
+            "CenterCharacterTwo": "",
+            "Chat": "敵も望んでいる曲のグループであることを見せるチャンスだった…。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_angry_close_a_shadow",
+            "CenterCharacterTwo": "",
+            "Chat": "ライバルにもかかわらず、私たちの楽曲を使ってパフォーマンスし、 \nそのおかげで堂々と上位に位置している...\nそんな展開になるべきだった。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_sad_1_ek",
+            "CenterCharacterTwo": "",
+            "Chat": "敵にも偶像にもなり、実際にも十分な価値があることを見せることができたのに！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_sad_1_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "時間がない。もうすぐ「魔の7年」になってしまう。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "IDEAの価値を認めてもらわなければならないんだ……!",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "はい！「ボーイズ·エンペラーズ·ウォー」、\n本日ついに二次競演の当日となりました。",
+            "ChatWindow": "CW_MC",
+            "Place": "二次競演当日",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "1차 순서",
+            "Chat": "競演が始まる前に~···\nIDEAが直接作成した公演順を先に公開します！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Midnight_ha",
+            "CenterCharacterTwo": "",
+            "Chat": "は？！最後が自分のグループじゃなくUNIVERSE？\nフィナーレを飾る順番なのに？",
+            "ChatWindow": "CW_Midnight",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Aaron_close_laugh",
+            "CenterCharacterTwo": "",
+            "Chat": "おう〜UNIVERSE〜。先輩たち、期待してもいいよね〜？",
+            "ChatWindow": "CW_Aaron",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_Aa_dere",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "みんな、どう？いいんじゃない、",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)universe_fudan",
+            "CenterCharacterTwo": "",
+            "Chat": "負担感でマジ死にそう...................……",
+            "ChatWindow": "CW_Universe",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_half_Aa_panic",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "………（好きだと思ったのに…違ったんだ…）",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Yuuto_half_um_",
+            "RightCharacter": "Legdan_1_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "없음",
+            "Chat": "ハハ、高得点を期待したチームを2番目、3番目にするなんて...",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Yuuto_half_um_",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "まぁ、構わない。",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_odoroki_a",
+            "RightCharacter": "Xion_basic_half_ung",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…フフ",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_odoroki_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "（うわっ、ちょうど今、目が合った…！）",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_smile_ung",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "（約束は守ってね？ホシくん。）",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_smile",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あっ！なんだかIDEAが最後の順番になっていません！\n予想外の結果ですが、IDEAのガイアさん、お気に召しましたか？",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Gaia_gankou",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "もう〜、私たちのリーダーは本当に頑固すぎですよ！ \n公演の順番は私たちの意見とは全く関係ありませんー！",
+            "ChatWindow": "CW_Gaia",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Gaia_butai",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…でも私たちは舞台のクオリティで公演順などは重要ではないということをお見せします。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Desert_hontouni",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "本当に何を考えているんだ、シオン？！",
+            "ChatWindow": "CW_Desert",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "気になるだろ？どうやってフィナーレを演出するかがー。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_smile2",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それでは今から二次競演を始めます！",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        }
+    ]
 }
