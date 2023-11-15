@@ -1,94 +1,1994 @@
 {
-  "Story":[
-    {
-      "Num": 1,
-      "LeftCharacter": "나",
-      "RightCharacter": "없음",
-      "Chat": "이것은 실험입니다 실험입니다 실험입니다 실험입니다",
-      "ChatWindow": "나",
-      "Place": "Room",
-      "BGM": "현재"
-    },
-    {
-      "Num": 2,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "하기가 귀찮네요",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 3,
-      "LeftCharacter": "",
-      "RightCharacter": "너",
-      "Chat": "어처피 해야함",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 4,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "그렇긴 함",
-      "ChatWindow": "나",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 5,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "배고파",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": "급박"
-    },
-    {
-      "Num": 6,
-      "LeftCharacter": "우리",
-      "RightCharacter": "너희",
-      "Chat": "배고프니까 뭐 먹을래",
-      "ChatWindow": "우리",
-      "Place": "Stage",
-      "BGM": ""
-    },
-    {
-      "Num": 7,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "초밥",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 8,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "피자",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 9,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "(걍 다 먹고 싶다)",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 10,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "난 떡볶이",
-      "ChatWindow": "너희",
-      "Place": "",
-      "BGM": ""
-    }
-  ]
+    "Story": [
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "없음",
+            "Chat": "はい！すでに申し上げたように、\n 4次競演では、ファイナル競演に進出できる4チームが決定されます。\n累積点数最下位順位のチームはファイナル競演に参加できず、「ボーイズ・エンペラーズ・ウォー」を去ることになります。",
+            "ChatWindow": "CW_MC",
+            "Place": "撮影スタジオ",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_angry_half_um_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "（2回目の脱落か…）",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "4回目の競演のテーマは~\n「相手の曲」です！",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "自分以外の4グループの中から一つを選んで、そのグループの曲をカバーすることです！\n累積点数の5位からグループ選択権を差し上げます。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "3차 결과",
+            "Chat": "それでは現在までの結果を公開します！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "5位はRECORDですね。 RECORDリーダーのリグデンさん、\nどのグループをカバーしますか？",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_1_o",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "どうしようかなー？ENCORAかIDEAにする？（ひそひそ）",
+            "ChatWindow": "CW_Legdan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_1_1_he",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "いっそUNIVERSEでやったら？",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_1_o",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "なんで？",
+            "ChatWindow": "CW_Legdan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_sad_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...俺たちがカバーすればオリジナルを超えることができる気がしてさ〜。\n成功が保証されたと言えるかな〜...",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_angry_half_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "お前、UNIVERSEを新人だと見下してるんじゃないの？\n一次の「我らの曲」の時にUNIVERSEが俺たちより上だったこと忘れたのか？",
+            "ChatWindow": "CW_Legdan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ray_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ところでさ、俺はキャリアとは別にUNIVERSEもいいと思うんだけど。",
+            "ChatWindow": "CW_Ray",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ray_1_1_ung",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うちはね、今までのパフォーマンスの雰囲気がほとんど同じで、そろそろ新しいものが必要だろ～？違和感がない限りで新しい挑戦をするにはUNIVERSE曲が無難だね。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Philip_1_1_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "確かに。ENCORAもうちと似ているじゃないか。KNOXは強烈すぎたし、IDEAはオリジナルのクオリティが結構高いから比較されるかもしれない...",
+            "ChatWindow": "CW_Philip",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "そう、UNIVERSEでしようよ。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_close_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "まぁ、分かった。",
+            "ChatWindow": "CW_Legdan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "私たちのRECORDはUNIVERSEの曲をカバーします。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Xion_sad_half_ung",
+            "CenterCharacterTwo": "",
+            "Chat": "ふむ～…",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "はい！UNIVERSEですね！\n次の順番は··· ENCORAですね！ ENCORAのリーダー、ゆうとさん、\nカバーするグループを選んでください。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Yuuto_1_o",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "うーん、俺はRECORDが俺たちを選んでくれると思ったのに。  \n新しい挑戦だなんて。じゃあ、俺たちも他のグループを選ぼうかな。",
+            "ChatWindow": "CW_Yuuto2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "cash_saa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うちはIDEAにする？名曲結構多いじゃん。",
+            "ChatWindow": "CW_Cash",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Yuuto_Close_wa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "いいね。 \n私たちENCORAはIDEAの曲をカバーします。",
+            "ChatWindow": "CW_Yuuto2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "了解しました！次はUNIVERSEですね。\nホシさん、グループを選んでください。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_1_1_Aa_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "はい！... \n（どうせIDEAの曲はファイナルの時に使うと約束したから、むしろよかった）",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_3_half_e",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "残るのはKNOX、ENCORA、RECORD…",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_o",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "よく考えてみよう。\nENCORAは二次競演とおんなじ雰囲気になれるかもしれないし、\nKNOXはうちが失敗する可能性が非常に高い。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "じゃあ、残りはRECORDだな。",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_3_odoroki_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…！ちょ、ちょっと待って。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_half_um_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "（できるだけRECORDとはずっと関わらないようにしようと思っていたけど、…）\n （…でも、俺一人の個人的なことで選曲を台無しにするわけにはいかない…)",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "何だ。",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_smile_doya_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…\n…何でもない〜、RECORDの曲にしようぜ。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "やっぱり今のところではレコードがベストだよね？ \nUNIVERSEはRECORDの曲をカバーします！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_a2",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "おっとー！RECORDとUNIVERSEがお互いの曲をカバーすることに\nなりました！\nお互いにたくさんのアドバイスをしあえるといいですね〜。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "では、IDEAはどうですか？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_sad_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "アハハ〜…私たちがUNIVERSEの曲をやろうとしたんですけど、 \nこれはこれは…奪われちゃったんですね。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Hoshi_2_1_Aa_panic",
+            "CenterCharacterTwo": "",
+            "Chat": "（ぞっとした…危うく原曲よりはるかに良かったみたいなコメントが\n殺到するところだった…）",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Desert_powerful",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "こうなった以上、パワフルなものにしよう。\n皇帝の行進を始めようぜ。",
+            "ChatWindow": "CW_Desert2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "～…いいよ。\nでは私たちは大胆に…はい、IDEAはKNOXの曲をカバーします。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "それではKNOXは自然にENCORAの曲をカバーすることになりましたね。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(r)Ifrit_balkun",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "マジかよ？？ENCORAは頭にデカいリボンつけても可愛いグループ\nなんだけどうちは違うんだよ！",
+            "ChatWindow": "CW_Ifrit2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Yuuto_half_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "いや、まあ··· 私たちもデカいリボン付けても別に可愛くはないんですけど…",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "はは、あくまで相手の曲をカバーするだけで、アレンジや再解釈の制限は\nありませんので、必ずしも既存のコンセプトについていく必要はありません。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "それぞれの曲がどんな形で生まれ変わるのか、 とても楽しみです！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Jeyun_Close_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "メロディーだけ取って悪ガキコンセプトいかないとなー。",
+            "ChatWindow": "CW_Jeyun",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "では、競演順は…先ほどの順番で、各グループが選んだ「グループ」の順番にしてみましょう。\n最初のRECORDは「UNIVERSE」を選びましたし、次にENCORAは「IDEA」を選びましたね。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "つまり〜...UNIVERSE、IDEA、RECORD、KNOX、ENCORAの順番で\n行きます！！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_Ichiban",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "うわああっ！！一番目は本当にもうやめたいんだ！！！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_ONEGAI",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "お願いしますぅぅ！！！ このままじゃUNIVERSEは完全に忘れ\nちゃいますよ！！",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Aaron_close_laugh",
+            "CenterCharacterTwo": "",
+            "Chat": "UNIVERSE、スタート上手いな～…（笑）",
+            "ChatWindow": "CW_Aaron",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "カバー相手と競演順が決まりましたので、\nそれでは当日お会いしましょう~！！",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "原作者のアドバイスを聞くことも大きなヒントになると思います！ \nお互いにコミュニケーションしながら素敵な舞台を準備してください〜！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "確かに経験豊富なグループを選んだから曲の選択肢がたくさんあるな〜…",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "会議室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "そうだね。ミニアルバムの収録曲もやる価値はある…",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "RECORD先輩たちに頼んで、いくつかおすすめを聞いてみる？ \n俺たちに合いそうな曲をいくつか選んでほしいと…",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_1_1_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…直接頼むか？",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_1_1_o",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "何か問題でも？",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "(コンコン)",
+            "ChatWindow": "CW_RECORD",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "こんにちは、UNIVERSE。うち、RECORDだけど入ってもいい？\nアドバイスをもらいたくて来たんだけど時間大丈夫？",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_2_odoroki_o_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "わ、私たちが先輩たちにアドバイスできることがありますでしょうか…？！？！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_1_1_Aa_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "とにかく、時間は大丈夫です。入ってください。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Lucas_zyaa",
+            "CenterCharacterTwo": "",
+            "Chat": "(バタン) じゃぁ〜...",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Sizma_2_odoroki_um_pain_shadow",
+            "CenterCharacterTwo": "",
+            "Chat": "(びくっ、)",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Ray_2_1_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "ルカス、ドアをそっと開けなよ。\nUNIVERSE、曲は決まった？",
+            "ChatWindow": "CW_Ray2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_sad_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あwwごめん。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Philip_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うちは君たちとの2枚目のアルバムのタイトル曲をやることに決めたんだ。",
+            "ChatWindow": "CW_Philip2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_1_1_he",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "君たちは5人で、僕たちは4人だから、パートの配分のアドバイスをもらいに来たんだよね〜。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "まず歌詞をプリントアウトして、それぞれのパートを仮でざっくり配分してみたけど、 ここここ、ラップパートを省いちゃおうか？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Sizma_sad_half_um_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "（そこは…俺のラップバート…）",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_3_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "君たちはラッパーが2人いるけど、俺たちは俺一人だから。\nだったらメインラッパーの分量だけやる方がいいと思ってねー。",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_3_half_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "いいだろ？シズマ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_2_1_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい…確かに、一人だけやるならメインラッパーであるイヴァンのパートだけやるのがいいですね…\n私はサブボーカルでもあるので…",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_1_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "〜...君たちの意見はどう？省いても自然になるかな？",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_2_half_um_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "… …まぁ、違和感はないと思いますけど… \n（でもなんか…ちょっとあれだな。悪意的だと思うけど。）",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_2_1_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…私もホシの言うとおりだと思います。\n（でもシズマのパートだけ省いて進めると…なんか存在感を消すような気がする。気まずい。）",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_1_half_um",
+            "RightCharacter": "(R)Valentin_3_half_e",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "… …",
+            "ChatWindow": "CW_Ivan+Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Legdan_1_close_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "…ゴホッ、\nそれ以外にもコンセプトのところをー…",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Ray_2_1_wa",
+            "CenterCharacterTwo": "",
+            "Chat": "ありがとう〜また後で来るね〜UNIVERSE、ファイトだよ～…",
+            "ChatWindow": "CW_Ray",
+            "Place": "会議室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_1_o",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、曲のおすすめを頼まれてるのを忘れてた！！ \nうちも後でアドバイスもらいに行こう。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_angry_close_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...ごめん、\n今回の4次競演。俺を除いて4人でやってほしいんだ。\nどうせRECORDも4人組だから、俺が抜ける方が練習しやすいかもしれないじゃん。",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_odoroki_o_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "え？何で？",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Sizma_2_half_a_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "...俺、実は、ルカス先輩とは会えないんだよ。\n... ...ちょっとトラウマなんだ。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "(R)Ivan_1_close_a",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "なるほど。何か知り合いのようだったけど。 \n…二人はどんな関係なんだ？",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "同じ高校の先輩後輩。\nその先輩はちょっと...学生たちをたくさんいじめてたんだ。 \n俺もやられたし。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_yokohalf_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...同じ学校、いや...その地域出身なら皆知ってるはずだ。\nルカス先輩は校内暴力の加害者ってことさ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_1_1_e",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、前にも一度校内暴力の話題があったんだけど…\n··· それは事実じゃないって 話が出たじゃん。 \nむしろ自分の方が被害者だったと···",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "暴露した流布者は結局「うわさを事実確認もなしに好奇心で掲示した」と供述したって？ そして事務所から警察に通報されたじゃん。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_2_1_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、それ、俺も昔に聞いたよ。...一体何が事実だ？",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_half_ek",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "事務所の処理がうますぎた結果だ。\n...つまり ルカスをすごくよく庇ってくれたことだ、 …鳥肌が立つくらいに。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それで呆れるけど、すべてを知っている俺は…··· どうしても「彼の校内暴力は事実だ」とは言えなかった。\n 力がないうえに、同じ業種の人じゃん。 ここの業界は狭すぎるよ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺も被害者の一人だったのに…",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_sad_1_um",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…シズマ。",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_yokohalf_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "高校時代を思い出すと呼吸が苦しくなる。\n俺は今でもドアが大きく閉まる音を聞くと胸がドキッとするんだ…",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_1_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "君たちは3年生男子トイレで髪を掴まれたまま膝をついて殴られたことある？\nお金を貸してほしいという言葉で脅迫されて周期的にお金を奪われたことは？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_1_a_pain_shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...あの人は、自分が殴ったことを自慢して、俺が好きだった子に俺が殴られたことを嘲弄するように言ったよ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_2_1_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "同じ練習生だからもっといじめられたのかな...\n牽制されたみたい。",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_half_um_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "でも、俺が先輩を訴えるなんて・・・絶対無理だよ。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_1_1_um_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "… …",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "だから、その人とこれからずっと会うくらいなら、\n 今俺が抜けた方がいいと思うんだ。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_angry_half_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "シズマ、俺たちが助けてあげる。 \n悪いのはあっちじゃん？悔しくない？それに俺たちはシズマを除外するつもりは全然ないし、",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "何より今解決しないと、シズマの方がずっとしんどくなると思うよ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Valentin_sad_a_e",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "芸能界にずっといたら、今後絶対また会うのに、\nその時はどうするつもりなの？この際もう一度暴露しようよ。",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...これはちょっと悪い考えかもしれないけど、事実かどうかに関係なく、イシューになればこの番組から降板されるよ？",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "事実と認められるまでは時間がかかっても、イシューになれば君と一時的に隔離させることができる。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_angry_odoroki_AAA_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "よ、余計なこと言うな！どうやって？自分でやるのか他の人に\n頼んでやるのか、とにかくこっちから最初に暴露するのはリスクが大きいよ。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_angry_half_AAA_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "もともとこの業界は狭すぎたし、位階秩序があまりにも明確で「先輩グループを壊した後輩グループ」と烙印を押されたら仕事が減るのはもちろん事務所が俺たちを解散させるかもしれない！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_angry_half_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "先輩が後輩に被害を受けたら報復できるけど、\n後輩が先輩に？それは自分が我慢する以外に方法がないんだ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Valentin_sad_close_ek_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...くそっ...",
+            "ChatWindow": "CW_Valentin2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "後で放送で言及されて、同じ学校出身じゃないかという質問が来ても、",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "「俺は全然知らなかった、ただアイドルを目指していてカッコイイ人だと思っただけだ。」…\nそんな風に答えなければならない。\nたとえ俺が被害者だとしても。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_sad_half_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "じゃあどうすれば…",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_2_half_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "仕方がない。...匿名の誰かが、また暴露文を投稿する以外に方法はない。\nこれが現実なんだ。漫画やアニメのように俺たちの努力でドラマティックな変化を起こすなんて無理だよ。",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_sad_1_um",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "... ...じゃあ...",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_sad_1_Aa_",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "仕方ないね。わかった。健康のことを言い訳にして、四次競演は休むことに\nしよう。自分のことを一番大切にして。無理をするとパニック障害になるかもしれないから。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "もしかしたらそんなことしなくてもいいかもよ。",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_2_odoroki_o_wet",
+            "RightCharacter": "(R)Sizma_2_odoroki_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "え？どういうこと？",
+            "ChatWindow": "CW_Hoshi+Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_1_close_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…あまり話したくなかったんだけど、\n俺、エゴサーチは結構する方なんだ。",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_1_half_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "前に一度話題になったと言っただろ？ 証言もいくつか出てきてさ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "논란1-1",
+            "Chat": "（スマホの画面を見せる）",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "もしかしたら、二次暴露の火種はもう燃えているかもしれないな。",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "논란1-2",
+            "Chat": "…同時に、ファンダムの争いになるかもしれない。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_1_half_niya",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "RECORDがUNIVERSEの曲を選び、 \nUNIVERSEがRECORDを選んだことが... \n...この解決策の端緒になったかもしれない。（にやり）",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Sizma_2_odoroki_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "없음",
+            "Chat": "…!!!",
+            "ChatWindow": "CW_Sizma2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_angry_half_Aa_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...グループ選択を間違えたのかと思ったけど、それはまた違ったんだな。",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_1_1_doya",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "むしろこのグループがくっついて、また話が出ることができたんだ。 \n...もうその火種が大きくなってほしいな。",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_sad_1_Aa_",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それでもまた会うことがあったら、\nできるだけ会わないようにしてあげるね、シズマ。",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_half_wa_tear",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…あ、ありがとう…！",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_1_1_Aa",
+            "RightCharacter": "Legdan_1_1_Aa",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "UNIVERSE、私たちが何か手伝うことない？",
+            "ChatWindow": "CW_Lucas+Legdan",
+            "Place": "練習室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)UNIVERSE_daizyobu",
+            "CenterCharacterTwo": "",
+            "Chat": "大丈夫です！私たちでやります。",
+            "ChatWindow": "CW_Universe",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_1_1_Aa",
+            "RightCharacter": "Philip_1_1_Aa",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "君たち、ちょっと時間ある？",
+            "ChatWindow": "CW_Lucas+ Philip",
+            "Place": "録音室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)UNIVERSE_daizyobu",
+            "CenterCharacterTwo": "",
+            "Chat": "今はちょっと無理です、30分後なら…",
+            "ChatWindow": "CW_Universe",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_3_half_a",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "おい、シズマ。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "狭い廊下",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_odoroki_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "(びくっ)...はいっ、",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_angry_half_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "先輩に会ったら挨拶からするべきじゃねーか。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_yoko_a_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "こん、こんにちは先輩…",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_angry_half_he",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はあ...高校の頃から変わらないバカみたいな奴だな(笑)\n最近俺を避けてるじゃないか？無視するのか？",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_e_pain",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ち、違いますっ、",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_angry_half_e_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ちゃんと答えろよ。\n（指で鎖骨を強く押し付ける）\nあいつら君をおれから引き離そうとしてるみたいだったぞ。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_chigai",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "（うぐ...）違います…っ…！",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Lucas_angry_half_niya_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "鈍臭いな~今回俺がお前が俺と比べられないようにお前のパートを外してやったから感謝して～...\nお前サブラッパーだから、俺のパートはある程度やってると思ってるけど、\n意地悪くすると殺すからな。",
+            "ChatWindow": "CW_Lucas",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それから... …\n自分でちゃんとしよう？\nアイドル活動続けたいなら。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_1_a_pain_shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "………",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_1_a_pain_shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "…はい…",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Ivan_1_odoroki_e_wet",
+            "CenterCharacterTwo": "",
+            "Chat": "…!",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_3_1_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、リグデン先輩だ。あの、先輩…！",
+            "ChatWindow": "CW_Ivan",
+            "Place": "テラスの休憩スペース",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "おっ、UNIVERSEの…イヴァンだったけ。こんにちは。何か用でも？",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_sad_half_e_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "その、……いえ、何でもありません。 \n（そう、この業界で後輩のくせに直接に葛藤を生じさせるのは…自爆だ。）",
+            "ChatWindow": "CW_Ivan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_3_half_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "~♪ !!!",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "数日後、RECORD録音室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "うーん、まあ、いいよ。ルカス、録音お疲れ様。\nそれで、話があるんだけど...まず出て。",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_1_odoroki_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "（OKと言われた...？思ってたよりもあんまり良くないと思ってもう一回するかと思ったけど、なんだ？）\nは？まぁ…わかった。\nそれで、話が何なんだ？",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "お前、また何かやらかしたのか？",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_1_1_ek",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ちくしょう...どういう意味だ？",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "논란2-1",
+            "Chat": "（携帯を差し出して）これ見ろよ。",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...はあ、何で今さら...",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_1_1_shadow_wet",
+            "RightCharacter": "Legdan_angry_half_AAA_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "없음",
+            "Chat": "お前、前回の論議で終わりじゃなかったのか？\n一体高校生の頃何をやってたんだ！\n一度は隠すことができるけど、二度目は難しいんだよ！",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_angry_half_AAA_wet+shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "くそっ！こいつらはなんで昔のことで騒ぐんだ！",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "논란2-2",
+            "Chat": "それから、お前...",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...UNIVERSEのシズマにも何をしたんだ？",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_half_ek_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "없음",
+            "Chat": "あの子のパートを削除したのを、 本人の前で堂々と話すところから見抜いてたんだ！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_angry_half_AAA_wet+shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "... ... ...あ、とにかく昔のことだよ！\n何でいきなり暴露されるんだ？...…あいつが主導したのか？",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_angry_odoroki_niya_wet+shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…はは...は！そうだ！シズマが主導したのは確かだ!!! ...もともとアイドル活動なんてできないように足か首を折った方がよかったのに...",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_angry_half_ek_wet+shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あいつ、俺がUNIVERSEに指名するって言った時から震えてたのに...",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_half_AAA_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ルカスてめぇ！！！",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_half_a_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "お前、あの子がお前を怖がるのを見たいからUNIVERSEを選んだんだのか？\nしっかりしろ。今回暴露が始まったのはシズマが主導したのではなく、 お前自身がUNIVERSEとの接点を直接作ったからだよ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_angry_odoroki_AAA_wet+shadow",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…じゃぁ俺が何をすればいいんだよ！！",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はぁ···  「UNIVERSEは「ボーイズ・エンペラーズ・ウォー」の利益のために扇動を始めた加害者だ」と今からでも記事を作れば··· …、\nとりあえず早く覆い隠せてほしいと事務所に連絡を···",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_close_a_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…\nいっそ、\n事件がもっと大きくなる前にこの番組から降板しろ。",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_sad_odoroki_AAA_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "は？",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_half_a_shadow+wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "そして謝罪文書いた後、数ヵ月間自粛してまた戻ってきな。",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_sad_1_AAA_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "おい、それがリーダーが言うことかよ！？",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_close_AAA_shadow",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "全部お前とチームのために言っているんだ！！！",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_1_AAA_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "数ヶ月自粛してたら人々はきっと忘れる。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_1_close_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "事件が大きくなってグループから脱退する前に、今すぐ番組から降板して謝罪文書いて後、数ヶ月間自粛するのが今の状況では最善だと思うんだ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Lucas_sad_smile_AAA_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ああ、RECORDはもう終わりだ！",
+            "ChatWindow": "CW_Lucas2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Legdan_angry_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ルカス。\n終わったのは俺たちじゃなく、お前の方だ。",
+            "ChatWindow": "CW_Legdan",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ただいま。",
+            "ChatWindow": "CW_Legdan2",
+            "Place": "RECORD会議室",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ray_1_1_wa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "やぁ、来たか。",
+            "ChatWindow": "CW_Ray",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Philip_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ルカスは？",
+            "ChatWindow": "CW_Philip",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_close_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ・エンペラーズ・ウォー」を降板した。\n俺が議論がもっと大きくなる前に降板しろと言ったんだ。\n...四次競演は3人でやろう。\n君たちは過去に何もなかったのか？",
+            "ChatWindow": "CW_Legdan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ray_sad_half_a_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、…···まさか過去の校内暴力の議論、また起こったか？ \nあの子は本当に···",
+            "ChatWindow": "CW_Ray",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Philip_sad_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "心配するな、僕たちは清廉だ。はは、むしろ3人が奇数だから安定感はあるだろうね。",
+            "ChatWindow": "CW_Philip",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_1_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "それならいい。おかげで準備したもののほとんどをやり直さなければならないけどな...\nでも、最善を尽くそう。",
+            "ChatWindow": "CW_Legdan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Legdan_1_close_um",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "（過去にやったことが多ければ、どれだけ隠そうとも結局真実が明るみに出るものだ。）\n（今学校で楽しく活動している一派たちも、自分たちの将来を台無しにすることがあるということを見て学んだだろう...）",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "はいっ、いよいよ4次競演の当日となりました。\n もうファイナルラウンドだけが残っています。",
+            "ChatWindow": "CW_MC",
+            "Place": "四次競演当日",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "相手の曲がどのように生まれ変わるのか本当に楽しみです。\n グループそれぞれの魅力をー",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_2_half_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "ルカス先輩は？（ひそひそ）",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_1_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "校内暴力論議で降板したんだって。",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Ivan_3_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ほら、俺が火種が大きくなるって言ったじゃん？",
+            "ChatWindow": "CW_Ivan2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…受ける関心はグループの認知度と比例する。RECORDならネチズンたちが普通ただではおかないんだ。\n そして…あの人は過去の戦績がかなり派手みたい。暴露者がずーっと出てくるのを見ると。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_close_Aa_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…はあ、よかった…··· … … でも、報復されるんじゃないかと思って、\nちょっと怖いね。 そっちのファンだとか、その人だとか···..",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_sad_smile_Aa",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "その時は俺たちがちゃんと助けるから。 \n あまり先のことは気にしないようにしよう。 シズマは悪いこと何もしてないじゃん。",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "ー5曲を3人でどのように消化するかが楽しみです！",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Valentin_2_1_a_wet",
+            "RightCharacter": "",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "ところで、降板して一切の言及もないみたいね。\n元々3人組だったように進行するね…",
+            "ChatWindow": "CW_Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Shunpei_2_odoroki_o_wet",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ちょっと恐ろしいな。静かに存在を消してしまうなんて...",
+            "ChatWindow": "CW_Shunpei2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_3_1_doya",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺たちは俺たちのやり方で上手くやればいいんだ。 \n今回も最初の順番だから...周りに流されずに普段通りに頑張ってこよう。",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "シズマが言った通り、俺たちは想像以上に上手くやれるから。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Sizma_sad_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "…うん！",
+            "ChatWindow": "CW_Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺たち、これから芸能界で力を··· 影響力を育てよう。\n誰にも触れられないように。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "UNIVERSE、スタンバイしてください。",
+            "ChatWindow": "CW_staff",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_1_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...じゃぁ、行こう！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        }
+    ]
 }

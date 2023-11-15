@@ -1,94 +1,704 @@
 {
-  "Story":[
-    {
-      "Num": 1,
-      "LeftCharacter": "나",
-      "RightCharacter": "없음",
-      "Chat": "이것은 실험입니다 실험입니다 실험입니다 실험입니다",
-      "ChatWindow": "나",
-      "Place": "Room",
-      "BGM": "현재"
-    },
-    {
-      "Num": 2,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "하기가 귀찮네요",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 3,
-      "LeftCharacter": "",
-      "RightCharacter": "너",
-      "Chat": "어처피 해야함",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 4,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "그렇긴 함",
-      "ChatWindow": "나",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 5,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "배고파",
-      "ChatWindow": "너",
-      "Place": "",
-      "BGM": "급박"
-    },
-    {
-      "Num": 6,
-      "LeftCharacter": "우리",
-      "RightCharacter": "너희",
-      "Chat": "배고프니까 뭐 먹을래",
-      "ChatWindow": "우리",
-      "Place": "Stage",
-      "BGM": ""
-    },
-    {
-      "Num": 7,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "초밥",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 8,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "피자",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 9,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "(걍 다 먹고 싶다)",
-      "ChatWindow": "",
-      "Place": "",
-      "BGM": ""
-    },
-    {
-      "Num": 10,
-      "LeftCharacter": "",
-      "RightCharacter": "",
-      "Chat": "난 떡볶이",
-      "ChatWindow": "너희",
-      "Place": "",
-      "BGM": ""
-    }
-  ]
+    "Story": [
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "없음",
+            "Chat": "さて、もう王座への旅路に終止符を打つ時間になりました。\n最終発表を前に、4チームの感想発表を聞いてみたいと思います。",
+            "ChatWindow": "CW_MC",
+            "Place": "ファイナル競演終了",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_a",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "まず、UNIVERSEのホシさん。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_1_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あ、はい。約3ヵ月間、一緒に過ごしてくださったメンバーたちとファンの方々、 視聴者の方々に感謝しています。\nこういう先輩たちと一緒にステージを作ることができたというのが末っ子チームとして光栄でした。本当に自信もたくさん得たし、先輩たちに愛もたくさんもらったし···",
+            "ChatWindow": "CW_Hoshi2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "(R)Hoshi_1_smile_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "何よりUNIVERSEの力量をきちんと発揮できる機会になったと思います。 \n貴重な機会をいただきありがとうございます！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_a2",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい〜！次はENCORAのゆうとさんの感想も聞いてみましょうか。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Yuuto_1_a",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "今まで一緒にしてくれたメンバーたちと 「ボーイズ·エンペラーズ·ウォー」のスタッフの方々、本当にお疲れ様でした。 \n…ちょっと数えてみたんですけど、私たちは2年半という時間の間に 計25回のステージを準備しました。",
+            "ChatWindow": "CW_Yuuto",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Yuuto_Close_wa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ·エンペラーズ·ウォー」を通じて、準備するごとに団結できたし、自分の発展と限界に気づき、少し謙虚になれる機会でした。忘れられない思い出をプレゼントしてくださってありがとうございます！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_smile",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい！次はKNOXのイフリートさんの感想をお聞きください。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ifrit_angry_aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "短くて長かったです。 数多くの舞台や縁、ハプニングがありました。 \n …そして、面白かったです！ 1000%楽しみました！  \n「ボーイズ·エンペラーズ·ウォー」が私たちノックスの新しい転換点になったようで、心から幸せでした。",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ifrit_daisuki",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "おかげさまで今年も充実した時間を過ごせたと思います。  KNOX本当にみんなお疲れ様。愛してるっ！！！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "MC_a",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい！次は最後にIDEAのシオンさんの感想を聞いてみましょう 。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_1_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "喜んで信じてついてきてくれたメンバーたち、本当にありがとう。     \nそしてスタッフの方々、コーディネーターの方々、IDEAを応援してくださった視聴者の方々など、約3ヶ月間一緒にしてくださったすべての方々に本当に感謝します。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "本当に… 競演ごとにすべてのアイディアと力量を注ぎ込んで最善を尽くしました。そのおかげで短期間で実力がぐんと伸びたのが実感できました。  \n短期間で伸びたければ「ボーイズ·エンペラーズ·ウォー」に 出たらいいと思います。(笑)",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "はい、私も一緒に嬉しくなりました。\nもちろんサバイバルというのは1位が決まるしかない、そんな競争の場ですが、\nただ一瞬も無駄にせずに最善を尽くした皆さんの姿を見て、私も歌手として心が熱くなる瞬間が多かったです。\nこれからも出演者のすべてのチームの将来を心から応援していきます。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_e",
+            "CenterCharacterTwo": "",
+            "Chat": "では、\n最後の発表を始めたいと思います。",
+            "ChatWindow": "CW_MC",
+            "Place": "最終優勝者発表",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "ついに新しい最終皇帝を発表する時間が近づいてきました。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ·エンペラーズ·ウォー」の真の皇帝は、単独のリアリティ ショーの編成と海外のスペシャル パフォーマンスを報酬として受け取ります。\nこの栄光の王座につくことになったチームは誰になるのか。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "現在、エンペラーの名前が私の手の中にあります。\nでは遅滞なく発表いたします。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_e",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ·エンペラーズ·ウォー」の最終優勝チームは、",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "IDEAとUNIVERSEです、おめでとうございます！！！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_3_odoroki_AAA_dere",
+            "RightCharacter": "Xion_2_odoroki_a",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "!!!",
+            "ChatWindow": "CW_Hoshi+Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "파이널 결과",
+            "Chat": "IDEAは累積点数48450点で全体順位1位を達成し、",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "UNIVERSEは専門家評価20%、生放送SMS投票80%でいずれも高い点数を受け、ファイナルラウンドの点数1位を獲得しました！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_half_Aa_tear",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "(うるうる…)1位···!!",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Ivan_2_odoroki_AAA_dere",
+            "RightCharacter": "(R)Valentin_ICHIII",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "わぁ！！！ 俺たちが1位だって！？",
+            "ChatWindow": "CW_Ivan+Valentin",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Shunpei_ichi",
+            "RightCharacter": "(R)Sizma_sad_odoroki_wa_dere",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "1位だって···。俺たちが···!!",
+            "ChatWindow": "CW_Shunpei+Sizma",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)Xion_3_half_Aa_dere",
+            "CenterCharacterTwo": "",
+            "Chat": "…!!! ファイナルでは勝てなかったんだ、 \nでも…··· それでいいよ。 最終的に優勝したからいいんだ！！",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)IDEA_Wai",
+            "CenterCharacterTwo": "",
+            "Chat": "やり遂げると思ったんだよ！！！ わーい！！！",
+            "ChatWindow": "CW_IDEA",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "없음",
+            "Chat": "はい、改めて両チームとも おめでとうございます。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Yuuto_Close_wa",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "本当にお疲れ様！！！",
+            "ChatWindow": "CW_Yuuto2",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Ifrit_saikou",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "マジ最高だった！ この他に何も言葉が見つからないよ！",
+            "ChatWindow": "CW_Ifrit",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "今、他のチームに 心から祝ってもらっています。\n自分のことのように喜んでくれる姿が本当に格好いいですね。\n優勝した2チームは前に出てください。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "皆さん、優勝した両チームに 熱い拍手をお願いします！\n 優勝した感想を聞いてみましょう。\n IDEAのリーダーシオンさん、お願いします。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_basic_1_Aa",
+            "CenterCharacterTwo": "",
+            "Chat": "先に挨拶からします。 Stay with Idea！ こんにちは、IDEAです。 \n私たちは··· チームとして競演で本当にかっこよく1位になるのが目標でした。 \nたとえ1位になれなかったとしても、それぞれメンバーの実力、努力、センス…IDEAのすべてを見せたかったです。",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_3_half_Aa",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ·エンペラーズ·ウォー」は終わりましたが、私たちIDEAは続けます。  \n私たちが来年デビューしてから 7年目になるんです。 ここで終わらず、8年、10年、15年以上長く活動して、より良い歌でお返しします。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "はい、次は2番目の優勝チームであり末っ子チームUNIVERSEのリーダーホシさん、 \n優勝の感想をお願いします。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_1_1_Aa",
+            "CenterCharacterTwo": "",
+            "Chat": "俺たちも挨拶からしようかな？ ハハ。We are the Universe！ こんにちは、 UNIVERSEです。 \nえっと··· 私たちが1次競演の時にちょうど4位になったんですが、その時はかなり満足でした。 ビリが当然だと思ったんですよ。",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_3_1_Aa",
+            "CenterCharacterTwo": "",
+            "Chat": "でもだんだんそれに満足できず、「あ、私たちはここで止まるようなチームじゃないんだな」という考えと共に自信がついて、本当に精一杯努力して1位になろうと決心しました。 欲も一緒にできたんですよ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_3_smile_Aa_dere",
+            "CenterCharacterTwo": "",
+            "Chat": "一番年次も少ない上に下位を2回も占めた私たちが1位だなんて··· \nそれをやり遂げたというのが不思議です。 皆さん、UNIVERSEはこれから始まります。\n日々発展していくUNIVERSE、絶対失望させません。 これからもたくさんの愛をお願いします！！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "はい！改めて、本当におめでとうございます。\n「ボーイズ·エンペラーズ·ウォー」、こうしてUNIVERSEとIDEAの最終優勝で幕を閉じることになりました。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ·エンペラーズ·ウォー」の完走まで多くのステージを作ってくださった すべてのアーティストの方々に大きな拍手を送ります！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "(パチパチパチパチ)",
+            "ChatWindow": "CW_Everybody",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "では、座っていた他のチームの方もステージの中央に来てください。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "本当にお疲れ様でした！！！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Kinder_close_a",
+            "RightCharacter": "cash_tanosi",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "みなさんお疲れ様でした！！！",
+            "ChatWindow": "CW_Kinder+Cash",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "(L)Wataru_OOooo",
+            "RightCharacter": "Director_close_o",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "会えて本当に楽しかったです！",
+            "ChatWindow": "CW_Wataru+Director",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "(c)MC_smile",
+            "CenterCharacterTwo": "",
+            "Chat": "心からお祝いする顔や「ボーイズ·エンペラーズ·ウォー」が 終わるのを寂しく思っている顔、そんな皆を見ながら僕も万感の思いです。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_smile_sad",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ·エンペラーズ·ウォー」の争いに参加してくださった視聴者の皆様にもう一度感謝申し上げます。\nこれから「ボーイズ·エンペラーズ·ウォー」に出演したすべてのアーティストに多くの愛と応援をお願いします。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "私はここで挨拶したいと思います。",
+            "ChatWindow": "CW_MC",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)MC_a2",
+            "CenterCharacterTwo": "",
+            "Chat": "では皆さん、最後に叫んでみましょう。 \n「ボーイズ·エンペラーズ·ウォー」の末っ子チームリーダーであるホシさんが「王座を獲得せよ！」 と言ったら、皆さんが「ボーイズ·エンペラーズ·ウォー！」と 言ってみましょうか。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_1_smile_Aa",
+            "CenterCharacterTwo": "",
+            "Chat": "ハハッ···はい！ \n王座を獲得せよ！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "없음",
+            "Chat": "ボーイズ·エンペラーズ·ウォー！",
+            "ChatWindow": "CW_Everybody",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Xion_2_smile_Aa",
+            "CenterCharacterTwo": "",
+            "Chat": "バイバイ~",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "(c)Hoshi_1_1_Aa",
+            "CenterCharacterTwo": "",
+            "Chat": "お疲れさまでした~~!!!!",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "デビュー後、初のサバイバル競演番組「ボーイズ·エンペラーズ·ウォー」が終映された。",
+            "ChatWindow": "",
+            "Place": "番組の終わり、その後",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "「ボーイズ·エンペラーズ·ウォー」放映以後、番組に参加した6チームともファン層が広がり、音源やアルバムなどですべてキャリアハイを成し遂げた。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "방송국",
+            "Chat": "特にECLIPSEは「ボーイズ·エンペラーズ·ウォー」を締め切った後に発表したアルバムで生放送音楽番組「K-POPショー！」1位を占め、\nアンコラも他の音楽番組「Music・Cart」1位から2日後「Cカウントダウン」で1位になり、デビュー以来初の地上波1位を達成した。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "KNOXもジェユン先輩が軍隊に行った後、完全体ではなく4人組で活動するにもかかわらず、ケーブル音楽放送1位を達成した。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "しかし、「ボーイズ·エンペラーズ·ウォー」の後は、こんなきれいなことばかりではなかった。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "길거리샷",
+            "Chat": "一次競演録画当時、舞台製作費上限を50万円に設定したが、一部グループで予算を越えるセットを使用したという事実が一歩遅れて知らされ公正性論難が提起された。制作側のコミュニケーションの不在で3チームだけに該当内容が伝えられ、結局製作側は公正性論難に対して謝った。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "また、ルカス先輩の校内暴力イシューでシズマにインタビューが入ってきたが、シズマはこの事態に対して全く知らないことだと遺憾を表わしたにもかかわらず、RECORDとUNIVERSEのファンダム間の対立が激しくなった···いざグループ同士の仲はいいのに。\nあ、もちろんその3人のみだ！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "そしてー…「ボーイズ·エンペラーズ·ウォー」はSNSの反応で好評も多かったが、その他は、\n「様々なグループが色んな公演ができる」という企画意図とは異なり、刺激的な「脱落制度」を入れた理由は何かという反応がほとんどだ···",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "카페",
+            "Chat": "とにかく、「ボーイズ·エンペラーズ·ウォー」以後、UNIVERSEとIDEAはバラエティ単独番組収録を準備中だ。ついでに海外コンサートの時に使う音源も俺とシオン先輩2人で準備中だ。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "あっ、そういえば、IDEAは事務所側と全員双方で再契約の意思を明らかにし、契約日だけを待っている状態だ！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "俺たちUNIVERSEは「ボーイズ·エンペラーズ·ウォー」参加前より確実に有名になり、放送渉外も音楽放送、芸能問わず非常に多く入ってきている。 \nおかげさまでスケジュールに隙がない···海外のファンも結構できたから、お兄ちゃんが俺のことを分かってくれるかもしれない。",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_sad_1_Aa_",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "コンサートに来てほしいのは 大きな欲かな？",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "（チャット通知音が鳴る）",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "",
+            "RightCharacter": "Xion_basic_half_Aa",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "[ホシくん、ちょっと来てデモ曲聞いてみる？]",
+            "ChatWindow": "CW_Xion",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "Hoshi_1_smile_Aa",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "はい、行きます！",
+            "ChatWindow": "CW_Hoshi",
+            "Place": "",
+            "BGM": ""
+        },
+        {
+            "LeftCharacter": "없음",
+            "RightCharacter": "없음",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "...とにかく俺は最近、幸せだ！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        }
+    ]
 }
