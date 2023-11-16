@@ -30,6 +30,8 @@ public class MoveController : MonoBehaviour
 
 	public GameObject[] StageLight; // 스테이지 불
 
+	public Button PlayButton;
+
     public static MoveController Instance { get; private set; }
 
     private void Awake()
@@ -44,7 +46,8 @@ public class MoveController : MonoBehaviour
     }
     private void Start() 
     {
-		MainAudioManager.Instance.PlayBGM(BGMName);
+        PlayButton.interactable = true;
+        MainAudioManager.Instance.PlayBGM(BGMName);
     }
 
     //Graphic & Input Updates	
@@ -52,13 +55,17 @@ public class MoveController : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentLevel+1<=5 && !isMoving && UIStage.Instance.isChange==0)
         {
-			MainAudioManager.Instance.PlaySFX(SFXMove);
+            PlayButton.interactable = false;
+            MainAudioManager.Instance.StopMusicBGM();
+            MainAudioManager.Instance.PlaySFX(SFXMove);
             UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
             SetIsWalk(true, false);
 			StartMoving();
 		}
 		else if(Input.GetKeyDown(KeyCode.LeftArrow) && CurrentLevel - 1 > 0 && !isMoving && UIStage.Instance.isChange == 0)
         {
+            PlayButton.interactable = false;
+            MainAudioManager.Instance.StopMusicBGM();
             MainAudioManager.Instance.PlaySFX(SFXMove);
             UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
             SetIsWalk(true,true);
@@ -146,7 +153,8 @@ public class MoveController : MonoBehaviour
 
 			if (fractionOfJourney >= 1.0f)
 			{
-				isMoving = false;
+                PlayButton.interactable = true;
+                isMoving = false;
                 UIStage.Instance.isChange = 2;
                 animator.SetBool("IsWalk", false);
 				UIStage.Instance.TitleUI.sprite = Resources.Load<Sprite>("UI/SongTitle0" + CurrentLevel);

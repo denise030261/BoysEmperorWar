@@ -157,10 +157,10 @@ RectTransform:
   m_Father: {fileID: 2021249980}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -500, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 375, y: -400}
+  m_SizeDelta: {x: 600, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &16606516
 MonoBehaviour:
@@ -2142,6 +2142,7 @@ MonoBehaviour:
   - {fileID: 1334019092}
   - {fileID: 2095600011}
   - {fileID: 1492166599}
+  PlayButton: {fileID: 16606516}
 --- !u!95 &1574224936
 Animator:
   serializedVersion: 5

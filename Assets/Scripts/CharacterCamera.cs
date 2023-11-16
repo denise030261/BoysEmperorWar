@@ -42,7 +42,6 @@ public class CharacterCamera : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentCamera + 1 <= 5 
             && !isMoving && !MoveController.Instance.isMoving)
 		{
-            MainAudioManager.Instance.StopMusicBGM();
             PreviousCamera = CurrentCamera;
 			CurrentCamera++;
             StartMoving();
@@ -50,7 +49,6 @@ public class CharacterCamera : MonoBehaviour
 		else if (Input.GetKeyDown(KeyCode.LeftArrow) && CurrentCamera - 1 > 0 
             && !isMoving && !MoveController.Instance.isMoving)
 		{
-            MainAudioManager.Instance.StopMusicBGM();
             PreviousCamera = CurrentCamera;
             CurrentCamera--;
             StartMoving();
