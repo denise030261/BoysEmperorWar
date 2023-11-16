@@ -7,7 +7,10 @@ public class MainAudioManager : MonoBehaviour
     public static MainAudioManager Instance { get; private set; } = null;
 
     public AudioSource bgmSource;
+    public AudioSource musicSource;
     public AudioSource[] sfxSource;
+
+    private bool IsPlaying = false;
 
     private void Awake()
     {
@@ -24,7 +27,15 @@ public class MainAudioManager : MonoBehaviour
 
     private void Update()
     {
-        bgmSource.volume = PlayerPrefs.GetFloat("BGM", 0.5f);
+        if (!IsPlaying)
+        {
+            bgmSource.volume = PlayerPrefs.GetFloat("BGM", 0.5f);
+        }
+        else
+        {
+            musicSource.volume = PlayerPrefs.GetFloat("BGM", 0.5f);
+        }
+
         for (int i = 0; i < sfxSource.Length; ++i)
         {
             if (sfxSource[i].isPlaying == false)
@@ -47,6 +58,26 @@ public class MainAudioManager : MonoBehaviour
         {
             Debug.LogError("BGM이 나오지 않습니다");
         }
+    }
+
+    public void PlayMusicBGM(int Level)
+    {
+        IsPlaying = true;
+
+        AudioClip bgmClip = Resources.Load<AudioClip>("Music/BGM/" + Level.ToString());
+
+        bgmSource.volume = 0;
+
+        musicSource.volume = PlayerPrefs.GetFloat("BGM", 0.5f);
+        musicSource.clip = bgmClip;
+        musicSource.Play();
+    }
+
+    public void StopMusicBGM()
+    {
+        IsPlaying = false;
+
+        musicSource.Stop();
     }
 
     public void StopBGM()

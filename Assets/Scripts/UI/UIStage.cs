@@ -177,4 +177,9 @@ public class UIStage : MonoBehaviour
         PlayerPrefs.SetInt("StoryLevel", level);
         SceneManager.LoadScene("Story");
     }
+
+    public void OnClick_PlayMusic()
+    {
+        MainAudioManager.Instance.PlayMusicBGM(CurrentLevel);
+    }
 }

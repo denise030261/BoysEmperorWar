@@ -69,10 +69,10 @@ public class MoveController : MonoBehaviour
 
 		if (collisionDetected && Input.GetKeyDown(KeyCode.Return) && UIStage.Instance.IsEnter[CurrentLevel-1])
 		{
+            MainAudioManager.Instance.StopMusicBGM();
             MainAudioManager.Instance.PlaySFX(SFXEnter);
             PlayerPrefs.SetInt("StoryLevel", 0);
             PlayerPrefs.SetString("State", "Before");
-            // After : PlayerPrefs.SetString("State", "After"); Before : PlayerPrefs.SetString("State", "Before");
             SceneManager.LoadScene("Story");
 		} // 스테이지 입장
 		else if(collisionDetected && Input.GetKeyDown(KeyCode.Return) && !UIStage.Instance.IsEnter[CurrentLevel - 1])
