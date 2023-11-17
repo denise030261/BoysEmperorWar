@@ -2127,9 +2127,9 @@ MonoBehaviour:
   CurrentLevel: 0
   PreviousLevel: 0
   WalkSpeed: 4
-  BGMName: "\uAD6D\uC545"
+  BGMName: "\uACE1\uC120\uD0DD"
   SFXMove: "\uC2E4\uD5D8"
-  SFXEnter: "\uC2E4\uD5D8"
+  SFXEnter: "\uC785\uC7A5"
   isMoving: 0
   Stage1: {x: 1.66, y: 1.25}
   Stage2: {x: 8.18, y: 1.25}
