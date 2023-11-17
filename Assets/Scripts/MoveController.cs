@@ -80,7 +80,8 @@ public class MoveController : MonoBehaviour
             MainAudioManager.Instance.PlaySFX(SFXEnter);
             PlayerPrefs.SetInt("StoryLevel", 0);
             PlayerPrefs.SetString("State", "Before");
-            SceneManager.LoadScene("Story");
+            PlayerPrefs.SetString("Scene", "StageSelect");
+            SceneManager.LoadScene("Loading(Imsi)");
 		} // 스테이지 입장
 		else if(collisionDetected && Input.GetKeyDown(KeyCode.Return) && !UIStage.Instance.IsEnter[CurrentLevel - 1])
 		{

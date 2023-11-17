@@ -30,6 +30,8 @@ public class UIStage : MonoBehaviour
     public GameObject StoryDisplay;
     public GameObject[] Manual;
 
+    public Button[] StoryButtons;
+
     public int[] StandardScore = new int[5];
 
     public static UIStage Instance { get; private set; }
@@ -44,6 +46,7 @@ public class UIStage : MonoBehaviour
         TitleUI.sprite = Resources.Load<Sprite>("UI/SongTitle0" + CurrentLevel);
         StageUI.sprite = Resources.Load<Sprite>("UI/Stage0" + CurrentLevel);
         IsEnter[0] = true;
+        StoryButtons[0].interactable = true;
     }
 
     private void Start()
@@ -57,12 +60,27 @@ public class UIStage : MonoBehaviour
                 if (StageMaxScore[i] >= StandardScore[i])
                 {
                     StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelArea");
+                    StoryButtons[i+1].interactable = true;
+                    StoryButtons[i+5].interactable = true;
                     IsEnter[i + 1] = true;
                 } // 일정 점수를 넘겨야 풀리는 것이지만 아직 점수가 정해지지 않았으니 디폴트로 만점으로 처리한다.
                 else if (i != 0)
                 {
                     StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
+                    StoryButtons[i + 1].interactable = false;
+                    StoryButtons[i + 5].interactable = false;
                     IsEnter[i + 1] = false;
+                }
+            }
+            else
+            {
+                if (StageMaxScore[i] >= StandardScore[i])
+                {
+                    StoryButtons[i + 5].interactable = true;
+                }
+                else
+                {
+                    StoryButtons[i + 5].interactable = false;
                 }
             }
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
@@ -175,7 +193,8 @@ public class UIStage : MonoBehaviour
     public void OnClick_StoryButton(int level)
     {
         PlayerPrefs.SetInt("StoryLevel", level);
-        SceneManager.LoadScene("Story");
+        PlayerPrefs.SetString("Scene", "StageSelect");
+        SceneManager.LoadScene("Loading(Imsi)");
     }
 
     public void OnClick_PlayMusic()
