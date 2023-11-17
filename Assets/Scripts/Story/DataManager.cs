@@ -57,7 +57,6 @@ public class DataManager : MonoBehaviour
         //MainAudioManager.Instance.PlayBGM("현재");
         MainAudioManager.Instance.StopBGM();
         Debug.Log(CurrentStage + " " + CurrentState);
-        // 게임 전후 구분 Prefs 필요
     }
 
     private void Update()
