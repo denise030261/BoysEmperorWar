@@ -59,11 +59,17 @@ public class UIStage : MonoBehaviour
             {
                 if (StageMaxScore[i] >= StandardScore[i])
                 {
+                    Debug.Log(i+"가 활성화");
                     StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelArea");
                     StoryButtons[i+1].interactable = true;
                     StoryButtons[i+5].interactable = true;
                     IsEnter[i + 1] = true;
                 } // 일정 점수를 넘겨야 풀리는 것이지만 아직 점수가 정해지지 않았으니 디폴트로 만점으로 처리한다.
+                else if(StageMaxScore[i] < StandardScore[i] && i==0)
+                {
+                    StoryButtons[i + 1].interactable = false;
+                    StoryButtons[i + 5].interactable = false;
+                }
                 else if (i != 0)
                 {
                     StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
