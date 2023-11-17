@@ -6,15 +6,20 @@ using UnityEngine.SceneManagement;
 public class LoadingNextScene : MonoBehaviour
 {
     public int WaitSeconds = 10;
+    private string scene;
 
     void Start()
     {
+        scene = PlayerPrefs.GetString("Scene", "Home");
         StartCoroutine(NextScene());
     }
 
     IEnumerator NextScene()
     {
         yield return new WaitForSeconds(WaitSeconds);
-        SceneManager.LoadScene("StageSelect");
+        if(scene == "Home")
+            SceneManager.LoadScene("StageSelect");
+        else if(scene == "StageSelect")
+            SceneManager.LoadScene("Story");
     } // 로고 나타내기
 }

@@ -26,6 +26,7 @@ public class GameStart : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) && DisplayStart)
         {
+            PlayerPrefs.SetString("Scene", "Home");
             SceneManager.LoadScene("Loading(Imsi)");
         }
 

@@ -77,7 +77,10 @@ public class MainAudioManager : MonoBehaviour
     {
         IsPlaying = false;
 
-        musicSource.Stop();
+        if(musicSource != null)
+        { 
+            musicSource.Stop();
+        }
     }
 
     public void StopBGM()

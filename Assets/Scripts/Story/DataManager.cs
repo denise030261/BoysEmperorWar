@@ -54,7 +54,8 @@ public class DataManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MainAudioManager.Instance.PlayBGM("현재");
+        //MainAudioManager.Instance.PlayBGM("현재");
+        MainAudioManager.Instance.StopBGM();
         Debug.Log(CurrentStage + " " + CurrentState);
         // 게임 전후 구분 Prefs 필요
     }
