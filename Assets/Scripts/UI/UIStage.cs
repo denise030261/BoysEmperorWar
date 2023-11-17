@@ -125,7 +125,7 @@ public class UIStage : MonoBehaviour
             if (TitleUI.rectTransform.anchoredPosition.x >= 357)
             {
                 TitleUI.rectTransform.anchoredPosition = new Vector2(357, TitleUI.rectTransform.anchoredPosition.y);
-                StageUI.rectTransform.anchoredPosition = new Vector2(-370, StageUI.rectTransform.anchoredPosition.y);
+                StageUI.rectTransform.anchoredPosition = new Vector2(-357, StageUI.rectTransform.anchoredPosition.y);
             }
             if (TitleUI.rectTransform.anchoredPosition.x <= 357)
             {
@@ -141,7 +141,7 @@ public class UIStage : MonoBehaviour
             {
                 isChange = 0;
                 TitleUI.rectTransform.anchoredPosition = new Vector2(-357, TitleUI.rectTransform.anchoredPosition.y);
-                StageUI.rectTransform.anchoredPosition = new Vector2(370, StageUI.rectTransform.anchoredPosition.y);
+                StageUI.rectTransform.anchoredPosition = new Vector2(357, StageUI.rectTransform.anchoredPosition.y);
                 if (StageBoard[CurrentLevel - 1].sprite.name == "LevelArea")
                 {
                     StageLight[CurrentLevel - 1].SetActive(true);
