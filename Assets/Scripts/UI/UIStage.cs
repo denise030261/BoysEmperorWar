@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class UIStage : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class UIStage : MonoBehaviour
     public Image TitleUI;
     public Image StageUI;
     public Text CurrentPage;
-    public Text MaxScore;
+    public TextMeshProUGUI MaxScore;
     public int UISpeed = 2; // UI 변경 속도
     public int isChange = 0; // UI 변경 여부 (0은 변경 없음, 1은 사라짐, 2는 채워짐)
 
@@ -31,6 +32,8 @@ public class UIStage : MonoBehaviour
     public GameObject[] Manual;
 
     public Button[] StoryButtons;
+    private bool PrePlay;
+    public Image PrePlayImage;
 
     public int[] StandardScore = new int[5];
 
@@ -47,6 +50,7 @@ public class UIStage : MonoBehaviour
         StageUI.sprite = Resources.Load<Sprite>("UI/Stage0" + CurrentLevel);
         IsEnter[0] = true;
         StoryButtons[0].interactable = true;
+        PrePlay = false;
     }
 
     private void Start()
@@ -111,6 +115,7 @@ public class UIStage : MonoBehaviour
         if (isChange == 1)
         {
             Debug.Log("왼쪽으로 움직였습니다");
+            PrePlay = false;
             if (TitleUI.rectTransform.anchoredPosition.x >= -357)
             {
                 float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x + Time.deltaTime * 5000;
@@ -159,17 +164,17 @@ public class UIStage : MonoBehaviour
     public void OnClick_OptionOn(bool On)
     {
         OptionDisplay.SetActive(On); 
-    }
+    } // 옵션 화면 상태
 
     public void OnClick_ManualDisplay(bool On)
     {
         ManualDisplay.SetActive(On);
-    }
+    } // 메뉴얼 화면 상태
 
     public void OnClick_GameEnd()
     {
         Application.Quit();
-    }
+    } // 게임 끄기
 
     public void OnClick_ManulPage(int Page)
     {
@@ -184,27 +189,43 @@ public class UIStage : MonoBehaviour
             Manual[Page - 1].SetActive(true);
             Manual[Page-2].SetActive(false);
         }
-    }
+    } // 메뉴얼 페이지 상태
 
     public void OnClick_MusicOption(bool On)
     {
         MusicOptionDisplay.SetActive(On);   
-    }
+    } // 음향 옵션 화면 상태
 
     public void Onclick_Story(bool On)
     {
         StoryDisplay.SetActive(On);
-    }
+    } // 스토리 화면 상태
 
     public void OnClick_StoryButton(int level)
     {
         PlayerPrefs.SetInt("StoryLevel", level);
         PlayerPrefs.SetString("Scene", "StageSelect");
         SceneManager.LoadScene("Loading(Imsi)");
-    }
+    } // 스토리 상태
 
     public void OnClick_PlayMusic()
     {
         MainAudioManager.Instance.PlayMusicBGM(CurrentLevel);
-    }
+
+        if(PrePlay)
+        {
+            Debug.Log("미리듣기 정지");
+            PrePlay = false;
+            MainAudioManager.Instance.StopMusicBGM();
+            PrePlayImage.color = new Color(255, 255, 255);
+        }
+        else
+        {
+            Debug.Log("미리듣기 실행중");
+            PrePlay = true;
+            Color color1;
+            ColorUtility.TryParseHtmlString("#959595", out color1);
+            PrePlayImage.color = color1;
+        }
+    } // 미리듣기 
 }

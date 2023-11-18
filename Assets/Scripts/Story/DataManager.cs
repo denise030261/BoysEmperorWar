@@ -56,6 +56,8 @@ public class DataManager : MonoBehaviour
     {
         //MainAudioManager.Instance.PlayBGM("현재");
         MainAudioManager.Instance.StopBGM();
+        // StopBGM은 지우고 첫 번째 브금으로 적용
+
         Debug.Log(CurrentStage + " " + CurrentState);
     }
 
@@ -97,9 +99,13 @@ public class DataManager : MonoBehaviour
                 }
             }
 
-            if (BGMData[SceneNum] != "")
+            if (BGMData[SceneNum] == "없음")
             {
-                MainAudioManager.Instance.PlayBGM("급박");
+                MainAudioManager.Instance.StopBGM();
+            } // 없으면 다음 Pause, Play?
+            else if(BGMData[SceneNum] != "")
+            {
+                MainAudioManager.Instance.PlayBGM(BGMData[SceneNum]);
             }
         }
     }

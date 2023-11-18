@@ -55,22 +55,12 @@ public class MoveController : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.RightArrow) && CurrentLevel+1<=5 && !isMoving && UIStage.Instance.isChange==0)
         {
-            PlayButton.interactable = false;
-            MainAudioManager.Instance.StopMusicBGM();
-            MainAudioManager.Instance.PlaySFX(SFXMove);
-            UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
-            SetIsWalk(true, false);
-			StartMoving();
-		}
+			MoveState(false);
+        }
 		else if(Input.GetKeyDown(KeyCode.LeftArrow) && CurrentLevel - 1 > 0 && !isMoving && UIStage.Instance.isChange == 0)
         {
-            PlayButton.interactable = false;
-            MainAudioManager.Instance.StopMusicBGM();
-            MainAudioManager.Instance.PlaySFX(SFXMove);
-            UIStage.Instance.StageLight[CurrentLevel-1].SetActive(false);
-            SetIsWalk(true,true);
-			StartMoving();
-		}
+            MoveState(true);
+        }
 
 		CharacterMove();
 
@@ -173,6 +163,15 @@ public class MoveController : MonoBehaviour
         TransformPositions[4] = Stage4;
         TransformPositions[5] = Stage5;
     } // 발판 위치
-}
 
-// 움직일 때 키보드 인식하지 않게 만들기
+    private void MoveState(bool flip)
+    {
+        PlayButton.interactable = false;
+        UIStage.Instance.PrePlayImage.color = new Color(255, 255, 255, 255);
+        MainAudioManager.Instance.StopMusicBGM();
+        MainAudioManager.Instance.PlaySFX(SFXMove);
+        UIStage.Instance.StageLight[CurrentLevel - 1].SetActive(false);
+        SetIsWalk(true, flip);
+        StartMoving();
+    } // 캐릭터가 움직일 때
+}
