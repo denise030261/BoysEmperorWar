@@ -5964,7 +5964,7 @@ MonoBehaviour:
   CurrentStage: 0
   ResultImage: {fileID: 1955156302}
   ResultStage: {fileID: 1236494013}
-  BGMName: "\uC790\uC5F0"
+  BGMName: Title
   LoadingTime: 7
   BackGroundImage: {fileID: 3142537937865653661}
   canvases:

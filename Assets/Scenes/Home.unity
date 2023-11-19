@@ -542,7 +542,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2f78f39be32552547a5fcbb317ce4f65, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f152344c05ca8a42bf7d3b9b8b7c390, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -661,7 +661,7 @@ MonoBehaviour:
   TitleLogo: {fileID: 2129640317}
   TitleLogoDelay: 1
   FadeSpeed: 5
-  BGMName: Title
+  BGMName: "\uD0C0\uC774\uD2C0\uD6C4\uBCF42"
 --- !u!1 &2114557230
 GameObject:
   m_ObjectHideFlags: 0
