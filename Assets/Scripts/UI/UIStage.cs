@@ -50,7 +50,6 @@ public class UIStage : MonoBehaviour
         StageUI.sprite = Resources.Load<Sprite>("UI/Stage0" + CurrentLevel);
         IsEnter[0] = true;
         StoryButtons[0].interactable = true;
-        PrePlay = false;
     }
 
     private void Start()
@@ -210,7 +209,7 @@ public class UIStage : MonoBehaviour
 
     public void OnClick_PlayMusic()
     {
-        MainAudioManager.Instance.PlayMusicBGM(CurrentLevel);
+        MainAudioManager.Instance.PlayMusicBGM(CurrentLevel.ToString());
 
         if(PrePlay)
         {

@@ -99,11 +99,7 @@ public class DataManager : MonoBehaviour
                 }
             }
 
-            if (BGMData[SceneNum] == "없음")
-            {
-                MainAudioManager.Instance.StopBGM();
-            } // 없으면 다음 Pause, Play?
-            else if(BGMData[SceneNum] != "")
+           if(BGMData[SceneNum] != "")
             {
                 MainAudioManager.Instance.PlayBGM(BGMData[SceneNum]);
             }

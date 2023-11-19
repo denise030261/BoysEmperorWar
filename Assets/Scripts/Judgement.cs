@@ -97,15 +97,17 @@ public class Judgement : MonoBehaviour
                     Score.Instance.data.judge = JudgeType.Good;
                 }
             Score.Instance.SetScore();
-            JudgeEffect.Instance.OnEffect(line);
+            //JudgeEffect.Instance.OnEffect(line);
 
             if (note.type == (int)NoteType.Short)
             {
                 notes[line].Dequeue();
+                JudgeEffect.Instance.OnEffect(line);
             }
             else if (note.type == (int)NoteType.Long)
             {
                 longNoteCheck[line] = 1;
+                JudgeEffect.Instance.OnPlay(line);
             }
         }
     }
@@ -141,6 +143,7 @@ public class Judgement : MonoBehaviour
                 }
             }
             JudgeEffect.Instance.OnEffect(line); // 땠을 때 이펙트
+            JudgeEffect.Instance.OnStop(line);
             Score.Instance.SetScore();
             longNoteCheck[line] = 0;
             notes[line].Dequeue();
@@ -148,6 +151,7 @@ public class Judgement : MonoBehaviour
         else if(longNoteCheck[line] == 1)
         {
             longNoteCheck[line] = 0;
+            JudgeEffect.Instance.OnStop(line);
         } // 긴 노드를 한 번만 눌렀을 때의 오류 방지
     }
 
