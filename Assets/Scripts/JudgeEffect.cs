@@ -33,7 +33,6 @@ public class JudgeEffect : MonoBehaviour
         foreach (ParticleSystem particle in particles)
         {
             var ps = particle.main;
-            //ps.startSpeed = new ParticleSystem.MinMaxCurve(speed);
             ps.startLifetime = new ParticleSystem.MinMaxCurve(life);
         }
     }
@@ -41,5 +40,13 @@ public class JudgeEffect : MonoBehaviour
     public void OnEffect(int line)
     {
         particles[line].Emit(1);
+    }
+    public void OnPlay(int line)
+    {
+        particles[line].Play();
+    }
+    public void OnStop(int line)
+    {
+        particles[line].Stop();
     }
 }

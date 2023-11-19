@@ -82,4 +82,3 @@ public class PlaceManager : UIFade
         FadeImage.rectTransform.anchoredPosition = new Vector2(UITitleRecX, FadeImage.rectTransform.anchoredPosition.y);
     }
 }
-// 처음에는 뜨고 엔터 누르면 사라지기

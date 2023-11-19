@@ -60,17 +60,20 @@ public class MainAudioManager : MonoBehaviour
         }
     }
 
-    public void PlayMusicBGM(int Level)
+    public void PlayMusicBGM(string Level)
     {
         IsPlaying = true;
 
-        AudioClip bgmClip = Resources.Load<AudioClip>("Music/BGM/" + Level.ToString());
+        AudioClip bgmClip = Resources.Load<AudioClip>("Music/BGM/" + Level);
 
-        bgmSource.volume = 0;
+        if(bgmClip != null) 
+        {
+            bgmSource.volume = 0;
 
-        musicSource.volume = PlayerPrefs.GetFloat("BGM", 0.5f);
-        musicSource.clip = bgmClip;
-        musicSource.Play();
+            musicSource.volume = PlayerPrefs.GetFloat("BGM", 0.5f);
+            musicSource.clip = bgmClip;
+            musicSource.Play();
+        }
     }
 
     public void StopMusicBGM()
