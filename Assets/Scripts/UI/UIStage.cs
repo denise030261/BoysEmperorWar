@@ -92,6 +92,7 @@ public class UIStage : MonoBehaviour
                     StoryButtons[i + 5].interactable = false;
                 }
             }
+
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
         }
 
