@@ -8,7 +8,7 @@
             "Chat": "グローバルKpopアイドルたちのパフォーマンス大激突！\n皇帝になるアイドルは誰になるのか！",
             "ChatWindow": "CW_MC",
             "Place": "撮影スタジオ",
-            "BGM": ""
+            "BGM": "방송진행(신남)"
         },
         {
             "LeftCharacter": "",
@@ -738,7 +738,7 @@
             "Chat": "「ボーイズ·エンペラーズ·ウォー」の旅を共にする6チーム、\nお会いできて嬉しいです。",
             "ChatWindow": "CW_MC",
             "Place": "INTRO",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "",
@@ -1598,7 +1598,7 @@
             "Chat": "パフォーマンスの比重が高いって？冗談でしょ…？",
             "ChatWindow": "CW_Midnight2",
             "Place": "その反面、ECLIPSEは…",
-            "BGM": ""
+            "BGM": "시리어스_싸움"
         },
         {
             "LeftCharacter": "",
@@ -1698,7 +1698,7 @@
             "Chat": "それでは、パフォーマンスの順番は...",
             "ChatWindow": "CW_MC",
             "Place": "順番決め",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "",
@@ -2188,7 +2188,7 @@
             "Chat": "うわ…ねむ…眠すぎるぅ…",
             "ChatWindow": "CW_Shunpei",
             "Place": "一次競演当日、待機室",
-            "BGM": ""
+            "BGM": "밝고_신나는"
         },
         {
             "LeftCharacter": "",

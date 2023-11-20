@@ -8,7 +8,7 @@
             "Chat": "2次競演のテーマは、\n「愛の曲」です！",
             "ChatWindow": "CW_MC",
             "Place": "撮影スタジオ",
-            "BGM": ""
+            "BGM": "방송진행(신남)"
         },
         {
             "LeftCharacter": "",
@@ -98,7 +98,7 @@
             "Chat": "もう脱落者が出るのか。今回は本当に上手くやらなきゃ…\n新人よりも下の5位だなんて危険だ。",
             "ChatWindow": "CW_Philip2",
             "Place": "廊下",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -208,7 +208,7 @@
             "Chat": "…本当にどんな曲にしようかな……............",
             "ChatWindow": "CW_Hoshi",
             "Place": "会議室",
-            "BGM": ""
+            "BGM": "밝고_설레는"
         },
         {
             "LeftCharacter": "",
@@ -348,7 +348,7 @@
             "Chat": "こんにちは、彗星のように現れた新人、UNIVERSEのリーダーのホシくん。 \n改めて自己紹介するよ、俺はIDEAのリーダー、シオンだ。",
             "ChatWindow": "CW_Xion",
             "Place": "空室",
-            "BGM": ""
+            "BGM": "시리어스_싸움"
         },
         {
             "LeftCharacter": "Hoshi_1_smile_Aa",
@@ -838,7 +838,7 @@
             "Chat": "ただいまー。帰ってきたよ。",
             "ChatWindow": "CW_Hoshi",
             "Place": "会議室",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -918,7 +918,7 @@
             "Chat": "…IDEAは... \n事務所に「まだ使えるグループ」であることを証明しなければならない。",
             "ChatWindow": "CW_Xion",
             "Place": "空室",
-            "BGM": ""
+            "BGM": "심각한무거움"
         },
         {
             "LeftCharacter": "",
@@ -978,7 +978,7 @@
             "Chat": "はい！「ボーイズ·エンペラーズ·ウォー」、\n本日ついに二次競演の当日となりました。",
             "ChatWindow": "CW_MC",
             "Place": "二次競演当日",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "",

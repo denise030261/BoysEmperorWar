@@ -8,7 +8,7 @@
             "Chat": "はい、「ボーイズ·エンペラーズ·ウォー」の 投票が全て終了されました。",
             "ChatWindow": "CW_MC",
             "Place": "撮影スタジオ",
-            "BGM": ""
+            "BGM": "방송진행(신남)"
         },
         {
             "LeftCharacter": "",
@@ -248,7 +248,7 @@
             "Chat": "…確かにアイドルは歌だけ上手いんじゃ駄目なんだな。",
             "ChatWindow": "CW_Hoshi",
             "Place": "ECLIPSEとの話の後",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "",

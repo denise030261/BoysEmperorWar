@@ -208,7 +208,7 @@
             "Chat": "うわぁ〜...今回が本当に最後だなんて··· \n本当にインパクト強くて余韻が残るものにしないと。",
             "ChatWindow": "CW_Hoshi",
             "Place": "廊下",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -1088,7 +1088,7 @@
             "Chat": "はあぁ〜...みんな、おやすみぃ〜。",
             "ChatWindow": "CW_Hoshi",
             "Place": "最終日、寮",
-            "BGM": ""
+            "BGM": "필로우토크"
         },
         {
             "LeftCharacter": "",
@@ -1538,7 +1538,7 @@
             "Chat": "…よく寝た！",
             "ChatWindow": "CW_Shunpei",
             "Place": "放送局の入口",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -1728,7 +1728,7 @@
             "Chat": "なんでそんなに心配そうな顔しているんだ？UNIVERSEのせい？",
             "ChatWindow": "CW_Kenneth",
             "Place": "IDEAの待機室",
-            "BGM": ""
+            "BGM": "잔잔하고_차분"
         },
         {
             "LeftCharacter": "(L)Xion_sad_1_a",
@@ -1918,7 +1918,7 @@
             "Chat": "…ちょっと心がソワソワする。",
             "ChatWindow": "CW_Hoshi",
             "Place": "待機室",
-            "BGM": ""
+            "BGM": "밝고_신나는"
         },
         {
             "LeftCharacter": "",

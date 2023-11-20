@@ -8,7 +8,7 @@
             "Chat": "いつのまにかボーイズ·エンペラーズ·ウォーの日程も半分に近づいています。\n3回目の競演のテーマは…",
             "ChatWindow": "CW_MC",
             "Place": "撮影スタジオ",
-            "BGM": ""
+            "BGM": "방송진행(신남)"
         },
         {
             "LeftCharacter": "",
@@ -278,7 +278,7 @@
             "Chat": "…俺、正直、勝つ自信がないんだ。\nさっきひるんだから··· 怖すぎる。",
             "ChatWindow": "CW_Shunpei",
             "Place": "会議室",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -768,7 +768,7 @@
             "Chat": "...まあね。",
             "ChatWindow": "CW_Ifrit",
             "Place": "",
-            "BGM": ""
+            "BGM": "정적"
         },
         {
             "LeftCharacter": "",
@@ -778,7 +778,7 @@
             "Chat": "は？…「まあね」？ \nまさか、もう個人活動を考えているのか？",
             "ChatWindow": "CW_Aaron",
             "Place": "",
-            "BGM": ""
+            "BGM": "심각한무거움"
         },
         {
             "LeftCharacter": "(r)Ifrit_halfEye_a",
@@ -811,11 +811,21 @@
             "BGM": ""
         },
         {
+            "LeftCharacter": "",
+            "RightCharacter": "Aaron_mwo",
+            "CenterCharacter": "없음",
+            "CenterCharacterTwo": "",
+            "Chat": "だからといって、俺たちは3年しか経っていないのにもう個人活動を考えるのかよ！お前はりーだーじゃないか！",
+            "ChatWindow": "CW_Aaron",
+            "Place": "",
+            "BGM": ""
+        },
+        {
             "LeftCharacter": "(r)Ifrit_angry_a",
             "RightCharacter": "",
             "CenterCharacter": "",
             "CenterCharacterTwo": "",
-            "Chat": "チームが忘れ去られ始めたら、俳優活動並行でもソロ活動でも\nするべきだ。芸能界で生き残るためにはキャリアを開拓しなければならないんだよ！",
+            "Chat": "…チームが忘れ去られ始めたら、俳優活動並行でもソロ活動でもするべきだ。芸能界で生き残るためにはキャリアを開拓しなければならないんだよ！",
             "ChatWindow": "",
             "Place": "",
             "BGM": ""
@@ -841,11 +851,21 @@
             "BGM": ""
         },
         {
+            "LeftCharacter": "(r)Ifrit_angry_a",
+            "RightCharacter": "",
+            "CenterCharacter": "",
+            "CenterCharacterTwo": "",
+            "Chat": "そうできなかったグループがどれだけ多いのか分からないのかお前は！いつまでもKNOXは上昇傾向になるわけではないんだ！",
+            "ChatWindow": "",
+            "Place": "",
+            "BGM": ""
+        },
+        {
             "LeftCharacter": "",
             "RightCharacter": "",
             "CenterCharacter": "",
             "CenterCharacterTwo": "",
-            "Chat": "ポジティブに考える努力もしてみてよ！ \n...実はKNOXのリーダーだったという経歴一つ持って、個人として飛躍しようとしてるんでしょ？",
+            "Chat": "ポジティブに考える努力もしてみてよ！もう個人活動なんて··· 本当に呆れる··· \n...実はKNOXのリーダーだったという経歴一つ持って、個人として飛躍しようとしてるんでしょ？",
             "ChatWindow": "",
             "Place": "",
             "BGM": ""
@@ -1008,7 +1028,7 @@
             "Chat": "はぁ...タバコ吸いてぇ...",
             "ChatWindow": "CW_Ifrit",
             "Place": "テラスの休憩スペース",
-            "BGM": ""
+            "BGM": "시리어스,싸움"
         },
         {
             "LeftCharacter": "Hoshi_1_smile_Aa",
@@ -1478,7 +1498,7 @@
             "Chat": "うわぁ。。。一睡もできなかった！",
             "ChatWindow": "CW_Shunpei",
             "Place": "三次競演当日、放送局の入口",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -1578,7 +1598,7 @@
             "Chat": "もう三次競演の日がやってきました！\n前回のくじで決められた最初の順番は-...",
             "ChatWindow": "CW_MC",
             "Place": "撮影スタジオ",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "",

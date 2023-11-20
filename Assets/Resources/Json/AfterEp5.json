@@ -8,7 +8,7 @@
             "Chat": "さて、もう王座への旅路に終止符を打つ時間になりました。\n最終発表を前に、4チームの感想発表を聞いてみたいと思います。",
             "ChatWindow": "CW_MC",
             "Place": "ファイナル競演終了",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "MC_a",
@@ -198,7 +198,7 @@
             "Chat": "IDEAとUNIVERSEです、おめでとうございます！！！",
             "ChatWindow": "",
             "Place": "",
-            "BGM": ""
+            "BGM": "엔딩후보2"
         },
         {
             "LeftCharacter": "Hoshi_3_odoroki_AAA_dere",
@@ -548,7 +548,7 @@
             "Chat": "デビュー後、初のサバイバル競演番組「ボーイズ·エンペラーズ·ウォー」が終映された。",
             "ChatWindow": "",
             "Place": "番組の終わり、その後",
-            "BGM": ""
+            "BGM": "story_ending"
         },
         {
             "LeftCharacter": "",

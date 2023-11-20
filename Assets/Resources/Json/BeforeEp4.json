@@ -8,7 +8,7 @@
             "Chat": "はい！すでに申し上げたように、\n 4次競演では、ファイナル競演に進出できる4チームが決定されます。\n累積点数最下位順位のチームはファイナル競演に参加できず、「ボーイズ・エンペラーズ・ウォー」を去ることになります。",
             "ChatWindow": "CW_MC",
             "Place": "撮影スタジオ",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "",
@@ -518,7 +518,7 @@
             "Chat": "確かに経験豊富なグループを選んだから曲の選択肢がたくさんあるな〜…",
             "ChatWindow": "CW_Hoshi",
             "Place": "会議室",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -788,7 +788,7 @@
             "Chat": "...ごめん、\n今回の4次競演。俺を除いて4人でやってほしいんだ。\nどうせRECORDも4人組だから、俺が抜ける方が練習しやすいかもしれないじゃん。",
             "ChatWindow": "CW_Sizma2",
             "Place": "",
-            "BGM": ""
+            "BGM": "정적"
         },
         {
             "LeftCharacter": "Hoshi_2_odoroki_o_wet",
@@ -808,7 +808,7 @@
             "Chat": "...俺、実は、ルカス先輩とは会えないんだよ。\n... ...ちょっとトラウマなんだ。",
             "ChatWindow": "CW_Sizma",
             "Place": "",
-            "BGM": ""
+            "BGM": "시리어스,싸움"
         },
         {
             "LeftCharacter": "없음",
@@ -1468,7 +1468,7 @@
             "Chat": "~♪ !!!",
             "ChatWindow": "CW_Lucas2",
             "Place": "数日後、RECORD録音室",
-            "BGM": ""
+            "BGM": "심각한무거움"
         },
         {
             "LeftCharacter": "",
@@ -1748,7 +1748,7 @@
             "Chat": "ただいま。",
             "ChatWindow": "CW_Legdan2",
             "Place": "RECORD会議室",
-            "BGM": ""
+            "BGM": "일상"
         },
         {
             "LeftCharacter": "",
@@ -1828,7 +1828,7 @@
             "Chat": "はいっ、いよいよ4次競演の当日となりました。\n もうファイナルラウンドだけが残っています。",
             "ChatWindow": "CW_MC",
             "Place": "四次競演当日",
-            "BGM": ""
+            "BGM": "방송진행(진지)"
         },
         {
             "LeftCharacter": "",
@@ -1905,7 +1905,7 @@
             "RightCharacter": "없음",
             "CenterCharacter": "(c)MC_a2",
             "CenterCharacterTwo": "",
-            "Chat": "ー5曲を3人でどのように消化するかが楽しみです！",
+            "Chat": "ー5人の曲を3人でどのように消化するかが楽しみです！",
             "ChatWindow": "CW_MC",
             "Place": "",
             "BGM": ""

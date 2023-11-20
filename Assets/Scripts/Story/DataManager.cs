@@ -54,10 +54,7 @@ public class DataManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //MainAudioManager.Instance.PlayBGM("현재");
-        MainAudioManager.Instance.StopBGM();
-        // StopBGM은 지우고 첫 번째 브금으로 적용
-
+        MainAudioManager.Instance.PlayBGM(BGMData[0]);
         Debug.Log(CurrentStage + " " + CurrentState);
     }
 
