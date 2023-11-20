@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     /// 게임 진행 상태. InputManager.OnEnter() 참고
     /// </summary>
     public bool isPlaying = true;
+    public TextMeshProUGUI CountNum;
+    public GameObject Pause;
     public string title;
     Coroutine coPlaying;
 
@@ -80,6 +82,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        CountNum.text = "";
+        Pause.SetActive(false);
         InitializeGame();
     }
 
@@ -90,12 +94,14 @@ public class GameManager : MonoBehaviour
             IsPaused = !IsPaused;
             if (IsPaused)
             {
+                Pause.SetActive(true);
                 Debug.Log("멈춥니다");
                 AudioManager.Instance.Pause();
                 Time.timeScale = 0;
             }
             else
             {
+                Pause.SetActive(false);
                 Debug.Log("3초 뒤에 시작합니다");
                 CurrentTime = Time.unscaledTime;
                 IsCount = true;
@@ -106,9 +112,22 @@ public class GameManager : MonoBehaviour
         {
             if (Time.unscaledTime-CurrentTime>=3f)
             {
+                CountNum.text = "";
                 IsCount = false;
                 AudioManager.Instance.UnPause();
                 Time.timeScale = 1;
+            }
+            else if(Time.unscaledTime-CurrentTime>=2f)
+            {
+                CountNum.text = "1";
+            }
+            else if (Time.unscaledTime - CurrentTime >= 1f)
+            {
+                CountNum.text = "2";
+            }
+            else if (Time.unscaledTime - CurrentTime >= 0f)
+            {
+                CountNum.text = "3";
             }
         }
     }

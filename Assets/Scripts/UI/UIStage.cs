@@ -58,7 +58,7 @@ public class UIStage : MonoBehaviour
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
 
-            if (i!=StageMaxScore.Length-1)
+            /*if (i!=StageMaxScore.Length-1)
             {
                 if (StageMaxScore[i] >= StandardScore[i])
                 {
@@ -91,7 +91,12 @@ public class UIStage : MonoBehaviour
                 {
                     StoryButtons[i + 5].interactable = false;
                 }
-            }
+            }*/
+
+            StoryButtons[i].interactable = true;
+            StoryButtons[i + 5].interactable = true;
+            IsEnter[i] = true;
+            StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelArea");
 
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
         }
@@ -203,6 +208,7 @@ public class UIStage : MonoBehaviour
 
     public void OnClick_StoryButton(int level)
     {
+        MainAudioManager.Instance.StopMusicBGM();
         PlayerPrefs.SetInt("StoryLevel", level);
         PlayerPrefs.SetString("Scene", "StageSelect");
         SceneManager.LoadScene("Loading(Imsi)");
