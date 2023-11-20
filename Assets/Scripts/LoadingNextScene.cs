@@ -10,6 +10,7 @@ public class LoadingNextScene : MonoBehaviour
 
     void Start()
     {
+        MainAudioManager.Instance.StopBGM();
         scene = PlayerPrefs.GetString("Scene", "Home");
         StartCoroutine(NextScene());
     }
