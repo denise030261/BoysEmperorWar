@@ -89,6 +89,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        VideoManager.Instance.SetResolution();
+
         if (Input.GetKeyDown(KeyCode.Space) && IsPlay)
         {
             IsPaused = !IsPaused;
@@ -175,7 +177,6 @@ public class GameManager : MonoBehaviour
     private async void InitializeGame()
     {
         SheetLoader.Instance.Init();
-
         foreach (GameObject go in canvases)
         {
             go.SetActive(true);
