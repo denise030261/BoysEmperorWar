@@ -28,6 +28,7 @@ public class UIStage : MonoBehaviour
     public GameObject OptionDisplay;
     public GameObject ManualDisplay;
     public GameObject MusicOptionDisplay;
+    public GameObject ScreenOptionDisplay;
     public GameObject StoryDisplay;
     public GameObject[] Manual;
 
@@ -58,7 +59,7 @@ public class UIStage : MonoBehaviour
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
 
-            /*if (i!=StageMaxScore.Length-1)
+            if (i!=StageMaxScore.Length-1)
             {
                 if (StageMaxScore[i] >= StandardScore[i])
                 {
@@ -91,12 +92,12 @@ public class UIStage : MonoBehaviour
                 {
                     StoryButtons[i + 5].interactable = false;
                 }
-            }*/
+            }
 
-            StoryButtons[i].interactable = true;
+            /*StoryButtons[i].interactable = true;
             StoryButtons[i + 5].interactable = true;
             IsEnter[i] = true;
-            StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelArea");
+            StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelArea");*/
 
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
         }
@@ -204,6 +205,11 @@ public class UIStage : MonoBehaviour
     public void Onclick_Story(bool On)
     {
         StoryDisplay.SetActive(On);
+    } // 스토리 화면 상태
+
+    public void Onclick_ScreenOption(bool On)
+    {
+        ScreenOptionDisplay.SetActive(On);
     } // 스토리 화면 상태
 
     public void OnClick_StoryButton(int level)
