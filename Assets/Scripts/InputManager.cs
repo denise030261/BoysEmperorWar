@@ -24,55 +24,67 @@ public class InputManager : MonoBehaviour
 
     public void OnNoteLine0(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if(!GameManager.Instance.IsPaused)
         {
-            judgement.Judge(0);
-            keyEffects[0].gameObject.SetActive(true);
-        }
-        else if (context.canceled)
-        {
-            judgement.CheckLongNote(0);
-            keyEffects[0].gameObject.SetActive(false);
+            if (context.started)
+            {
+                judgement.Judge(0);
+                keyEffects[0].gameObject.SetActive(true);
+            }
+            else if (context.canceled)
+            {
+                judgement.CheckLongNote(0);
+                keyEffects[0].gameObject.SetActive(false);
+            }
         }
     } //길게 눌러지면 짧은 노드(started)가 떴다가 떼면 노드가 긴 노드라고 뜸
 
     public void OnNoteLine1(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (!GameManager.Instance.IsPaused)
         {
-            judgement.Judge(1);
-            keyEffects[1].gameObject.SetActive(true);
-        }
-        else if (context.canceled)
-        {
-            judgement.CheckLongNote(1);
-            keyEffects[1].gameObject.SetActive(false);
+            if (context.started)
+            {
+                judgement.Judge(1);
+                keyEffects[1].gameObject.SetActive(true);
+            }
+            else if (context.canceled)
+            {
+                judgement.CheckLongNote(1);
+                keyEffects[1].gameObject.SetActive(false);
+            }
         }
     }
     public void OnNoteLine2(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (!GameManager.Instance.IsPaused)
         {
-            judgement.Judge(2);
-            keyEffects[2].gameObject.SetActive(true);
-        }
-        else if (context.canceled)
-        {
-            judgement.CheckLongNote(2);
-            keyEffects[2].gameObject.SetActive(false);
+            if (context.started)
+            {
+                judgement.Judge(2);
+                keyEffects[2].gameObject.SetActive(true);
+            }
+            else if (context.canceled)
+            {
+                judgement.CheckLongNote(2);
+                keyEffects[2].gameObject.SetActive(false);
+            }
         }
     }
     public void OnNoteLine3(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (!GameManager.Instance.IsPaused)
         {
-            judgement.Judge(3);
-            keyEffects[3].gameObject.SetActive(true);
-        }
-        else if (context.canceled)
-        {
-            judgement.CheckLongNote(3);
-            keyEffects[3].gameObject.SetActive(false);
+            if (context.started)
+            {
+                judgement.Judge(3);
+                keyEffects[3].gameObject.SetActive(true);
+            }
+            else if (context.canceled)
+            {
+                judgement.CheckLongNote(3);
+                keyEffects[3].gameObject.SetActive(false);
+            }
         }
     }
 

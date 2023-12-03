@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     public string BGMName;
 
     public int LoadingTime=5;
-    private bool IsPaused=false; // ∏ÿ√„ ø©∫Œ
+    public bool IsPaused=false; // ∏ÿ√„ ø©∫Œ
     private bool IsPlay = false; // «√∑π¿Ã ø©∫Œ
     private bool IsCount = false;
     private float CurrentTime;

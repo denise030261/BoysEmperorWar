@@ -5032,7 +5032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1498581020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6058,6 +6058,7 @@ MonoBehaviour:
   ResultStage: {fileID: 1236494013}
   BGMName: Title
   LoadingTime: 7
+  IsPaused: 0
   BackGroundImage: {fileID: 3142537937865653661}
   canvases:
   - {fileID: 1809573596}
@@ -6822,7 +6823,7 @@ GameObject:
   - component: {fileID: 2107412717}
   - component: {fileID: 2107412716}
   m_Layer: 5
-  m_Name: Canvas_Editor
+  m_Name: Canvas_Loading
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
