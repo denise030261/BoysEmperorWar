@@ -826,7 +826,7 @@
             "CenterCharacter": "",
             "CenterCharacterTwo": "",
             "Chat": "…チームが忘れ去られ始めたら、俳優活動並行でもソロ活動でもするべきだ。芸能界で生き残るためにはキャリアを開拓しなければならないんだよ！",
-            "ChatWindow": "",
+            "ChatWindow": "CW_Ifrit2",
             "Place": "",
             "BGM": ""
         },
@@ -836,7 +836,7 @@
             "CenterCharacter": "",
             "CenterCharacterTwo": "",
             "Chat": "それは君たちにも同じだ。そうしないとKNOXが終わった後、何をするつもりなんだ？会社員？君たちには何の能力も、資格もないんだろう？",
-            "ChatWindow": "",
+            "ChatWindow": "CW_Ifrit2",
             "Place": "",
             "BGM": ""
         },
@@ -856,7 +856,7 @@
             "CenterCharacter": "",
             "CenterCharacterTwo": "",
             "Chat": "そうできなかったグループがどれだけ多いのか分からないのかお前は！いつまでもKNOXは上昇傾向になるわけではないんだ！",
-            "ChatWindow": "",
+            "ChatWindow": "CW_Ifrit2",
             "Place": "",
             "BGM": ""
         },
@@ -866,7 +866,7 @@
             "CenterCharacter": "",
             "CenterCharacterTwo": "",
             "Chat": "ポジティブに考える努力もしてみてよ！もう個人活動なんて··· 本当に呆れる··· \n...実はKNOXのリーダーだったという経歴一つ持って、個人として飛躍しようとしてるんでしょ？",
-            "ChatWindow": "",
+            "ChatWindow": "CW_Aaron",
             "Place": "",
             "BGM": ""
         },
