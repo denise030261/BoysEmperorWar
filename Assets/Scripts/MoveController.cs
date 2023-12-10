@@ -76,7 +76,7 @@ public class MoveController : MonoBehaviour
 		else if(collisionDetected && Input.GetKeyDown(KeyCode.Return) && !UIStage.Instance.IsEnter[CurrentLevel - 1])
 		{
             MainAudioManager.Instance.PlaySFX(SFXEnter);
-            UIStage.Instance.WarningDisplay.SetActive(true);
+            UIOption.Instance.WarningDisplay.SetActive(true);
         }
 	}
 
@@ -167,7 +167,7 @@ public class MoveController : MonoBehaviour
     private void MoveState(bool flip)
     {
         PlayButton.interactable = false;
-        UIStage.Instance.PrePlayImage.color = new Color(255, 255, 255, 255);
+        UIOption.Instance.PrePlayImage.color = new Color(255, 255, 255, 255);
         MainAudioManager.Instance.StopMusicBGM();
         MainAudioManager.Instance.PlaySFX(SFXMove);
         UIStage.Instance.StageLight[CurrentLevel - 1].SetActive(false);

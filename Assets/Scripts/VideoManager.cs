@@ -32,7 +32,6 @@ public class VideoManager : MonoBehaviour
 
     public void SetResolution()
     {
-        Debug.Log(ResolutionWidth + " " + ResolutionHeight + " " + ResolutionFullScreen);
         Screen.SetResolution(ResolutionWidth, ResolutionHeight, ResolutionFullScreen);
     }
     // Start is called before the first frame update

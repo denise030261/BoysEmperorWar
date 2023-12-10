@@ -13,7 +13,6 @@ public class UIStage : MonoBehaviour
 
     public Image TitleUI;
     public Image StageUI;
-    public Text CurrentPage;
     public TextMeshProUGUI MaxScore;
     public int UISpeed = 2; // UI 변경 속도
     public int isChange = 0; // UI 변경 여부 (0은 변경 없음, 1은 사라짐, 2는 채워짐)
@@ -24,17 +23,7 @@ public class UIStage : MonoBehaviour
     public GameObject[] StageLight; // 스테이지 불
     public bool[] IsEnter = new bool[5];
 
-    public GameObject WarningDisplay;
-    public GameObject OptionDisplay;
-    public GameObject ManualDisplay;
-    public GameObject MusicOptionDisplay;
-    public GameObject ScreenOptionDisplay;
-    public GameObject StoryDisplay;
-    public GameObject[] Manual;
-
     public Button[] StoryButtons;
-    private bool PrePlay;
-    public Image PrePlayImage;
 
     public int[] StandardScore = new int[5];
 
@@ -68,7 +57,7 @@ public class UIStage : MonoBehaviour
                     StoryButtons[i+1].interactable = true;
                     StoryButtons[i+5].interactable = true;
                     IsEnter[i + 1] = true;
-                } // 일정 점수를 넘겨야 풀리는 것이지만 아직 점수가 정해지지 않았으니 디폴트로 만점으로 처리한다.
+                } // 일정 점수를 넘겨야 풀리는 것
                 else if(StageMaxScore[i] < StandardScore[i] && i==0)
                 {
                     StoryButtons[i + 1].interactable = false;
@@ -121,7 +110,7 @@ public class UIStage : MonoBehaviour
         if (isChange == 1)
         {
             Debug.Log("왼쪽으로 움직였습니다");
-            PrePlay = false;
+            UIOption.Instance.PrePlay = false;
             if (TitleUI.rectTransform.anchoredPosition.x >= -357)
             {
                 float UITitleRecX = TitleUI.rectTransform.anchoredPosition.x + Time.deltaTime * 5000;
@@ -162,56 +151,6 @@ public class UIStage : MonoBehaviour
         }
     } // UI 변경
 
-    public void Onclick_Warning(bool On)
-    {
-        WarningDisplay.SetActive(On);
-    } // 현재 스테이지 입장 불가 경고
-
-    public void OnClick_OptionOn(bool On)
-    {
-        OptionDisplay.SetActive(On); 
-    } // 옵션 화면 상태
-
-    public void OnClick_ManualDisplay(bool On)
-    {
-        ManualDisplay.SetActive(On);
-    } // 메뉴얼 화면 상태
-
-    public void OnClick_GameEnd()
-    {
-        Application.Quit();
-    } // 게임 끄기
-
-    public void OnClick_ManulPage(int Page)
-    {
-        CurrentPage.text = Page.ToString();
-        if (Page == 1)
-        {
-            Manual[Page - 1].SetActive(true);
-            Manual[Page].SetActive(false);
-        }
-        else if(Page==2)
-        {
-            Manual[Page - 1].SetActive(true);
-            Manual[Page-2].SetActive(false);
-        }
-    } // 메뉴얼 페이지 상태
-
-    public void OnClick_MusicOption(bool On)
-    {
-        MusicOptionDisplay.SetActive(On);   
-    } // 음향 옵션 화면 상태
-
-    public void Onclick_Story(bool On)
-    {
-        StoryDisplay.SetActive(On);
-    } // 스토리 화면 상태
-
-    public void Onclick_ScreenOption(bool On)
-    {
-        ScreenOptionDisplay.SetActive(On);
-    } // 스토리 화면 상태
-
     public void OnClick_StoryButton(int level)
     {
         MainAudioManager.Instance.StopMusicBGM();
@@ -219,25 +158,4 @@ public class UIStage : MonoBehaviour
         PlayerPrefs.SetString("Scene", "StageSelect");
         SceneManager.LoadScene("Loading(Imsi)");
     } // 스토리 상태
-
-    public void OnClick_PlayMusic()
-    {
-        MainAudioManager.Instance.PlayMusicBGM(CurrentLevel.ToString());
-
-        if(PrePlay)
-        {
-            Debug.Log("미리듣기 정지");
-            PrePlay = false;
-            MainAudioManager.Instance.StopMusicBGM();
-            PrePlayImage.color = new Color(255, 255, 255);
-        }
-        else
-        {
-            Debug.Log("미리듣기 실행중");
-            PrePlay = true;
-            Color color1;
-            ColorUtility.TryParseHtmlString("#959595", out color1);
-            PrePlayImage.color = color1;
-        }
-    } // 미리듣기 
 }
