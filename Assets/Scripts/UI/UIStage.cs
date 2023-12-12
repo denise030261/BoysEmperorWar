@@ -27,6 +27,8 @@ public class UIStage : MonoBehaviour
 
     public int[] StandardScore = new int[5];
 
+    public bool AllClearMode = false;
+
     public static UIStage Instance { get; private set; }
 
     private void Awake()
@@ -48,45 +50,50 @@ public class UIStage : MonoBehaviour
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
 
-            if (i!=StageMaxScore.Length-1)
+            if(AllClearMode)
             {
-                if (StageMaxScore[i] >= StandardScore[i])
-                {
-                    Debug.Log(i+"가 활성화");
-                    StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelArea");
-                    StoryButtons[i+1].interactable = true;
-                    StoryButtons[i+5].interactable = true;
-                    IsEnter[i + 1] = true;
-                } // 일정 점수를 넘겨야 풀리는 것
-                else if(StageMaxScore[i] < StandardScore[i] && i==0)
-                {
-                    StoryButtons[i + 1].interactable = false;
-                    StoryButtons[i + 5].interactable = false;
-                }
-                else if (i != 0)
-                {
-                    StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
-                    StoryButtons[i + 1].interactable = false;
-                    StoryButtons[i + 5].interactable = false;
-                    IsEnter[i + 1] = false;
-                }
+                StoryButtons[i].interactable = true;
+                StoryButtons[i + 5].interactable = true;
+                IsEnter[i] = true;
+                StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelArea");
             }
             else
             {
-                if (StageMaxScore[i] >= StandardScore[i])
+                if (i != StageMaxScore.Length - 1)
                 {
-                    StoryButtons[i + 5].interactable = true;
+                    if (StageMaxScore[i] >= StandardScore[i])
+                    {
+                        Debug.Log(i + "가 활성화");
+                        StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelArea");
+                        StoryButtons[i + 1].interactable = true;
+                        StoryButtons[i + 5].interactable = true;
+                        IsEnter[i + 1] = true;
+                    } // 일정 점수를 넘겨야 풀리는 것
+                    else if (StageMaxScore[i] < StandardScore[i] && i == 0)
+                    {
+                        StoryButtons[i + 1].interactable = false;
+                        StoryButtons[i + 5].interactable = false;
+                    }
+                    else if (i != 0)
+                    {
+                        StageBoard[i + 1].sprite = Resources.Load<Sprite>("UI/LevelLockArea");
+                        StoryButtons[i + 1].interactable = false;
+                        StoryButtons[i + 5].interactable = false;
+                        IsEnter[i + 1] = false;
+                    }
                 }
                 else
                 {
-                    StoryButtons[i + 5].interactable = false;
+                    if (StageMaxScore[i] >= StandardScore[i])
+                    {
+                        StoryButtons[i + 5].interactable = true;
+                    }
+                    else
+                    {
+                        StoryButtons[i + 5].interactable = false;
+                    }
                 }
             }
-
-            /*StoryButtons[i].interactable = true;
-            StoryButtons[i + 5].interactable = true;
-            IsEnter[i] = true;
-            StageBoard[i].sprite = Resources.Load<Sprite>("UI/LevelArea");*/
 
             Debug.Log((i + 1) + "MaxScore" + "에서의 최고 점수는 " + StageMaxScore[i]);
         }

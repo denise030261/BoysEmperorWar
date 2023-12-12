@@ -4409,6 +4409,7 @@ MonoBehaviour:
   - {fileID: 1705753374}
   - {fileID: 504135960}
   StandardScore: f0490200e093040020a1070010eb090060ae0a00
+  AllClearMode: 0
 --- !u!114 &1986108040
 MonoBehaviour:
   m_ObjectHideFlags: 0

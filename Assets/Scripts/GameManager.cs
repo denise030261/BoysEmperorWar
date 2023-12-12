@@ -7,6 +7,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Networking;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -185,16 +187,17 @@ public class GameManager : MonoBehaviour
         UIController.Instance.Init();
         Score.Instance.Init();
 
+        string imagePath = Path.Combine(Application.streamingAssetsPath, "Play/Stage" + CurrentStage + ".png");
+        StartCoroutine(LoadImage(imagePath, BackGroundImage));
+
         // UIObject들이 자기자신을 캐싱할때까지 여유를 주고 비활성화(임시코드)
         await Task.Delay(1000 * LoadingTime); // 대기
 
         DisableCanvases();
 
+
         // 선택화면 아이템 생성
         await WaitUntilSheetLoaded();
-
-        Debug.Log(CurrentStage);
-        BackGroundImage.sprite = Resources.Load<Sprite>("Play/Stage" + CurrentStage);
 
         Play();
     }
@@ -259,11 +262,31 @@ public class GameManager : MonoBehaviour
     // 게임 끝
     IEnumerator IEEndPlay()
     {
-        ResultStage.sprite= Resources.Load<Sprite>("Result/ResultLevel"+CurrentStage);
         while (true)
         {
             if (!AudioManager.Instance.IsPlaying())
             {
+                string imagePath = Path.Combine(Application.streamingAssetsPath, "Result/ResultLevel" + CurrentStage + ".png");
+                StartCoroutine(LoadImage(imagePath, ResultStage));
+
+                if (MaxScore[CurrentStage - 1] <= Score.Instance.data.score)
+                {
+                    Debug.Log(Score.Instance.data.score + "를 받음");
+                    PlayerPrefs.SetInt(CurrentStage + "MaxScore", Score.Instance.data.score);
+                }
+
+                if (Score.Instance.data.score >= UIStage.Instance.StandardScore[CurrentStage - 1])
+                {
+                    Debug.Log("성공");
+                    imagePath = Path.Combine(Application.streamingAssetsPath, "Result/Success.png");
+                    StartCoroutine(LoadImage(imagePath, ResultImage));
+                }
+                else
+                {
+                    Debug.Log("실패");
+                    imagePath = Path.Combine(Application.streamingAssetsPath, "Result/Fail.png");
+                    StartCoroutine(LoadImage(imagePath, ResultImage));
+                }
                 break;
             }
             yield return new WaitForSeconds(1f);
@@ -284,23 +307,6 @@ public class GameManager : MonoBehaviour
         UIText rgreat = UIController.Instance.FindUI("UI_R_Great").uiObject as UIText;
         UIText rgood = UIController.Instance.FindUI("UI_R_Good").uiObject as UIText;
         UIText rmiss = UIController.Instance.FindUI("UI_R_Miss").uiObject as UIText;
-
-        if (MaxScore[CurrentStage - 1] <= Score.Instance.data.score)
-        {
-            Debug.Log(Score.Instance.data.score + "를 받음");
-            PlayerPrefs.SetInt(CurrentStage + "MaxScore", Score.Instance.data.score);
-        }
-
-        if (Score.Instance.data.score >= UIStage.Instance.StandardScore[CurrentStage-1])
-        {
-            Debug.Log("성공");
-            ResultImage.sprite = Resources.Load<Sprite>("Result/Success");
-        }
-        else
-        {
-            Debug.Log("실패");
-            ResultImage.sprite = Resources.Load<Sprite>("Result/Fail");
-        }
 
         rscore.SetText(Score.Instance.data.score.ToString());
         rcombo.SetText(Score.Instance.data.maxcombo.ToString());
@@ -328,5 +334,22 @@ public class GameManager : MonoBehaviour
         MainAudioManager.Instance.StopBGM();
         DisableCanvases();
         Play();
+    }
+
+    IEnumerator LoadImage(string path,Image image)
+    {
+        UnityWebRequest www = UnityWebRequestTexture.GetTexture("file://" + path);
+        yield return www.SendWebRequest();
+
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+            // 이제 texture를 BackGroundImage.sprite에 할당하면 됩니다.
+            image.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+        }
+        else
+        {
+            Debug.LogError("Failed to load image: " + www.error+" Path : "+path);
+        }
     }
 }

@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
-
+using UnityEngine.Networking;
 
 public struct ScoreData
 {
@@ -45,6 +46,8 @@ public class Score : MonoBehaviour
     UIText uiCombo;
     UIText uiScore;
 
+    private Sprite uiStageSprite;
+
     void Awake()
     {
         if (instance == null)
@@ -66,10 +69,13 @@ public class Score : MonoBehaviour
 
     public void Clear()
     {
-        Sprite uiStageSprite = Resources.Load<Sprite>("Play/SmallST" + GameManager.Instance.CurrentStage);
+        //Sprite uiStageSprite = Resources.Load<Sprite>("Play/SmallST" + GameManager.Instance.CurrentStage);
+        string imagePath = Path.Combine(Application.streamingAssetsPath, "Play/SmallST" + GameManager.Instance.CurrentStage+".png");
+        StartCoroutine(LoadImage(imagePath));
+
         data = new ScoreData();
         data.judgeText = Enum.GetNames(typeof(JudgeType));
-        uiStage.SetSprite(uiStageSprite);
+        //uiStage.SetSprite(uiStageSprite);
         uiJudgement.SetSprite(null);
         uiJudgement.SetAlphaToOne(0);
         uiCombo.SetText("");
@@ -98,5 +104,23 @@ public class Score : MonoBehaviour
     public void Ani(UIObject uiObject)
     {
        // AniPreset.Instance.PlayPop(uiObject.Name, uiObject.rect);
+    }
+
+    IEnumerator LoadImage(string path)
+    {
+        UnityWebRequest www = UnityWebRequestTexture.GetTexture("file://" + path);
+        yield return www.SendWebRequest();
+
+        if (www.result == UnityWebRequest.Result.Success)
+        {
+            Texture2D texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+            // 이제 texture를 BackGroundImage.sprite에 할당하면 됩니다.
+            uiStageSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
+            uiStage.SetSprite(uiStageSprite);
+        }
+        else
+        {
+            Debug.LogError("Failed to load image: " + www.error + " Path : " + path);
+        }
     }
 }
