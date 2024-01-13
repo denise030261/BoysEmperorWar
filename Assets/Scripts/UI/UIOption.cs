@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using ColorUtility = UnityEngine.ColorUtility;
 
 public class UIOption : MonoBehaviour
 {
@@ -51,6 +53,10 @@ public class UIOption : MonoBehaviour
     public void OnClick_ManualDisplay(bool On)
     {
         ManualDisplay.SetActive(On);
+
+        Manual[0].SetActive(true);
+        Manual[1].SetActive(false);
+        CurrentPage.text = "1";
     } // 메뉴얼 화면 상태
 
     public void OnClick_GameEnd()
