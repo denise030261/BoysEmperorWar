@@ -5484,7 +5484,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5115279099943469758, guid: ba4b0397dc7dcb74f9c6ad3cc5aed820, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5115279099943469759, guid: ba4b0397dc7dcb74f9c6ad3cc5aed820, type: 3}
       propertyPath: m_Pivot.x
@@ -5818,7 +5818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1038059484840271455, guid: 6d7c90ff71fc78b49b61353d5a6b2047, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1532783258982677025, guid: 6d7c90ff71fc78b49b61353d5a6b2047, type: 3}
       propertyPath: m_Color.b
@@ -6139,6 +6139,10 @@ PrefabInstance:
     - target: {fileID: 7235257577779929556, guid: 6d7c90ff71fc78b49b61353d5a6b2047, type: 3}
       propertyPath: m_Name
       value: BackGround
+      objectReference: {fileID: 0}
+    - target: {fileID: 7235257577779929556, guid: 6d7c90ff71fc78b49b61353d5a6b2047, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7262259678025313030, guid: 6d7c90ff71fc78b49b61353d5a6b2047, type: 3}
       propertyPath: m_Enabled
