@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using ColorUtility = UnityEngine.ColorUtility;
 
 public class UIOption : MonoBehaviour
@@ -44,6 +45,11 @@ public class UIOption : MonoBehaviour
     {
         WarningDisplay.SetActive(On);
     } // 현재 스테이지 입장 불가 경고
+
+    public void Onclick_MainMenu()
+    {
+        SceneManager.LoadScene("Home");
+    }
 
     public void OnClick_OptionOn(bool On)
     {

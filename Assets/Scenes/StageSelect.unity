@@ -3991,8 +3991,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2021249981}
         m_TargetAssemblyTypeName: UIOption, Assembly-CSharp
-        m_MethodName: OnClick_MusicOption
-        m_Mode: 6
+        m_MethodName: Onclick_MainMenu
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5957,7 +5957,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5115279100452736193, guid: ba4b0397dc7dcb74f9c6ad3cc5aed820, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5115279100452736194, guid: ba4b0397dc7dcb74f9c6ad3cc5aed820, type: 3}
       propertyPath: m_SizeDelta.x
@@ -5993,7 +5993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5115279100513020802, guid: ba4b0397dc7dcb74f9c6ad3cc5aed820, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5115279100513020803, guid: ba4b0397dc7dcb74f9c6ad3cc5aed820, type: 3}
       propertyPath: m_AnchorMax.y
