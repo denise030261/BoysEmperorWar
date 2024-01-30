@@ -97,7 +97,7 @@ public class MoveController : MonoBehaviour
 		if (flip)
         {
 			Vector2 scale = transform.localScale;
-			scale.x = -Mathf.Abs(scale.x); // Flip x scale
+			scale.x = -Mathf.Abs(scale.x);
 			transform.localScale = scale;
 			CurrentLevel--;
 		}

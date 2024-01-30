@@ -15,6 +15,7 @@ public class GameStart : MonoBehaviour
 
     private bool DisplayTitle = false;
     private bool DisplayStart = false;
+
     private void Start()
     {
         MainAudioManager.Instance.PlayBGM(BGMName);

@@ -48,7 +48,7 @@ public class PlaceManager : UIFade
             else if (FadeImage.rectTransform.anchoredPosition.x < -800)
             {
                 IsFade = false;
-            }
+            }// 장소 이미지 넘기기
         }
     }
 

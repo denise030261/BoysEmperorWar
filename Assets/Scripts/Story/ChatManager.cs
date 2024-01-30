@@ -136,7 +136,6 @@ public class ChatManager : DataManager
     void EffectEnd()
     {
         DataManager.Instance.IsProgress = true;
-        DataManager.Instance.IsPlaceWindow = false;
     }
     // 글자 애니메이션 구현
 

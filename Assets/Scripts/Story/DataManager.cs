@@ -21,9 +21,8 @@ public class DataManager : MonoBehaviour
     public List<string> BGMData = new List<string>();
 
     public int SceneNum = 0;
-    public bool IsProgress=false;
-    public bool IsChat = false;
-    public bool IsPlaceWindow = false;   
+    public bool IsProgress=false; // 진행해도 되는가
+    public bool IsChat = false; // 이야기하는 중인가
 
     public static DataManager Instance { get; private set; }
 
@@ -146,7 +145,7 @@ public class DataManager : MonoBehaviour
     public void OnClick_Skip()
     {
         MainAudioManager.Instance.StopBGM();
-        int StoryLevel = PlayerPrefs.GetInt("StoryLevel", 0);
+        int StoryLevel = PlayerPrefs.GetInt("StoryLevel", 0); // 이 줄 삭제해볼 것
         if (CurrentState=="Before" && StoryLevel==0)
             SceneManager.LoadScene("Game");
         else

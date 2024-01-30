@@ -7,7 +7,7 @@ public class CharacterCamera : MonoBehaviour
 {
 	private Dictionary<int, Vector3> CameraPositions = new Dictionary<int, Vector3>();
 
-	private bool isMoving = false;
+    private bool isMoving = false;
     private float startTime;
     private float journeyLength;
 
@@ -56,7 +56,7 @@ public class CharacterCamera : MonoBehaviour
 
 		if (isMoving)
 		{
-			float distanceCovered = (Time.time - startTime) * CameraSpeed; // WalkSpeed는 걷는 속도 
+			float distanceCovered = (Time.time - startTime) * CameraSpeed; // 거리가 얼마나 남았는지
 			float fractionOfJourney = distanceCovered / journeyLength;
 
 			Vector3 originalPosition = CameraPositions[PreviousCamera];

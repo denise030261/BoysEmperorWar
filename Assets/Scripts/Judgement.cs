@@ -124,6 +124,7 @@ public class Judgement : MonoBehaviour
         }
 
         int judgeTime = curruntTime - note.tail + judgeTimeFromUserSetting;
+        Debug.Log(judgeTime);
         if (judgeTime < good && judgeTime > -good)
         {
             if (judgeTime < great && judgeTime > -great)
@@ -145,14 +146,14 @@ public class Judgement : MonoBehaviour
             JudgeEffect.Instance.OnEffect(line); // 땠을 때 이펙트
             JudgeEffect.Instance.OnStop(line);
             Score.Instance.SetScore();
-            longNoteCheck[line] = 0;
+            longNoteCheck[line] = 0; 
             notes[line].Dequeue();
         }
         else if(longNoteCheck[line] == 1)
         {
             longNoteCheck[line] = 0;
             JudgeEffect.Instance.OnStop(line);
-        } // 긴 노드를 한 번만 눌렀을 때의 오류 방지
+        } // 긴 노드를 한 번만 눌렀을 때의 오류 방지 (이를 처리하지 않으면 IECheckMiss()의 조건문에 맞지 않아서)
     }
 
     IEnumerator IECheckMiss()
@@ -178,7 +179,6 @@ public class Judgement : MonoBehaviour
                             Score.Instance.data.miss++;
                             Score.Instance.data.judge = JudgeType.Miss;
                             Score.Instance.data.combo = 0;
-                            // 긴 거 한 번만 눌려도 미스 처리 안할거면 생략 처리 할거면 주석 없애기
                             Score.Instance.SetScore();
                             notes[i].Dequeue();
                         }
