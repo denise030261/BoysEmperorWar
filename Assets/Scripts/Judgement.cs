@@ -153,7 +153,7 @@ public class Judgement : MonoBehaviour
         {
             longNoteCheck[line] = 0;
             JudgeEffect.Instance.OnStop(line);
-        } // 긴 노드를 한 번만 눌렀을 때의 오류 방지 (이를 처리하지 않으면 IECheckMiss()의 조건문에 맞지 않아서)
+        } // 긴 노드를 한 번만 눌렀을 때의 오류 방지
     }
 
     IEnumerator IECheckMiss()

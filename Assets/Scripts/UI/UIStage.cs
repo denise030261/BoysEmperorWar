@@ -50,7 +50,7 @@ public class UIStage : MonoBehaviour
         {
             StageMaxScore[i] = PlayerPrefs.GetInt((i + 1) + "MaxScore", 0);
 
-            if(AllClearMode)
+            if (AllClearMode)
             {
                 StoryButtons[i].interactable = true;
                 StoryButtons[i + 5].interactable = true;
